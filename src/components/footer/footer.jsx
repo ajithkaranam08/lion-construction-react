@@ -18,9 +18,9 @@ const Footer = function () {
     <>
       {/* <!-- FOOTER AREA START --> */}
       <footer className="ltn__footer-area  ">
-        <div className="footer-top-area  section-bg-2 plr--5">
+        <div className="footer-top-area section-bg-2 plr--5">
           <Container fluid>
-            <Row>
+            <Row className="footer-change">
               <Col xs={12} sm={6} xl={3}>
                 <div className="footer-widget footer-about-widget">
                   <div className="footer-logo">
@@ -30,10 +30,52 @@ const Footer = function () {
                     </div>
                   </div>
                   <p>
-                    Lorem Ipsum is simply dummy text of the and typesetting
-                    industry. Lorem Ipsum is dummy text of the printing.
+                    {"At Lion Construction, we turn your ideas into real spaces that are simple, strong, and built for the future. Let's build something great together."}
                   </p>
-                  <div className="footer-address">
+            
+                </div>
+              </Col>
+              <Col xs={12} sm={6} xl={2}>
+                <div className="footer-widget footer-menu-widget clearfix">
+                  <h4 className="footer-title">Quick Links</h4>
+                  <div className="footer-menu">
+                    <ul>
+                      <li>
+                        <Link href="/">Home</Link>
+                      </li>
+                      <li>
+                        <Link href="/coming-soon">About</Link>
+                      </li>
+                      <li>
+                        <Link href="/coming-soon">Blog</Link>
+                      </li>
+                      <li>
+                        <Link href="/coming-soon">Projects</Link>
+                      </li>
+                      <li>
+                        <Link href="/contact">Contact</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </Col>
+              <Col xs={12} sm={6} xl={2}>
+                <div className="footer-widget footer-menu-widget clearfix">
+                  <h4 className="footer-title">Services</h4>
+                  <div className="footer-menu">
+                    <ul>
+                      <li>
+                        <Link href="/coming-soon">Interiors</Link>
+                      </li>
+                      <li>
+                        <Link href="/coming-soon">Construction</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </Col>
+              <Col xs={12} sm={6} xl={3}>
+              <div className="footer-address">
                     <ul>
                       <li>
                         <div className="footer-address-icon">
@@ -91,110 +133,6 @@ const Footer = function () {
                       </li>
                     </ul>
                   </div>
-                </div>
-              </Col>
-              <Col xs={12} sm={6} xl={2}>
-                <div className="footer-widget footer-menu-widget clearfix">
-                  <h4 className="footer-title">Company</h4>
-                  <div className="footer-menu">
-                    <ul>
-                      <li>
-                        <Link href="/about">About</Link>
-                      </li>
-                      <li>
-                        <Link href="/blog">Blog</Link>
-                      </li>
-                      <li>
-                        <Link href="/shop">All Products</Link>
-                      </li>
-                      <li>
-                        <Link href="/locations">Locations Map</Link>
-                      </li>
-                      <li>
-                        <Link href="/faq">FAQ</Link>
-                      </li>
-                      <li>
-                        <Link href="/contact">Contact us</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </Col>
-              <Col xs={12} sm={6} xl={2}>
-                <div className="footer-widget footer-menu-widget clearfix">
-                  <h4 className="footer-title">Services</h4>
-                  <div className="footer-menu">
-                    <ul>
-                      <li>
-                        <Link href="/order-tracking">Order tracking</Link>
-                      </li>
-                      <li>
-                        <Link href="/wishlist">Wish List</Link>
-                      </li>
-                      <li>
-                        <Link href="/login">Login</Link>
-                      </li>
-                      <li>
-                        <Link href="/my-account">My account</Link>
-                      </li>
-                      <li>
-                        <Link href="/about">Terms & Conditions</Link>
-                      </li>
-                      <li>
-                        <Link href="/about">Promotional Offers</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </Col>
-              <Col xs={12} sm={6} xl={2}>
-                <div className="footer-widget footer-menu-widget clearfix">
-                  <h4 className="footer-title">Customer Care</h4>
-                  <div className="footer-menu">
-                    <ul>
-                      <li>
-                        <Link href="/login">Login</Link>
-                      </li>
-                      <li>
-                        <Link href="/my-account">My account</Link>
-                      </li>
-                      <li>
-                        <Link href="/wishlist">Wish List</Link>
-                      </li>
-                      <li>
-                        <Link href="/order-tracking">Order tracking</Link>
-                      </li>
-                      <li>
-                        <Link href="/faq">FAQ</Link>
-                      </li>
-                      <li>
-                        <Link href="/contact">Contact us</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </Col>
-              <Col xs={12} sm={6} xl={3}>
-                <div className="footer-widget footer-newsletter-widget">
-                  <h4 className="footer-title">Newsletter</h4>
-                  <p>
-                    Subscribe to our weekly Newsletter and receive updates via
-                    email.
-                  </p>
-                  <div className="footer-newsletter">
-                    <form action="#">
-                      <input type="email" name="email" placeholder="Email*" />
-                      <div className="btn-wrapper">
-                        <button className="theme-btn-1 btn" type="submit">
-                          {" "}
-                          <FaPaperPlane />
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                  <h5 className="mt-30">We Accept</h5>
-                  <img src="/img/icons/payment-4.png" alt="Payment Image" />
-                </div>
               </Col>
             </Row>
           </Container>

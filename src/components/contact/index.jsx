@@ -23,14 +23,14 @@ const Contact = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-4">
-              <div className="ltn__contact-address-item ltn__contact-address-item-3 box-shadow">
+            <div className="ltn__contact-address-item ltn__contact-address-item-3 box-shadow">
                 <div className="ltn__contact-address-icon">
-                  <img src="/img/icons/10.png" alt="Icon Image" />
+                  <img src="/img/icons/12.png" alt="Icon Image" />
                 </div>
-                <h3>Email Address</h3>
+                <h3>Office Address</h3>
                 <p>
-                  info@webmail.com <br />
-                  jobs@webexample.com
+                  18/A, New Born Town Hall <br />
+                  New York, US
                 </p>
               </div>
             </div>
@@ -48,12 +48,12 @@ const Contact = () => {
             <div className="col-lg-4">
               <div className="ltn__contact-address-item ltn__contact-address-item-3 box-shadow">
                 <div className="ltn__contact-address-icon">
-                  <img src="/img/icons/12.png" alt="Icon Image" />
+                  <img src="/img/icons/10.png" alt="Icon Image" />
                 </div>
-                <h3>Office Address</h3>
+                <h3>Email Address</h3>
                 <p>
-                  18/A, New Born Town Hall <br />
-                  New York, US
+                  info@webmail.com <br />
+                  jobs@webexample.com
                 </p>
               </div>
             </div>
@@ -68,7 +68,7 @@ const Contact = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="ltn__form-box contact-form-box box-shadow white-bg">
-                <h4 className="title-2">Get A Quote</h4>
+                <h4 className="title-2">Send us a message</h4>
                 <form id="contact-form" action="#" method="post">
                   <div className="row">
                     <div className="col-md-6">
@@ -99,12 +99,17 @@ const Contact = () => {
                       <div className="input-item input-item input-item-email ltn__custom-icon">
                         <Form.Select className="nice-select">
                           <option>Select Service Type</option>
-                          <option>Property Management </option>
-                          <option>Mortgage Service </option>
-                          <option>Consulting Service</option>
-                          <option>Home Buying</option>
-                          <option>Home selling</option>
-                          <option>Escrow Services</option>
+                          <option>Joint Ventures</option>
+                          <option>Renovation</option>
+                          <option>Interior Design</option>
+                          <option>Residential Interiors</option>
+                          <option>Commercial Interiors</option>
+                          <option>Workspace Interiors</option>
+                          <option>Real Estate</option>
+                          <option>Waterproofing Works</option>
+                          <option>Property Maintenance</option>
+                          <option>Material Supply</option>
+                          <option>Manpower Supply</option>
                         </Form.Select>
                         <span className="inline-icon">
                           <FaArrowDown />
@@ -135,9 +140,7 @@ const Contact = () => {
                   </div>
                   <p>
                     <label className="input-info-save mb-0">
-                      <input type="checkbox" name="agree" /> Save my name,
-                      email, and website in this browser for the next time I
-                      comment.
+                      <input type="checkbox" name="agree" /> Please fill in the form below, and we will talk to you soon.
                     </label>
                   </p>
                   <div className="btn-wrapper mt-0">
@@ -145,7 +148,7 @@ const Contact = () => {
                       className="btn theme-btn-1 btn-effect-1 text-uppercase"
                       type="submit"
                     >
-                      get a free service
+                     Submit
                     </button>
                   </div>
                   <p className="form-messege mb-0 mt-20"></p>

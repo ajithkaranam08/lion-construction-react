@@ -110,6 +110,9 @@
     Footer Area
 -------------------------*/
 .footer-top-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 92px;
     padding-bottom: 20px;
 }
@@ -123,6 +126,11 @@
 .footer-title {
     font-size: 20px;
     margin-bottom: 25px;
+}
+
+.footer-change {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* ----------------------------------------------------
