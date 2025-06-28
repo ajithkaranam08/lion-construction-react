@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import cogoToast from "@hasanm95/cogo-toast";
+import cogoToast from "cogo-toast";
 const { createSlice } = require('@reduxjs/toolkit');
 import { HYDRATE } from "next-redux-wrapper";
 

@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@hasanm95/cogo-toast": "https://github.com/hasanm95/cogo-toast",
+    "cogo-toast": "^2.4.2",
     "@next/font": "^13.2.4",
     "@reduxjs/toolkit": "^1.9.1",
     "animate.css": "^3.7.0",
