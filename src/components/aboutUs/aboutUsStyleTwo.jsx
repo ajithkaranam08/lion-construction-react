@@ -47,57 +47,21 @@ function AboutUsStyleTwo({ sectionSpace }) {
               <div className="about-us-info-wrap">
                 <div className="section-title-area ltn__section-title-2--- mb-30">
                   <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">
-                    About Us
+                  CONTACT US
                   </h6>
-                  <h1 className="section-title">Today Sells Properties</h1>
+                  <h1 className="section-title">Premier and Best Builders in Chennai for Your Dream Home</h1>
                   <p>
-                    Houzez allow you to design unlimited panels and real estate
-                    custom forms to capture leads and keep record of all
-                    information
+                  We are known as one of the best builders in Chennai, always focused on giving top-quality construction on time
                   </p>
                 </div>
                 <ul className="ltn__list-item-1 ltn__list-item-1-before clearfix">
-                  <li> Live Music Cocerts at Luviana</li>
-                  <li>Our SecretIsland Boat Tour is Just for You</li>
-                  <li>Live Music Cocerts at Luviana</li>
-                  <li>Live Music Cocerts at Luviana</li>
+                  <li>High-Quality Work – We use the best materials and build with care</li>
+                  <li>On-Time Delivery – Every project is finished without delay.</li>
+                  <li>We Understand Your Needs – We stay in touch and listen to your ideas.</li>
+                  <li>Smart Project Planning – We use Gantt charts to keep work on track.</li>
+                  <li>Regular Progress Updates – You’re always informed about the work.</li>
+                  <li>Strict Quality Checks – We check every step to ensure top quality.</li>
                 </ul>
-                <ul className="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
-                  <li>
-                    <span>
-                      3 <i className="flaticon-bed"></i>
-                    </span>
-                    Bedrooms
-                  </li>
-                  <li>
-                    <span>
-                      2 <i className="flaticon-clean"></i>
-                    </span>
-                    Bathrooms
-                  </li>
-                  <li>
-                    <span>
-                      2 <i className="flaticon-car"></i>
-                    </span>
-                    Car parking
-                  </li>
-                  <li>
-                    <span>
-                      3450
-                      <i className="flaticon-square-shape-design-interface-tool-symbol"></i>
-                    </span>
-                    square Ft
-                  </li>
-                </ul>
-
-                <div className="ltn__list-item-2 ltn__list-item-2-img mb-50">
-                  <PhotoAlbum
-                    layout="rows"
-                    photos={slides}
-                    targetRowHeight={150}
-                    onClick={({ index: current }) => setIndex(current)}
-                  />
-                </div>
               </div>
             </Col>
             <Col xs={12} lg={6} className="align-self-center">

@@ -54,7 +54,7 @@ function Feature({
                       </h3>
                       <p>{item.shortDescription}</p>
 
-                      {servicebtn ? (
+                      {/* {servicebtn ? (
                         <Link
                           className="ltn__service-btn"
                           href={`/service/${slug}`}
@@ -65,7 +65,7 @@ function Feature({
                         </Link>
                       ) : (
                         ""
-                      )}
+                      )} */}
                     </div>
                   </div>
                 </Col>
