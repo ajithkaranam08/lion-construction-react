@@ -42,45 +42,17 @@ function AboutUsStyleOne({ sectionSpace }) {
                     About Us
                   </h6>
                   <h1 className="section-title">
-                    The Leading Real Estate Rental Marketplace<span>.</span>
+                  Best Construction Company in Chennai - For Quality Builds<span>.</span>
                   </h1>
                   <p>
-                    Over 39,000 people work for us in more than 70 countries all
-                    over the This breadth of global coverage, combined with
-                    specialist services
+                  Lion Construction is proud to be recognized as one of the best construction company in Chennai. We provide top-quality services to meet all your construction needs. With a team of skilled professionals, we ensure every project is completed with precision, quality, and attention to detail. Our goal is to deliver outstanding results on time and within budget.
+                  <br />
+                  <br />
+                  At Lion Construction, we take on all types of construction projects, including residential, commercial, and industrial developments. We also specialize in renovations, extensions, and custom builds tailored to each client’s unique vision. By using advanced technology and premium materials, we create structures that are both strong and visually appealing
+                  <br />
+                  <br />
+                  What sets Lion Construction apart is our commitment to customer satisfaction. We stay open and honest with you from the first meeting to the end of the project. When you choose Lion Construction, you’re partnering with a construction company that truly values trust, quality, and your peace of mind. Trust Lion Construction for your next project and experience why we are Chennai’s top choice for construction<br />
                   </p>
-                </div>
-                <ul className="ltn__list-item-half clearfix">
-                  <li>
-                    <i className="flaticon-home-2"></i>
-                    Smart Home Design
-                  </li>
-                  <li>
-                    <i className="flaticon-mountain"></i>
-                    Beautiful Scene Around
-                  </li>
-                  <li>
-                    <i className="flaticon-heart"></i>
-                    Exceptional Lifestyle
-                  </li>
-                  <li>
-                    <i className="flaticon-secure"></i>
-                    Complete 24/7 Security
-                  </li>
-                </ul>
-                <div className="ltn__callout bg-overlay-theme-05  mt-30">
-                  <p>
-                    Enimad minim veniam quis nostrud exercitation <br />
-                    llamco laboris. Lorem ipsum dolor sit amet
-                  </p>
-                </div>
-                <div className="btn-wrapper animated">
-                  <Link
-                    href="/service"
-                    className="theme-btn-1 btn btn-effect-1"
-                  >
-                    OUR SERVICES
-                  </Link>
                 </div>
               </div>
             </Col>

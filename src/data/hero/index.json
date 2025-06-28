@@ -1,26 +1,13 @@
 [
   {
-    "subtitle": "Real Estate Agency",
-    "Title": "Find Your Dream House By Us",
-    "Desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
+    "subtitle": "Welcome to Lion Construction",
+    "Title": "Turn Your Dream Home Into Reality with Lion Construction",
+    "Desc": "Your dream home is our mission. We deliver customized construction with careful planning and attention to every detail.",
     "icon": "FaHome",
     "heroimage": "61.jpg",
     "id": "01",
-    "buttonText": "Make An Enquiry",
-    "videoButton": true,
+    "buttonText": "Contact Us",
     "learnMoreButtonText": false,
     "variationLeft": false
-  },
-  {
-    "subtitle": "Real Estate Agency",
-    "Title": "The Right Place of House Finding",
-    "Desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
-    "icon": "FaHome",
-    "heroimage": "62.jpg",
-    "id": "02",
-    "buttonText": "Make An Enquiry",
-    "videoButton": false,
-    "learnMoreButtonText": "LEARN MORE",
-    "variationLeft": true
   }
 ]

@@ -27,7 +27,7 @@ import featuresData from "@/data/service";
 function HomePage(props) {
   const { products } = useSelector((state) => state.product);
   const featuredProducts = getProducts(products, "buying", "featured", 5);
-  const featureData = getProducts(featuresData, "buying", "featured", 3);
+  const featureData = getProducts(featuresData, "buying", "featured", 11);
   const { Herodata } = props;
 
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
@@ -153,8 +153,8 @@ function HomePage(props) {
     <>
       <LayoutOne topbar={true}>
         <HeroSectionStyleOne data={Herodata} />
-
-        <CarDealerSearchForm navMenuClass="d-none" customClasses="" />
+{/* 
+        <CarDealerSearchForm navMenuClass="d-none" customClasses="" /> */}
         {/* <!-- CAR DEALER FORM AREA END -->
 
       <!-- ABOUT US AREA START --> */}
@@ -162,14 +162,11 @@ function HomePage(props) {
         {/* <!-- ABOUT US AREA END -->
 
       <!-- COUNTER UP AREA START --> */}
-        <CounterUp />
+        {/* <CounterUp /> */}
         {/* <!-- COUNTER UP AREA END -->
 
       <!-- ABOUT US AREA START --> */}
-        <AboutUsStyleTwo sectionSpace="pt-120 pb-90" />
-        {/* <!-- ABOUT US AREA END -->
 
-      <!-- FEATURE AREA START ( Feature - 6) --> */}
         <Feature
           classes="section-bg-1"
           servicebtn={true}
@@ -182,6 +179,11 @@ function HomePage(props) {
             title: "Our Main Focus",
           }}
         />
+        <AboutUsStyleTwo sectionSpace="pt-120 pb-90" />
+        {/* <!-- ABOUT US AREA END -->
+
+      <!-- FEATURE AREA START ( Feature - 6) --> */}
+      
         {/* PRODUCT SLIDER AREA START */}
         <div className="ltn__product-slider-area ltn__product-gutter pt-115 pb-90 plr--7">
           <Container fluid>

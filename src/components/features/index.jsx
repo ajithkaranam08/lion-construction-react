@@ -12,6 +12,7 @@ function Feature({
   classes,
   headingClasses,
 }) {
+  console.log(data);
   return (
     <>
       <div className={`ltn__feature-area pt-115 pb-90 ${classes}`}>

@@ -66,7 +66,12 @@ const Contact = () => {
       <div className="ltn__contact-message-area mb-120 mb--100">
         <div className="container">
           <div className="row">
-            <div className="col-lg-12">
+          <div className="col-lg-6">
+            <div className="about-us-img-wrap about-img-left"> 
+              <img src="/img/11.png" alt="About Us Image" height={650} width={700}/>
+            </div>
+            </div>
+            <div className="col-lg-6">
               <div className="ltn__form-box contact-form-box box-shadow white-bg">
                 <h4 className="title-2">Send us a message</h4>
                 <form id="contact-form" action="#" method="post">
@@ -155,6 +160,7 @@ const Contact = () => {
                 </form>
               </div>
             </div>
+       
           </div>
         </div>
       </div>
