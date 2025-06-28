@@ -1,4 +1,4 @@
-import cogoToast from "cogo-toast";
+import toast from "react-hot-toast";
 const { createSlice } = require('@reduxjs/toolkit');
 import { HYDRATE } from "next-redux-wrapper";
 
@@ -11,16 +11,16 @@ const wishlistSlice = createSlice({
         addToWishlist(state, action) {
             const isInWishlist = state.wishlistItems.findIndex(item => item.id === action.payload.id);
             if(isInWishlist > -1){
-                cogoToast.info("Product already in wishlist", {position: "bottom-left"});
+                toast.info("Product already in wishlist");
             } else {
                 state.wishlistItems.push(action.payload);
-                cogoToast.success("Added To wishlist", {position: "bottom-left"});
+                toast.success("Added To wishlist");
             }
             
         },
         deleteFromWishlist(state, action){
             state.wishlistItems = state.wishlistItems.filter(item => item.id !== action.payload);
-            cogoToast.error("Removed From Wishlist", {position: "bottom-left"});
+            toast.error("Removed From Wishlist");
         },
         deleteAllFromWishlist(state){
             state.wishlistItems = []

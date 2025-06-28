@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Nunito_Sans,Poppins } from "next/font/google";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
+import { Toaster } from "react-hot-toast";
 import { wrapper } from "@/store";
 import { setProducts } from "@/store/slices/product-slice";
 import products from "@/data/products.json";
@@ -57,6 +58,7 @@ const MyApp = ({ Component, ...rest }) => {
       <Provider store={store}>
         <PersistGate persistor={store.__persistor} loading={<Preloader />}>
           <Component {...props.pageProps} />
+          <Toaster position="bottom-left" />
         </PersistGate>
       </Provider>
     </Fragment>
