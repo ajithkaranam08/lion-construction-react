@@ -1,13 +1,25 @@
-[
-  {
-    "subtitle": "Welcome to Lion Construction",
-    "Title": "Turn Your Dream Home Into Reality with Lion Construction",
-    "Desc": "Your dream home is our mission. We deliver customized construction with careful planning and attention to every detail.",
-    "icon": "FaHome",
-    "heroimage": "61.jpg",
-    "id": "01",
-    "buttonText": "Contact Us",
-    "learnMoreButtonText": false,
-    "variationLeft": false
+{
+  "hero": [
+    {
+      "subtitle": "Welcome to Lion Construction",
+      "Title": "Turn Your Dream Home Into Reality with Lion Construction",
+      "Desc": "Your dream home is our mission. We deliver customized construction with careful planning and attention to every detail.",
+      "icon": "FaHome",
+      "heroimage": "home-banner.png",
+      "id": "01",
+      "buttonText": "Contact Us",
+      "learnMoreButtonText": false,
+      "variationLeft": false
+    }
+  ],
+  "about": {
+    "subtitle": "About Us",
+    "Title": "Best Construction Company in Chennai - For Quality Builds",
+    "descriptions": [
+      "Lion Construction is proud to be recognized as one of the best construction company in Chennai. We provide top-quality services to meet all your construction needs. With a team of skilled professionals, we ensure every project is completed with precision, quality, and attention to detail. Our goal is to deliver outstanding results on time and within budget.",
+      "At Lion Construction, we take on all types of construction projects, including residential, commercial, and industrial developments. We also specialize in renovations, extensions, and custom builds tailored to each client’s unique vision. By using advanced technology and premium materials, we create structures that are both strong and visually appealing",
+      "What sets Lion Construction apart is our commitment to customer satisfaction. We stay open and honest with you from the first meeting to the end of the project. When you choose Lion Construction, you’re partnering with a construction company that truly values trust, quality, and your peace of mind. Trust Lion Construction for your next project and experience why we are Chennai’s top choice for construction"
+    ],
+    "image": "home-about.jpg"
   }
-]
+}
