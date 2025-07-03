@@ -16,7 +16,7 @@ function ContactUs() {
 
         <Contact />
 
-        <div className="ltn__call-to-action-area call-to-action-6 before-bg-bottom">
+        {/* <div className="ltn__call-to-action-area call-to-action-6 before-bg-bottom">
           <Container>
             <Row>
               <Col xs={12}>
@@ -24,7 +24,7 @@ function ContactUs() {
               </Col>
             </Row>
           </Container>
-        </div>
+        </div> */}
       </LayoutOne>
     </>
   );

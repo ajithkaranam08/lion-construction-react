@@ -4,6 +4,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import TitleSection from "@/components/titleSection";
 import { productSlug } from "@/lib/product";
+import Slider from "react-slick";
+
 function Feature({
   data,
   iconTag,
@@ -12,9 +14,31 @@ function Feature({
   classes,
   headingClasses,
 }) {
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <>
-      <div className={`ltn__feature-area pt-115 pb-90 ${classes}`}>
+      <div className={`ltn__feature-area pt-115 pb-90 contact-us-banner ${classes}`}>
         <Container>
           <Row>
             <Col xs={12}>
@@ -22,20 +46,20 @@ function Feature({
                 titleSectionData={titleSectionData}
                 sectionClasses={titleSectionData.sectionClasses}
                 headingClasses={headingClasses}
+
               />
             </Col>
           </Row>
-          <Row className="justify-content-center">
+          <Slider {...sliderSettings} className="feature-slider">
             {data.map((item, key) => {
               const slug = productSlug(item.title);
               return (
-                <Col key={key} xs={12} sm={6} lg={4}>
+                <div key={key}>
                   <div
-                    className={`ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1 ${
-                      item.active ? "active" : ""
-                    }`}
+                    className={`ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1 ${item.active ? "active" : ""
+                      }`}
                   >
-                    <div className="ltn__feature-icon">
+                    <div className="ltn__feature-icon d-flex justify-content-center">
                       {iconTag ? (
                         <span>
                           <i className={`${item.icon}`}></i>
@@ -51,7 +75,7 @@ function Feature({
                       <h3>
                         <Link href={`/service/${slug}`}>{item.title}</Link>
                       </h3>
-                      <p>{item.shortDescription}</p>
+                      <p title={item.shortDescription} className="line-clamp-2">{item.shortDescription}</p>
 
                       {/* {servicebtn ? (
                         <Link
@@ -67,10 +91,10 @@ function Feature({
                       )} */}
                     </div>
                   </div>
-                </Col>
+                </div>
               );
             })}
-          </Row>
+          </Slider>
         </Container>
       </div>
     </>

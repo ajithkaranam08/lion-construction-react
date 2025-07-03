@@ -3,7 +3,7 @@ import slugify from "slugify";
 export const getProducts = (products, category, type, limit) => {
   const finalProducts = category
     ? products.filter(
-      (product) => product.category.filter((single) => single === category)[0]
+      (product) => product.category.find((single) => single === category)[0]
     )
     : products;
 

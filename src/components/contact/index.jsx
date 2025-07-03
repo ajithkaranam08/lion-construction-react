@@ -14,6 +14,7 @@ import {
   FaPhoneAlt,
   FaArrowDown,
 } from "react-icons/fa";
+import ContactSection from "./ContactSection";
 
 const Contact = () => {
   return (
@@ -23,7 +24,7 @@ const Contact = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-4">
-            <div className="ltn__contact-address-item ltn__contact-address-item-3 box-shadow">
+              <div className="ltn__contact-address-item ltn__contact-address-item-3 box-shadow">
                 <div className="ltn__contact-address-icon">
                   <img src="/img/icons/12.png" alt="Icon Image" />
                 </div>
@@ -63,107 +64,7 @@ const Contact = () => {
       {/* <!-- CONTACT ADDRESS AREA END --> */}
 
       {/* <!-- CONTACT MESSAGE AREA START --> */}
-      <div className="ltn__contact-message-area mb-120 mb--100">
-        <div className="container">
-          <div className="row">
-          <div className="col-lg-6">
-            <div className="about-us-img-wrap about-img-left"> 
-              <img src="/img/11.png" alt="About Us Image" height={650} width={700}/>
-            </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="ltn__form-box contact-form-box box-shadow white-bg">
-                <h4 className="title-2">Send us a message</h4>
-                <form id="contact-form" action="#" method="post">
-                  <div className="row">
-                    <div className="col-md-6">
-                      <div className="input-item input-item-name ltn__custom-icon">
-                        <input
-                          type="text"
-                          name="name"
-                          placeholder="Enter your name"
-                        />
-                        <span className="inline-icon">
-                          <FaUserAlt />
-                        </span>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="input-item input-item-email ltn__custom-icon">
-                        <input
-                          type="email"
-                          name="email"
-                          placeholder="Enter email address"
-                        />
-                        <span className="inline-icon">
-                          <FaEnvelope />
-                        </span>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="input-item input-item input-item-email ltn__custom-icon">
-                        <Form.Select className="nice-select">
-                          <option>Select Service Type</option>
-                          <option>Joint Ventures</option>
-                          <option>Renovation</option>
-                          <option>Interior Design</option>
-                          <option>Residential Interiors</option>
-                          <option>Commercial Interiors</option>
-                          <option>Workspace Interiors</option>
-                          <option>Real Estate</option>
-                          <option>Waterproofing Works</option>
-                          <option>Property Maintenance</option>
-                          <option>Material Supply</option>
-                          <option>Manpower Supply</option>
-                        </Form.Select>
-                        <span className="inline-icon">
-                          <FaArrowDown />
-                        </span>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="input-item input-item-phone ltn__custom-icon">
-                        <input
-                          type="text"
-                          name="phone"
-                          placeholder="Enter phone number"
-                        />
-                        <span className="inline-icon">
-                          <FaPhoneAlt />
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="input-item input-item-textarea ltn__custom-icon">
-                    <textarea
-                      name="message"
-                      placeholder="Enter message"
-                    ></textarea>
-                    <span className="inline-icon">
-                      <FaPencilAlt />
-                    </span>
-                  </div>
-                  <p>
-                    <label className="input-info-save mb-0">
-                      <input type="checkbox" name="agree" /> Please fill in the form below, and we will talk to you soon.
-                    </label>
-                  </p>
-                  <div className="btn-wrapper mt-0">
-                    <button
-                      className="btn theme-btn-1 btn-effect-1 text-uppercase"
-                      type="submit"
-                    >
-                     Submit
-                    </button>
-                  </div>
-                  <p className="form-messege mb-0 mt-20"></p>
-                </form>
-              </div>
-            </div>
-       
-          </div>
-        </div>
-      </div>
+      <ContactSection />
       {/* <!-- CONTACT MESSAGE AREA END --> */}
 
       {/* <!-- GOOGLE MAP AREA START --> */}

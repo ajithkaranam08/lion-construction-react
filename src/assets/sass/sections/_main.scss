@@ -7755,3 +7755,78 @@ input.cart-plus-minus-box {
 .price_filter .price_slider_amount span:nth-child(3) {
   margin: 0 5px;
 }
+
+// Line clamp utility classes
+@for $i from 1 through 5 {
+  .line-clamp-#{$i} {
+    display: -webkit-box;
+    -webkit-line-clamp: #{$i};
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+.contact-us-banner {
+  .form-input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    padding-left: 0;
+  }
+
+  .form-input:focus {
+    border: none;
+    border-bottom: 2px solid var(--ltn__secondary-color);
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .form-label {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+
+  .form-text {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-top: 0.25rem;
+  }
+
+  .form-input-textaera:focus {
+    border: 1px solid var(--ltn__secondary-color);
+    box-shadow: none;
+    ;
+  }
+
+  .form-check-box {
+    input {
+      &:checked {
+        background-color: var(--ltn__secondary-color);
+        border-color: var(--ltn__secondary-color);
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 .25rem #ff5a3c3b;
+        border: var(--ltn__secondary-color);
+      }
+    }
+
+
+
+
+
+  }
+
+  .form-btn {
+    background-color: var(--ltn__secondary-color);
+    border-color: var(--ltn__secondary-color);
+
+    &:active {
+      border-color: var(--ltn__secondary-color);
+      background-color: var(--ltn__secondary-color);
+    }
+  }
+}

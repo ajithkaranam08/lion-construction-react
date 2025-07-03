@@ -1,4 +1,4 @@
-const TitleSection = ({ titleSectionData, sectionClasses, headingClasses }) => {
+const TitleSection = ({ titleSectionData, sectionClasses, headingClasses  }) => {
   return (
     <>
       <div className={`section-title-area ${sectionClasses}`}>
@@ -8,6 +8,11 @@ const TitleSection = ({ titleSectionData, sectionClasses, headingClasses }) => {
           {titleSectionData.subTitle}
         </h6>
         <h1 className="section-title"> {titleSectionData.title}</h1>
+       {titleSectionData?.description  &&  
+        <p>
+          {titleSectionData?.description}
+        </p>
+       }
       </div>
     </>
   );

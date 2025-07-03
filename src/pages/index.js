@@ -24,12 +24,17 @@ import BlogItem from "@/components/blog";
 import blogData from "@/data/blog";
 import featuresData from "@/data/service";
 import Link from "next/link";
+import CallToActionstyleTwo from "@/components/callToAction/callToActionstyleTwo";
+import ContactSection from "@/components/contact/ContactSection";
+import ApartmentsPlanTabs from "@/components/apartments/ApartmentsPlanTabs";
+
 
 function HomePage(props) {
   const { products } = useSelector((state) => state.product);
   const featuredProducts = getProducts(products, "buying", "featured", 5);
   const featureData = getProducts(featuresData, "buying", "featured", 11);
   const { Herodata, aboutData } = props;
+
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
     <button
       {...props}
@@ -165,39 +170,11 @@ function HomePage(props) {
         {/* <CounterUp /> */}
         {/* <!-- COUNTER UP AREA END -->
 
+       our service
+
       <!-- ABOUT US AREA START --> */}
-        <div
-          className="ltn__call-to-action-area ltn__call-to-action-4 bg-image pt-115 pb-120"
-        // style={{ backgroundImage: `url("../img/bg/6.jpg")` }}
-        >
-          <Container>
-            <Row>
-              <Col xs={12}>
-                <div className="call-to-action-inner call-to-action-inner-4 text-center">
-                  <div className="section-title-area ltn__section-title-2">
-                    <h6 className="section-subtitle ltn__secondary-color">{`Need a reliable builder? We’re here for you`}</h6>
-                    <h1 className="section-title">Call Now: 897-876-987-90</h1>
-                  </div>
-                  <p>Whether it is a new home or a makeover, we’re ready to help.Honest work. Lasting results</p>
-                  <div className="btn-wrapper">
-                    <Link
-                      href="tel:+123456789"
-                      className="theme-btn-1 btn btn-effect-1"
-                    >
-                      Contact Us
-                    </Link>
-                  </div>
-                </div>
-              </Col>
-            </Row>
-          </Container>
-          {/* <div className="ltn__call-to-4-img-1">
-          <img src="/img/slider/21.png" alt="#" />
-        </div> */}
-          <div className="ltn__call-to-4-img-2">
-            <img src="/img/bg/11.png" alt="#" />
-          </div>
-        </div>
+
+        <CallToActionstyleTwo />
 
         <Feature
           classes="section-bg-1"
@@ -208,7 +185,8 @@ function HomePage(props) {
           titleSectionData={{
             sectionClasses: "text-center",
             subTitle: "Our Services",
-            title: "Our Main Focus",
+            title: "What We Prioritize",
+            description: "We offer expert construction, design, real estate, and maintenance services ensuring top-quality results from start to finish on every project."
           }}
         />
         <AboutUsStyleTwo sectionSpace="pt-120 pb-90" />
@@ -642,109 +620,13 @@ function HomePage(props) {
         </div> */}
         {/* <!-- BLOG AREA END --> */}
 
-        <div className="ltn__contact-message-area mb-120 mb--100">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-6">
-                <div className="about-us-img-wrap about-img-left">
-                  <img src="/img/11.png" alt="About Us Image" height={650} width={700} />
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="ltn__form-box contact-form-box box-shadow white-bg">
-                  <h4 className="title-2">Send us a message</h4>
-                  <form id="contact-form" action="#" method="post">
-                    <div className="row">
-                      <div className="col-md-6">
-                        <div className="input-item input-item-name ltn__custom-icon">
-                          <input
-                            type="text"
-                            name="name"
-                            placeholder="Enter your name"
-                          />
-                          <span className="inline-icon">
-                            <FaUserAlt />
-                          </span>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="input-item input-item-email ltn__custom-icon">
-                          <input
-                            type="email"
-                            name="email"
-                            placeholder="Enter email address"
-                          />
-                          <span className="inline-icon">
-                            <FaEnvelope />
-                          </span>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="input-item input-item input-item-email ltn__custom-icon">
-                          <Form.Select className="nice-select">
-                            <option>Select Service Type</option>
-                            <option>Joint Ventures</option>
-                            <option>Renovation</option>
-                            <option>Interior Design</option>
-                            <option>Residential Interiors</option>
-                            <option>Commercial Interiors</option>
-                            <option>Workspace Interiors</option>
-                            <option>Real Estate</option>
-                            <option>Waterproofing Works</option>
-                            <option>Property Maintenance</option>
-                            <option>Material Supply</option>
-                            <option>Manpower Supply</option>
-                          </Form.Select>
-                          {/* <span className="inline-icon">
-                          <FaArrowDown />
-                        </span> */}
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="input-item input-item-phone ltn__custom-icon">
-                          <input
-                            type="text"
-                            name="phone"
-                            placeholder="Enter phone number"
-                          />
-                          <span className="inline-icon">
-                            <FaPhoneAlt />
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="input-item input-item-textarea ltn__custom-icon">
-                      <textarea
-                        name="message"
-                        placeholder="Enter message"
-                      ></textarea>
-                      <span className="inline-icon">
-                        <FaPencilAlt />
-                      </span>
-                    </div>
-                    <p>
-                      <label className="input-info-save mb-0">
-                        <input type="checkbox" name="agree" /> Please fill in the form below, and we will talk to you soon.
-                      </label>
-                    </p>
-                    <div className="btn-wrapper mt-0">
-                      <button
-                        className="btn theme-btn-1 btn-effect-1 text-uppercase"
-                        type="submit"
-                      >
-                        Submit
-                      </button>
-                    </div>
-                    <p className="form-messege mb-0 mt-20"></p>
-                  </form>
-                </div>
-              </div>
 
-            </div>
-          </div>
-        </div>
+        <ApartmentsPlanTabs />
 
-        <div className="ltn__call-to-action-area call-to-action-6 before-bg-bottom mt-100">
+        <ContactSection />
+
+
+        {/* <div className="ltn__call-to-action-area call-to-action-6 before-bg-bottom mt-100">
           <Container>
             <Row>
               <Col xs={12}>
@@ -752,7 +634,7 @@ function HomePage(props) {
               </Col>
             </Row>
           </Container>
-        </div>
+        </div> */}
       </LayoutOne>
     </>
   );
