@@ -15,16 +15,16 @@ const callToActionstyleTwo = () => {
                 <div className="section-title-area ltn__section-title-2">
                   <h6 className="section-subtitle ltn__secondary-color">{`//  any question you have  //`}</h6>
                   <div className=" ltn__secondary-color">
-                    Whether it's a new home or a makeover, we’re ready to help. Honest work. Lasting results.
+                    Whether it&#39;s a new home or a makeover, we&#39;re ready to help. Honest work. Lasting results.
                   </div>
                   <h1 className="section-title white-color">897-876-987-90</h1>
                 </div>
                 <div className="btn-wrapper">
                   <Link
-                      href="/contact"
+                    href="/contact"
                     className="theme-btn-1 btn btn-effect-1"
                   >
-                   CONTACT US
+                    CONTACT US
                   </Link>
                   {/* <Link
                  
