@@ -9,9 +9,9 @@ const serviceOptions = [
   "Modular Kitchen",
 ];
 
-const ContactSection = () => {
+const ContactSection = ({ classes = "" }) => {
   return (
-    <section className="py-5 bg-white contact-us-banner">
+    <section className={`py-5 contact-us-banner ${classes}`}>
       <Container>
         <Row className="align-items-stretch gy-4">
           {/* LEFT: Image with overlaid text */}
@@ -37,7 +37,7 @@ const ContactSection = () => {
 
           {/* RIGHT: Contact form */}
           <Col md={6}>
-            <div className="bg-light p-4 p-md-5 rounded-3 shadow-sm h-100">
+            <div className={`${classes.includes("section-bg-1") ? "bg-white" : "bg-light"} p-4 p-md-5 rounded-3 shadow-sm h-100 `}>
               <h4 className="mb-3 fw-bold ltn__secondary-color">Ready to Build? Let’s Talk</h4>
               <p className="text-muted mb-4">
                 Let’s start building your dream space. Just fill out the form, and our team will get in touch with you soon.

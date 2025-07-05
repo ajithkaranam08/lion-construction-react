@@ -47,11 +47,11 @@ function AboutUsStyleTwo({ sectionSpace }) {
               <div className="about-us-info-wrap">
                 <div className="section-title-area ltn__section-title-2--- mb-30">
                   <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">
-                  CONTACT US
+                    CONTACT US
                   </h6>
                   <h1 className="section-title">Premier and Best Builders in Chennai for Your Dream Home</h1>
                   <p>
-                  We are known as one of the best builders in Chennai, always focused on giving top-quality construction on time
+                    We are known as one of the best builders in Chennai, always focused on giving top-quality construction on time
                   </p>
                 </div>
                 <ul className="ltn__list-item-1 ltn__list-item-1-before clearfix">

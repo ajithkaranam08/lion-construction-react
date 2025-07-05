@@ -70,6 +70,10 @@ export const getProducts = (products, category, type, limit) => {
       finalProducts.filter((single) => single.discount && single.discount > 0);
     return saleItems.slice(0, limit ? limit : saleItems.length);
   }
+  if (type && type === "residential") {
+    const residentialProducts = finalProducts.filter((single) => single.residential);
+    return residentialProducts.slice(0, limit ? limit : residentialProducts.length);
+  }
   return (
     finalProducts &&
     finalProducts.slice(0, limit ? limit : finalProducts.length)

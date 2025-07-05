@@ -163,9 +163,8 @@ function HeroSectionStyleTwo({ data }) {
                 key={key}
               >
                 <div
-                  className={`ltn__slide-item-inner ${
-                    item.variationLeft ? "text-right text-end" : ""
-                  }`}
+                  className={`ltn__slide-item-inner ${item.variationLeft ? "text-right text-end" : ""
+                    }`}
                 >
                   <Container className="container">
                     <Row className="row">
@@ -186,7 +185,7 @@ function HeroSectionStyleTwo({ data }) {
                             </div>
                             <div className="btn-wrapper animated">
                               <Link
-                                href="/about"
+                                href={item?.buttonLink || "/about"}
                                 className="theme-btn-1 btn btn-effect-1"
                               >
                                 {item.buttonText}
@@ -201,7 +200,7 @@ function HeroSectionStyleTwo({ data }) {
                                 </button>
                               ) : (
                                 <Link
-                                href="/about"
+                                  href={item?.learnMoreButtonLink || "/about"}
                                   className="btn btn-transparent btn-effect-3"
                                 >
                                   {item.learnMoreButtonText}
@@ -211,11 +210,10 @@ function HeroSectionStyleTwo({ data }) {
                           </div>
                         </div>
                         <div
-                          className={`slide-item-img ${
-                            item.variationLeft ? "slide-img-left" : ""
-                          }`}
+                          className={`slide-item-img ${item.variationLeft ? "slide-img-left" : ""
+                            }`}
                         >
-                          <img src={`/img/slider/${item.heroimage}`} alt="#" />
+                          <img src={`${item.heroimage}`} alt="#" />
                         </div>
                       </Col>
                     </Row>
@@ -255,10 +253,10 @@ function HeroSectionStyleTwo({ data }) {
               ref={(slider2) => setNav2(slider2)}
               className="ltn__slider-11-img-slide-arrow-active"
             >
-              {data.map((item, key) => {
+              {data[0].subImages.map((item, key) => {
                 return (
                   <div className="image-slide-item" key={key}>
-                    <img src={`/img/slider/${item.heroimage}`} alt="#" />
+                    <img src={`${item}`} alt="#" />
                   </div>
                 );
               })}

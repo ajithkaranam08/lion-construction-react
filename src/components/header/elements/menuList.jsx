@@ -89,7 +89,15 @@ const MenuList = ({ addListing }) => {
         <Link href="/coming-soon">
           Services <FaPlus />
         </Link>
-        {/* <ul>
+        <ul>
+
+          <li>
+            <Link href="/service/residential">Residential Interiors</Link>
+          </li>
+          <li>
+            <Link href="/service/construction">Construction</Link>
+          </li>
+          {/*           
           <li>
             <Link href="/shop">Property</Link>
           </li>
@@ -136,8 +144,8 @@ const MenuList = ({ addListing }) => {
                 <Link href="/register">Register</Link>
               </li>
             </ul>
-          </li>
-        </ul> */}
+          </li> */}
+        </ul>
       </li>
       <li className="menu-icon">
         <Link href="/coming-soon">

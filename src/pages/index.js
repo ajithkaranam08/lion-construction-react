@@ -620,10 +620,11 @@ function HomePage(props) {
         </div> */}
         {/* <!-- BLOG AREA END --> */}
 
+        <div className="ltn__apartments-plan-area pt-115 pb-100 section-bg-1">
+          <ApartmentsPlanTabs />
+        </div>
 
-        <ApartmentsPlanTabs />
-
-        <ContactSection />
+        <ContactSection classes="bg-white" />
 
 
         {/* <div className="ltn__call-to-action-area call-to-action-6 before-bg-bottom mt-100">

@@ -81,70 +81,71 @@ const ApartmentsPlanTabs = ({
   tabs = defaultTabs,
   sectionTitle = {
     sectionClasses: "text-center",
-    headingClasses: "",
+    headingClasses: "section-subtitle-2",
     titleSectionData: {
       subTitle: "What We Do and How We Do It",
       title: "Our Construction Process",
       additionalClassName: "",
+
     },
   },
 }) => (
-  <div className="ltn__apartments-plan-area pb-70">
- 
-    <Container>
-      <Row>
-        <Col>
-          <TitleSection
-            sectionClasses={sectionTitle.sectionClasses}
-            headingClasses={sectionTitle.headingClasses}
-            titleSectionData={sectionTitle.titleSectionData}
-          />
-          <Tab.Container defaultActiveKey={tabs[0].key}>
-            <div className="ltn__tab-menu ltn__tab-menu-3 text-center responsive-tab-scroll">
-              <Nav className="nav flex-nowrap overflow-auto justify-content-start justify-content-lg-center">
-                {tabs.map((tab) => (
-                  <Nav.Link eventKey={tab.key} key={tab.key}>{tab.title}</Nav.Link>
-                ))}
-              </Nav>
-            </div>
-            <Tab.Content>
+
+
+  <Container>
+    <Row>
+      <Col>
+        <TitleSection
+          sectionClasses={sectionTitle.sectionClasses}
+          headingClasses={sectionTitle.headingClasses}
+          titleSectionData={sectionTitle.titleSectionData}
+        />
+        <Tab.Container defaultActiveKey={tabs[0].key}>
+          <div className="ltn__tab-menu ltn__tab-menu-3 text-center responsive-tab-scroll">
+            <Nav className="nav flex-nowrap overflow-auto justify-content-start justify-content-lg-center">
               {tabs.map((tab) => (
-                <Tab.Pane eventKey={tab.key} key={tab.key}>
-                  <div className="ltn__apartments-tab-content-inner">
-                    <Row>
-                      <Col xs={12} lg={6}>
-                        <div className="apartments-plan-info section-bg-1">
-                          <h2>{tab.heading}</h2>
-                          <p>{tab.description}</p>
-                          {tab.info && tab.info.length > 0 && (
-                            <div className="apartments-info-list apartments-info-list-color mt-40">
-                              <ul>
-                                {tab.info.map((item, idx) => (
-                                  <li key={idx}>
-                                    <label>{item.label}</label>
-                                    <span>{item.value}</span>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          )}
-                        </div>
-                      </Col>
-                      <Col xs={12} lg={6}>
-                        <div className="apartments-plan-img">
-                          <img src={tab.image} alt="#" />
-                        </div>
-                      </Col>
-                    </Row>
-                  </div>
-                </Tab.Pane>
+                <Nav.Link eventKey={tab.key} key={tab.key}>{tab.title}</Nav.Link>
               ))}
-            </Tab.Content>
-          </Tab.Container>
-        </Col>
-      </Row>
-    </Container>
-  </div>
+            </Nav>
+          </div>
+          <Tab.Content>
+            {tabs.map((tab) => (
+              <Tab.Pane eventKey={tab.key} key={tab.key}>
+                <div className="ltn__apartments-tab-content-inner">
+                  <Row>
+                    <Col xs={12} lg={6}>
+                      <div className="apartments-plan-info ltn__secondary-bg text-color-white">
+                        <h2>{tab.heading}</h2>
+                        <p>{tab.description}</p>
+                        {tab.info && tab.info.length > 0 && (
+                          <div className="apartments-info-list apartments-info-list-color mt-40">
+                            <ul>
+                              {tab.info.map((item, idx) => (
+                                <li key={idx}>
+                                  <label>{item.label}</label>
+                                  <span>{item.value}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                      </div>
+                    </Col>
+                    <Col xs={12} lg={6}>
+                      <div className="apartments-plan-img">
+                        <img src={tab.image} alt="#" />
+                      </div>
+                    </Col>
+                  </Row>
+                </div>
+              </Tab.Pane>
+            ))}
+          </Tab.Content>
+        </Tab.Container>
+      </Col>
+    </Row>
+  </Container>
+
 );
 
 export default ApartmentsPlanTabs; 

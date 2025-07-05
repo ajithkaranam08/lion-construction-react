@@ -1,0 +1,167 @@
+{
+    "hero": [
+        {
+            "subtitle": "Residential Interiors",
+            "Title": "Stylish and Comfortable Home Makeovers ",
+            "Desc": "Create a home that feels just right. Our custom interior designs match your style and make everyday living better.",
+            "icon": "FaHome",
+            "heroimage": "https://quarter-nextjs.vercel.app/img/slider/61.jpg",
+            "id": "1",
+            "buttonText": "Get Your Quote",
+            "buttonLink": "/contact",
+            "videoButton": false,
+            "learnMoreButtonText": " See Our Projects",
+            "learnMoreButtonLink": "/projects",
+            "variationLeft": false,
+            "subImages": [
+                "https://quarter-nextjs.vercel.app/img/slider/62.jpg",
+                "https://quarter-nextjs.vercel.app/img/slider/62.jpg",
+                "https://quarter-nextjs.vercel.app/img/slider/61.jpg"
+            ]
+        }
+    ],
+    "aboutSectionOne": {
+        "subtitle": "Best Interior Designers in Chennai ",
+        "Title": "Welcome to LC – Where Design Meets Purpose ",
+        "descriptions": [
+            "At Lion Construction, we don’t just build rooms; we create special experiences. Known as one of the best interior designers in Chennai, we change homes, offices, and shops with care, skill, and style.",
+            "Our approach is simple, listen, understand, and deliver. Every project begins with your vision and is shaped by our passion for design and architecture. Whether you're building your dream home, revamping your workspace, or refreshing a retail space, we bring ideas to life with thoughtful planning and exceptional craftsmanship.",
+            "Join us on a creative journey to reimagine your space, one that reflects who you are and leaves a lasting impression."
+        ],
+        "image": "https://quarter-nextjs.vercel.app/img/others/11.png",
+        "relativePath": true,
+        "reverse": false
+    },
+    "aboutSectionTwo": {
+        "subtitle": "Modern Home Interiors in Chennai",
+        "Title": "Where Elegance Meets Everyday Comfort",
+        "descriptions": [
+            "At Lion Construction, we blend elegance with functionality to create interiors that feel as good as they look. As leading home interior designers in Chennai, we transform your living spaces into stylish, modern, comfortable, and deeply personal environments. ",
+            "Every design begins with you, your lifestyle, your preferences, and your vision. From welcoming living rooms to peaceful bedrooms, we craft spaces that enhance daily life and reflect your personality in every detail. ",
+            "Backed by a passion for design and a commitment to quality, Lion Construction is your trusted partner in bringing your dream home to life seamlessly and beautifully. "
+        ],
+        "image": "https://quarter-nextjs.vercel.app/img/others/9.png",
+        "relativePath": true,
+        "reverse": true
+    },
+    "ApartmentsPlan": {
+        "sectionTitle": {
+            "sectionClasses": "text-center",
+            "headingClasses": "section-subtitle-2",
+            "titleSectionData": {
+                "subTitle": "Design Blueprint",
+                "title": "Stylish Interiors Plan",
+                "additionalClassName": ""
+            }
+        },
+        "tabs": [
+            {
+                "key": "modular-kitchens",
+                "title": "Modular Kitchens",
+                "heading": "Tailored Designs for Every Home in Chennai",
+                "description": "At Lion Construction, we craft custom modular kitchens designed to fit perfectly in your home, apartment, or villa. Our personalized approach focuses on your lifestyle and space, ensuring your kitchen is both functional and stylish. Our expert designers visit your home to take accurate measurements and learn about your needs. We then create a detailed design that maximizes your kitchen's layout while reflecting your preferences. You approve every detail before we begin installation, guaranteeing a smooth and flawless process. With Lion Construction, your ideal modular kitchen is just one consultation away.",
+                "info": [
+                    {
+                        "label": "Focus",
+                        "value": "Custom Design & Perfect Fit"
+                    },
+                    {
+                        "label": "Process",
+                        "value": "Measurement, Design, Approval, Installation"
+                    }
+                ],
+                "image": "/img/others/10.png"
+            },
+            {
+                "key": "bedroom-interiors",
+                "title": "Bedroom Interiors",
+                "heading": "Your Personal Sanctuary for Rest and Relaxation",
+                "description": "The bedroom is your peaceful retreat where comfort and calm come first. Creating a relaxing space is key, but with essential furniture like beds, wardrobes, and dressers taking up room, smart design is essential. At Lion Construction, we specialize in custom bedroom furniture that fits your space perfectly while enhancing style and comfort. Explore our collection at Lion Construction and discover designs that make your bedroom both beautiful and restful.",
+                "info": [
+                    {
+                        "label": "Goal",
+                        "value": "Comfort & Calm Retreat"
+                    },
+                    {
+                        "label": "Features",
+                        "value": "Custom Furniture, Smart Design, Style"
+                    }
+                ],
+                "image": "/img/others/10.png"
+            },
+            {
+                "key": "dining-room-designs",
+                "title": "Dining Room Designs",
+                "heading": "Style and Functionality for Your Dining Space",
+                "description": "At Lion Construction, we provide complete dining room furniture solutions including tables, chairs, and crockery units all designed to match in style and color. Our custom designs make sure your dining area perfectly matches your modular kitchen, creating a seamless and unified look. Whether you want a cozy bar counter or a wash counter with extra storage, we tailor every detail to fit your needs. Discover our collection of dining furniture and décor options, from wall treatments to lighting and unique pieces, to create a warm and inviting dining space you'll love.",
+                "info": [
+                    {
+                        "label": "Promise",
+                        "value": "Complete Furniture Solutions"
+                    },
+                    {
+                        "label": "Options",
+                        "value": "Matching Kitchen Design, Custom Details"
+                    }
+                ],
+                "image": "/img/others/10.png"
+            },
+            {
+                "key": "living-room-designs",
+                "title": "Living Room Designs",
+                "heading": "Create a Stylish and Functional Living Space",
+                "description": "At Lion Construction, we transform your living room into a vibrant and practical area. Whether you have design ideas or need inspiration, our expert interior designers bring your vision to life. We craft custom furniture like TV units, sofa sets, coffee tables, and room dividers each tailored to match your home's style perfectly. Our team works closely with you to create a living room design that fits your tastes and lifestyle.",
+                "info": [
+                    {
+                        "label": "Scope",
+                        "value": "Vibrant & Practical Living Space"
+                    },
+                    {
+                        "label": "Confidence",
+                        "value": "Custom Furniture, Expert Design"
+                    }
+                ],
+                "image": "/img/others/10.png"
+            },
+            {
+                "key": "kids-room-designs",
+                "title": "Kids' Room Designs",
+                "heading": "Playful, Practical, and Full of Personality",
+                "description": "Kids are the heart of every home and their room should be a space where they can sleep, play, learn, and grow. At Lion Construction, we design cheerful, functional kids' rooms with custom furniture like cots, wardrobes, study units, and desks tailored to their needs. We add life to the room with fun wallpapers, creative wall paints, and smart storage solutions. Our designers collaborate with you to craft a space that is safe, organized, and bursting with color, creativity, and happiness.",
+                "info": [
+                    {
+                        "label": "Tradition",
+                        "value": "Safe, Organized, Creative Space"
+                    },
+                    {
+                        "label": "Meaning",
+                        "value": "Sleep, Play, Learn, Grow"
+                    }
+                ],
+                "image": "/img/others/10.png"
+            }
+        ]
+    },
+    "aboutSectionThree": {
+        "subtitle": "Office Interior Designers in Chennai ",
+        "Title": "Smart, Comfortable, and Productive Workspaces ",
+        "descriptions": [
+            "At Lion Construction, one of the leading office interior designers in Chennai, Lion Construction delivers innovative workspace designs that combine function, style, and long-lasting value. We understand that a well designed workspace improves focus, teamwork, and overall performance. That’s why we create modern office environments tailored to your company’s style, culture, and needs.",
+            "Whether it’s a compact office or a large corporate space, we handle every detail with care from lighting and furniture to layout and colors. Our goal is to design workspaces that inspire productivity and make your team feel at home."
+        ],
+        "image": "https://quarter-nextjs.vercel.app/img/others/9.png",
+        "relativePath": true,
+        "reverse": false
+    },
+    "aboutSectionFour": {
+        "subtitle": "Let’s Begin Your Transformation ",
+        "Title": "Your Vision. Designed to Perfection. ",
+        "descriptions": [
+            "At Lion Construction, we believe every great space starts with a great idea of yours. As Lion Construction is premier interior designers in chennai, we’re here to turn your vision into a beautifully crafted reality. ",
+            "With a perfect blend of creativity, precision, and innovation, we design spaces that reflect your personality and enhance everyday living. Let’s create something extraordinary together. "
+        ],
+        "beforeImage": "https://quarter-nextjs.vercel.app/img/bg/21.jpg",
+        "relativePath": true,
+        "reverse": true
+    }
+}

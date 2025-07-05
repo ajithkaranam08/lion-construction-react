@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 import TitleSection from "@/components/titleSection";
 import { productSlug } from "@/lib/product";
 import Slider from "react-slick";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 function Feature({
   data,
@@ -14,12 +15,46 @@ function Feature({
   classes,
   headingClasses,
 }) {
+
+  const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
+    <button
+      {...props}
+      className={
+        "slick-prev slick-arrow" + (currentSlide === 0 ? " slick-disabled" : "")
+      }
+      aria-hidden="true"
+      aria-disabled={currentSlide === 0 ? true : false}
+      type="button"
+    >
+      <FaArrowLeft />
+    </button>
+  );
+  const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
+    <button
+      {...props}
+      className={
+        "slick-next slick-arrow" +
+        (currentSlide === slideCount - 1 ? " slick-disabled" : "")
+      }
+      aria-hidden="true"
+      aria-disabled={currentSlide === slideCount - 1 ? true : false}
+      type="button"
+    >
+      <FaArrowRight />
+    </button>
+  );
+
+
   const sliderSettings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    nextArrow: <SlickArrowRight />,
+    prevArrow: <SlickArrowLeft />,
+    autoplay: true,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 992,
@@ -50,13 +85,13 @@ function Feature({
               />
             </Col>
           </Row>
-          <Slider {...sliderSettings} className="feature-slider">
+          <Slider {...sliderSettings} className="row ltn__upcoming-project-slider-1-active slick-arrow-1" >
             {data.map((item, key) => {
               const slug = productSlug(item.title);
               return (
                 <div key={key}>
                   <div
-                    className={`ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1 ${item.active ? "active" : ""
+                    className={` ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1 ${item.active ? "active" : ""
                       }`}
                   >
                     <div className="ltn__feature-icon d-flex justify-content-center">

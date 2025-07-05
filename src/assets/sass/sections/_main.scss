@@ -163,13 +163,15 @@
 .bg-image-right-before {
   position: relative;
 
+  --image: url(/img/bg/21.jpg);
+
   &::before {
     position: absolute;
     content: "";
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url(/img/bg/21.jpg);
+    background-image: var(--image);
     height: 100%;
     width: 48%;
     left: auto;

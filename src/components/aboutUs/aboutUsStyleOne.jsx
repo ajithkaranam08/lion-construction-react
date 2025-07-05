@@ -19,11 +19,12 @@ function AboutUsStyleOne({ sectionSpace, data }) {
       />
       <div className={`ltn__about-us-area ${sectionSpace}`}>
         <Container>
-          <Row>
+          <Row className={`${data?.reverse ? 'flex-row-reverse' : ''}`}>
             <Col xs={12} lg={6} >
-              <div className="about-us-img-wrap about-img-left">
-                <img src={`/img/banner/${data?.image}`}   alt="About Us Image" />
-                {/* <div className="about-us-img-info about-us-img-info-2 about-us-img-info-3">
+              {data?.image && (
+                <div className="about-us-img-wrap about-img-left">
+                  <img src={`${data?.relativePath ? data?.image : `/img/banner/${data?.image}`}`} alt="About Us Image" />
+                  {/* <div className="about-us-img-info about-us-img-info-2 about-us-img-info-3">
                   <div className="ltn__video-img ltn__animation-pulse1">
                     <img src="/img/others/8.png" alt="video popup bg image" />
                     <button
@@ -34,16 +35,17 @@ function AboutUsStyleOne({ sectionSpace, data }) {
                     </button>
                   </div>
                 </div> */}
-              </div>
+                </div>
+              )}
             </Col>
-            <Col xs={12} lg={6} className="align-self-center">
+            <Col xs={12} lg={6}>
               <div className="about-us-info-wrap">
                 <div className="section-title-area mb-20">
                   <h6 className=" section-subtitle-2 ltn__secondary-color">
                     {data.subtitle}
                   </h6>
                   <h1 className="section-title">
-                  {data.Title}<span>.</span>
+                    {data.Title}<span>.</span>
                   </h1>
                   {data.descriptions?.map((description, index) => (
                     <>

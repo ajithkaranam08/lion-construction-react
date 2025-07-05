@@ -15,11 +15,13 @@
     "buttonText": "Find A Home",
     "active": false,
     "icon": "flaticon-house",
-    "category": ["buying", "women"],
+    "category": [
+      "buying",
+      "women"
+    ],
     "featured": true,
     "coreFeature": false
   },
-
   {
     "title": "Renovation",
     "shortDescription": "Give your space a fresh start with expert renovation services, modern upgrades, improved function, and lasting style",
@@ -37,7 +39,10 @@
     "buttonText": "Find A Home",
     "active": true,
     "icon": "flaticon-house-3",
-    "category": ["buying", "women"],
+    "category": [
+      "buying",
+      "women"
+    ],
     "featured": true,
     "coreFeature": false
   },
@@ -58,7 +63,10 @@
     "buttonText": "Find A Home",
     "active": false,
     "icon": "flaticon-deal-1",
-    "category": ["buying", "women"],
+    "category": [
+      "buying",
+      "women"
+    ],
     "featured": true,
     "coreFeature": false
   },
@@ -79,7 +87,10 @@
     "buttonText": "Find A Home",
     "active": false,
     "icon": "flaticon-deal-1",
-    "category": ["buying", "women"],
+    "category": [
+      "buying",
+      "women"
+    ],
     "featured": true,
     "coreFeature": false
   },
@@ -100,7 +111,10 @@
     "buttonText": "Find A Home",
     "active": false,
     "icon": "flaticon-deal-1",
-    "category": ["buying", "women"],
+    "category": [
+      "buying",
+      "women"
+    ],
     "featured": true,
     "coreFeature": false
   },
@@ -121,7 +135,10 @@
     "buttonText": "Find A Home",
     "active": false,
     "icon": "flaticon-deal-1",
-    "category": ["buying", "women"],
+    "category": [
+      "buying",
+      "women"
+    ],
     "featured": true,
     "coreFeature": false
   },
@@ -142,7 +159,10 @@
     "buttonText": "Find A Home",
     "active": false,
     "icon": "flaticon-deal-1",
-    "category": ["buying", "women"],
+    "category": [
+      "buying",
+      "women"
+    ],
     "featured": true,
     "coreFeature": false
   },
@@ -163,7 +183,10 @@
     "buttonText": "Find A Home",
     "active": false,
     "icon": "flaticon-apartment",
-    "category": ["buying", "women"],
+    "category": [
+      "buying",
+      "women"
+    ],
     "featured": false,
     "coreFeature": true
   },
@@ -184,7 +207,10 @@
     "buttonText": "Find A Home",
     "active": true,
     "icon": "flaticon-park",
-    "category": ["buying", "women"],
+    "category": [
+      "buying",
+      "women"
+    ],
     "featured": false,
     "coreFeature": true
   },
@@ -205,7 +231,10 @@
     "buttonText": "Find A Home",
     "active": false,
     "icon": "flaticon-maps-and-location",
-    "category": ["buying", "women"],
+    "category": [
+      "buying",
+      "women"
+    ],
     "featured": false,
     "coreFeature": true
   },
@@ -226,8 +255,86 @@
     "buttonText": "Find A Home",
     "active": false,
     "icon": "flaticon-excavator",
-    "category": ["buying", "women"],
+    "category": [
+      "buying",
+      "women"
+    ],
     "featured": false,
     "coreFeature": true
+  },
+  {
+    "title": "Smart Design for Modern Workspaces",
+    "shortDescription": "Upgrade your corporate interiors with LC's expert design solutions. We create stylish and practical spaces that are tailored to your business needs.",
+    "fullDescription": "Upgrade your corporate interiors with LC's expert design solutions. We create stylish and practical spaces that are tailored to your business needs. From planning to execution, our team works closely with you to deliver custom interiors that enhance both the look and functionality of your commercial space.",
+    "captions": {
+      "image1": "31.jpg",
+      "image2": "32.jpg",
+      "caption": "Image caption here.",
+      "captionFullDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.",
+      "captionShortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+    },
+    "thumbImage": "21.jpg",
+    "img": "23.png",
+    "id": "12",
+    "buttonText": "Find A Home",
+    "active": false,
+    "icon": "flaticon-deal-1",
+    "category": [
+      "buying",
+      "women"
+    ],
+    "featured": false,
+    "coreFeature": false,
+    "residential": true
+  },
+  {
+    "title": "Commercial Building Services",
+    "shortDescription": "We Handle Everything for You. We take care of your entire commercial building project from planning and design to construction.",
+    "fullDescription": "We Handle Everything for You. We take care of your entire commercial building project from planning and design to construction. Our all-in-one service makes the process easy and stress-free, so you don't have to deal with multiple teams or delays. Just share your concept, and we'll bring it to life for you.",
+    "captions": {
+      "image1": "31.jpg",
+      "image2": "32.jpg",
+      "caption": "Image caption here.",
+      "captionFullDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.",
+      "captionShortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+    },
+    "thumbImage": "21.jpg",
+    "img": "23.png",
+    "id": "13",
+    "buttonText": "Find A Home",
+    "active": false,
+    "icon": "flaticon-deal-1",
+    "category": [
+      "buying",
+      "women"
+    ],
+    "featured": false,
+    "coreFeature": false,
+    "residential": true
+  },
+  {
+    "title": "Hotel Interiors",
+    "shortDescription": "Make Every Stay Special. We help turn your hotel into a stylish and comfortable place guests will love.",
+    "fullDescription": "Make Every Stay Special. We help turn your hotel into a stylish and comfortable place guests will love. From bedrooms to common areas, we design spaces that look great and feel relaxing so every visitor enjoys a pleasant, memorable stay.",
+    "captions": {
+      "image1": "31.jpg",
+      "image2": "32.jpg",
+      "caption": "Image caption here.",
+      "captionFullDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.",
+      "captionShortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+    },
+    "thumbImage": "21.jpg",
+    "img": "23.png",
+    "id": "14",
+    "buttonText": "Find A Home",
+    "active": false,
+    "icon": "flaticon-deal-1",
+    "category": [
+      "buying",
+      "women"
+    ],
+    "featured": false,
+    "coreFeature": false,
+    "residential": true
   }
 ]
