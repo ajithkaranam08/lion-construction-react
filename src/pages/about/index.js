@@ -15,6 +15,8 @@ import Feature from "@/components/features";
 import featureData from "@/data/service"
 import TeamItem from "@/components/team";
 import TeamData from '@/data/team';
+import aboutData from '@/data/about';
+import CardSection from "@/components/aboutUs/cardSection";
 
 function AboutUs() {
   const agents = getProducts(TeamData, "buying", "featured", 3);
@@ -78,7 +80,9 @@ function AboutUs() {
           currentSlug="About Us"
         />
 
-        <AboutUsStyleOne sectionSpace="pb-90" />
+        <AboutUsStyleOne sectionSpace="pb-90" data={aboutData.aboutSectionOne} />
+
+        <CardSection data={aboutData.cardSection} />
 
         <Feature
           classes="section-bg-1"

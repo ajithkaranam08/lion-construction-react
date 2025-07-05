@@ -1,0 +1,50 @@
+{
+    "aboutSectionOne": {
+        "subtitle": "Lion Construction",
+        "Title": "Your Vision, Our Quality Commitment",
+        "descriptions": [
+            "Experience the difference with Lion Construction, Chennai’s trusted partner for innovative and reliable construction services. We turn your vision into reality with top quality craftsmanship and complete building solutions."
+        ],
+        "image": "https://quarter-nextjs.vercel.app/img/others/11.png",
+        "relativePath": true,
+        "reverse": false,
+        "list": [
+            {
+                "title": "Excellence in Every Project",
+                "icon": "flaticon-home-2"
+            },
+            {
+                "title": "Driven by Passion",
+                "icon": "flaticon-mountain"
+            },
+            {
+                "title": "We Take Responsibility",
+                "icon": "flaticon-heart"
+            },
+            {
+                "title": "Leading by Example",
+                "icon": "flaticon-secure"
+            },
+            {
+                "title": "Always Learning",
+                "icon": "flaticon-secure"
+            },
+            {
+                "title": "Built on Integrity",
+                "icon": "flaticon-mountain"
+            }
+        ]
+    },
+    "cardSection": [
+        {
+            "title": "Our Vision",
+            "description": "We aim to build a future driven by excellence, where customer satisfaction is the key to our success. Our focus is on consistently exceeding expectations while building lasting relationships based on trust and loyalty.",
+            "image": "https://www.kekgaconstruction.com/site-assets/images/about-section.png"
+        },
+        {
+            "title": "Our Mission",
+            "description": "Our mission is to grow as a company by delivering quality work and ensuring customer satisfaction at every step. We strive to earn repeat business and long-term partnerships through our dedication, leading to continuous growth and exciting new opportunities.",
+            "image": "https://www.kekgaconstruction.com/site-assets/images/about-section-3.png"
+        }
+    ]
+}
