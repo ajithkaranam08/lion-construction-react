@@ -181,7 +181,13 @@ function HeroSectionStyleTwo({ data }) {
                               {item.Title}
                             </h1>
                             <div className="slide-brief animated">
-                              <p>{item.Desc}</p>
+                              {Array.isArray(item.Desc) ? (
+                                item.Desc.map((desc, index) => (
+                                  <p key={index} className="mb-05">{desc}</p>
+                                ))
+                              ) : (
+                                <p>{item.Desc}</p>
+                              )}
                             </div>
                             <div className="btn-wrapper animated">
                               <Link
@@ -198,14 +204,14 @@ function HeroSectionStyleTwo({ data }) {
                                 >
                                   <FaPlay className="icon-play  ltn__secondary-color" />
                                 </button>
-                              ) : (
+                              ) : item.learnMoreButtonText ? (
                                 <Link
                                   href={item?.learnMoreButtonLink || "/about"}
                                   className="btn btn-transparent btn-effect-3"
                                 >
                                   {item.learnMoreButtonText}
                                 </Link>
-                              )}
+                              ) : null}
                             </div>
                           </div>
                         </div>

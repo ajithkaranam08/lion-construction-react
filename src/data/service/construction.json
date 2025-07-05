@@ -1,0 +1,24 @@
+{
+    "hero": [
+        {
+            "subtitle": "Welcome To LC",
+            "Title": "Welcome To The Lion Construction",
+            "Desc": [
+                "Chennai’s Premier Construction Experts",
+                "We offer end-to-end construction services tailored to your needs. We’re ready to help bring your vision to life."
+            ],
+            "icon": "FaHome",
+            "heroimage": "https://quarter-nextjs.vercel.app/img/slider/61.jpg",
+            "id": "1",
+            "buttonText": "Get Your Quote",
+            "buttonLink": "/contact",
+            "videoButton": false,
+            "variationLeft": false,
+            "subImages": [
+                "https://quarter-nextjs.vercel.app/img/slider/62.jpg",
+                "https://quarter-nextjs.vercel.app/img/slider/62.jpg",
+                "https://quarter-nextjs.vercel.app/img/slider/61.jpg"
+            ]
+        }
+    ]
+}
