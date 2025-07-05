@@ -32,7 +32,7 @@ const Footer = function () {
                   <p>
                     {"At Lion Construction, we turn your ideas into real spaces that are simple, strong, and built for the future. Let's build something great together."}
                   </p>
-            
+
                 </div>
               </Col>
               <Col xs={12} sm={6} xl={2}>
@@ -65,74 +65,75 @@ const Footer = function () {
                   <div className="footer-menu">
                     <ul>
                       <li>
-                        <Link href="/coming-soon">Interiors</Link>
+                        <Link href="/service/residential">Residential Interior</Link>
                       </li>
                       <li>
-                        <Link href="/coming-soon">Construction</Link>
+                        <Link href="/service/construction">Construction</Link>
+
                       </li>
                     </ul>
                   </div>
                 </div>
               </Col>
               <Col xs={12} sm={6} xl={3}>
-              <div className="footer-address">
-                    <ul>
-                      <li>
-                        <div className="footer-address-icon">
-                          <FaMapMarkerAlt />
-                        </div>
-                        <div className="footer-address-info">
-                          <p>Brooklyn, New York, United States</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="footer-address-icon">
-                          <FaPhoneAlt />
-                        </div>
-                        <div className="footer-address-info">
-                          <p>
-                            <Link href="tel:+0123-456789">+0123-456789</Link>
-                          </p>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="footer-address-icon">
-                          <FaEnvelope />
-                        </div>
-                        <div className="footer-address-info">
-                          <p>
-                            <Link href="mailto:example@example.com">
-                              example@example.com
-                            </Link>
-                          </p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="ltn__social-media mt-20">
-                    <ul>
-                      <li>
-                        <Link href="#" title="Facebook">
-                          <FaFacebookF />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#" title="Twitter">
-                          <FaTwitter />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#" title="Linkedin">
-                          <FaLinkedin />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#" title="Youtube">
-                          <FaYoutube />
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
+                <div className="footer-address">
+                  <ul>
+                    <li>
+                      <div className="footer-address-icon">
+                        <FaMapMarkerAlt />
+                      </div>
+                      <div className="footer-address-info">
+                        <p>Brooklyn, New York, United States</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="footer-address-icon">
+                        <FaPhoneAlt />
+                      </div>
+                      <div className="footer-address-info">
+                        <p>
+                          <Link href="tel:+0123-456789">+0123-456789</Link>
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="footer-address-icon">
+                        <FaEnvelope />
+                      </div>
+                      <div className="footer-address-info">
+                        <p>
+                          <Link href="mailto:example@example.com">
+                            example@example.com
+                          </Link>
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div className="ltn__social-media mt-20">
+                  <ul>
+                    <li>
+                      <Link href="#" title="Facebook">
+                        <FaFacebookF />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="#" title="Twitter">
+                        <FaTwitter />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="#" title="Linkedin">
+                        <FaLinkedin />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="#" title="Youtube">
+                        <FaYoutube />
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </Col>
             </Row>
           </Container>
