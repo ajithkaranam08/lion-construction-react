@@ -50,36 +50,36 @@ function TestimonialStyleThree({ data }) {
     prevArrow: <SlickArrowLeft />,
     nextArrow: <SlickArrowRight />,
     responsive: [
-        {
-            breakpoint: 992,
-            settings: {
-                autoplay: false,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                arrows: false,
-            }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                autoplay: false,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                arrows: false,
-            }
-        },
-        {
-            breakpoint: 580,
-            settings: {
-                autoplay: false,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                arrows: false,
-            }
+      {
+        breakpoint: 992,
+        settings: {
+          autoplay: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
         }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          autoplay: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          autoplay: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+        }
+      }
     ]
   };
 
@@ -129,7 +129,13 @@ function TestimonialStyleThree({ data }) {
 
   return (
     <>
-     
+
+
+      <h2 className="text-center ltn__secondary-color">
+        Let’s Build Your Dream Home Together!
+      </h2>
+
+
       <div className="ltn__slider-11-inner position-relative">
         <Slider
           {...Herosettings}
@@ -139,36 +145,36 @@ function TestimonialStyleThree({ data }) {
         >
           {data.map((item, key) => {
             return (
-                <div className="ltn__testimonial-item-5" key={key}>
+              <div className="ltn__testimonial-item-5" key={key}>
                 <div className="ltn__quote-icon">
-                    <FaRegComments/>
+                  <FaRegComments />
                 </div>
                 <div className="ltn__testimonial-image">
-                    <img src={`/img/testimonial/${item.img}`} alt="quote"/>
+                  <img src={item.img} alt="quote" />
                 </div>
                 <div className="ltn__testimonial-info">
-                    <p>{item.description}</p>
-                    <h4>{item.name}</h4>
-                    <h6>{item.type}</h6>
+                  <p>{item.description}</p>
+                  <h4>{item.name}</h4>
+                  <h6>{item.type}</h6>
                 </div>
-            </div>
+              </div>
             );
           })}
         </Slider>
 
 
         <Slider
-              {...Navsettings}
-              asNavFor={nav1}
-              ref={(slider2) => setNav2(slider2)}
-              className="ltn__testimonial-quote-menu d-none d-lg-block"
-            >
-              {data.map((item, key) => {
-                return (
-                  <img key={key} src={`/img/testimonial/${item.img}`} alt="#" />
-                );
-              })}
-            </Slider>
+          {...Navsettings}
+          asNavFor={nav1}
+          ref={(slider2) => setNav2(slider2)}
+          className="ltn__testimonial-quote-menu d-none d-lg-block"
+        >
+          {data.map((item, key) => {
+            return (
+              <img key={key} src={item.img} alt="#" />
+            );
+          })}
+        </Slider>
       </div>
     </>
   );

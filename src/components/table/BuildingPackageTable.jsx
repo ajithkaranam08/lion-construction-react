@@ -8,18 +8,18 @@ const packages = ['Basic', 'Standard', 'Premium'];
 const data = [
     {
         title: 'Design & Drawings',
-        values: [
-            'Architectural Layout 2D',
-            'Architectural Layout 2D',
-            'Architectural Layout 2D',
-        ],
+        values: ['✓', '✓', '✓'],
+    },
+    {
+        title: 'Architectural Layout 2D',
+        values: ['✓', '✓', '✓'],
     },
     {
         title: 'Structural Drawing',
         values: ['✓', '✓', '✓'],
     },
     {
-        title: 'Elevation Design (3D)',
+        title: 'Elevation Design 3D',
         values: ['✓', '✓', '✓'],
     },
     {
@@ -39,12 +39,16 @@ const data = [
         ],
     },
     {
-        title: 'Steel',
-        values: ['ISI Brand 500 TMT', 'ISI Brand 500 TMT', 'ISI Brand 500 TMT'],
+        title: 'Steel (500 TMT Bars)',
+        values: ['ISI Brand', 'ISI Brand', 'ISI Brand'],
     },
     {
         title: 'Cement',
-        values: ['Grade 43', 'Zuari / Ultratech / ACC', 'Dalmia / Coramantal'],
+        values: [
+            'Grade 43',
+            'Zuari / Ultratech / ACC - Grade 43',
+            'Dalmia / Coramontal - Grade 43',
+        ],
     },
     {
         title: 'Concrete',
@@ -65,21 +69,21 @@ const data = [
     {
         title: 'Parapet Wall',
         values: [
-            'Chamber brick 3\'6" height, 6" thick',
-            'Chamber brick 3\'6" height, 6" thick',
-            'Chamber brick 3\'6" height, 6" thick or glass railing',
+            '3\'6" height, 6" thick',
+            '3\'6" height, 6" thick',
+            '3\'6" height, 6" thick or glass railing',
         ],
     },
     {
-        title: 'Living/Dining/Kitchen Flooring',
+        title: 'Living/Dining/Bedroom/Kitchen Flooring',
         values: [
-            '2\'x2\' Vitrified tiles up to ₹45/sqft',
-            '4\'x2\' Vitrified tiles up to ₹65/sqft',
-            '4\'x2\' Vitrified tiles up to ₹80/sqft',
+            '2\'x2\' Vitrified up to ₹45/sqft',
+            '4\'x2\' Vitrified up to ₹65/sqft',
+            '4\'x2\' Vitrified up to ₹80/sqft',
         ],
     },
     {
-        title: 'Balcony & Utility',
+        title: 'Balcony & Utility Flooring',
         values: [
             '1\'x1\' Anti-skid up to ₹35/sqft',
             '1\'x1\' Anti-skid up to ₹45/sqft',
@@ -89,14 +93,14 @@ const data = [
     {
         title: 'Staircase',
         values: [
-            '1\'x1\' Antiskid up to ₹35/sqft',
+            '1\'x1\' Anti-skid tile up to ₹35/sqft',
             'Sadarhalli granite up to ₹65/sqft',
             'Sadarhalli granite up to ₹85/sqft',
         ],
     },
     {
         title: 'Terrace Floor',
-        values: ['', '✓', '✓'],
+        values: ['', '', 'Waterproofing with Tile'],
     },
     {
         title: 'Kitchen Counter',
@@ -105,9 +109,9 @@ const data = [
     {
         title: 'Wall Dado',
         values: [
-            'Ceramic tile 2\' above counter ₹35 / sqft',
-            'Ceramic wall full height ₹45/sqft',
-            'Vitrified wall full height ₹65/sqft',
+            'Ceramic 2\' above counter ₹35 / sqft',
+            'Ceramic full height ₹45/sqft',
+            'Vitrified full height ₹65/sqft',
         ],
     },
     {
@@ -153,10 +157,7 @@ const BuildingPackageTable = () => (
                         <th className="bg-light">Quote</th>
                         {packages.map((_, i) => (
                             <td key={i}>
-                                <Link
-                                    href={"/contact-us"}
-                                    className="theme-btn-1 btn btn-effect-1"
-                                >
+                                <Link href="/contact-us" className="theme-btn-1 btn btn-effect-1">
                                     Get Quote
                                 </Link>
                             </td>
