@@ -55,7 +55,7 @@ const MenuList = ({ addListing }) => {
         </ul> */}
       </li>
       <li className="menu-icon">
-        <Link href="/coming-soon">
+        <Link href="/about">
           About Us
         </Link>
         {/* <ul>

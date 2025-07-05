@@ -32,6 +32,55 @@
         "relativePath": true,
         "reverse": false
     },
+    "aboutSectionTwo": {
+        "titleSectionData": {
+            "subTitle": "Our Approach",
+            "title": "Clear and Simple Steps to Building Your Dream Home",
+            "description": null,
+            "additionalClassName": "",
+            "sectionClasses": "text-center",
+            "headingClasses": "section-subtitle-2"
+        },
+        "showVideo": false,
+        "rightImage": "https://quarter-nextjs.vercel.app/img/bg/21.jpg",
+        "list": [
+            {
+                "title": "Fill Out the Inquiry Form",
+                "shortDescription": "Complete the form with your details so we can understand your requirements.",
+                "icon": "icon-done"
+            },
+            {
+                "title": "Consultation Call",
+                "shortDescription": "Our architect will contact you to talk about your project and answer any questions you have. ",
+                "icon": "icon-done"
+            },
+            {
+                "title": "Site Visit & Analysis",
+                "shortDescription": "Our project team and senior architect will visit your site to study it carefully.",
+                "icon": "icon-done"
+            },
+            {
+                "title": "Quotation & Terms",
+                "shortDescription": "We will provide a detailed quote including specifications and payment options.",
+                "icon": "icon-done"
+            },
+            {
+                "title": "Booking & Agreement",
+                "shortDescription": "Confirm your booking by paying Rs. 2.5 lakhs and signing the construction agreement.",
+                "icon": "icon-done"
+            },
+            {
+                "title": "Design & Approval",
+                "shortDescription": "We start the design and approval process to prepare everything for construction.",
+                "icon": "icon-done"
+            },
+            {
+                "title": "Construction Begins",
+                "shortDescription": "Sit back and relax while we start building your dream home with care.",
+                "icon": "icon-done"
+            }
+        ]
+    },
     "constructionProcessSteps": {
         "titleSectionData": {
             "subTitle": "Our Aminities",

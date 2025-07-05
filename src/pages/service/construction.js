@@ -10,8 +10,10 @@ import TitleSection from '@/components/titleSection'
 import testimonialData from '@/data/testimonial/index-three.json'
 import TestimonialStyleThree from '@/components/testimonialCarousel/indexThree'
 import ContactSection from '@/components/contact/ContactSection'
+import AboutUsSectionTwo from '@/components/aboutUs/aboutUsSectionTwo'
 
 const Construction = () => {
+
     return (
         <LayoutOne topbar={true}>
             <div className="ltn__slider-area ltn__slider-11 section-bg-1">
@@ -31,8 +33,15 @@ const Construction = () => {
 
             <AmenitiesSlider data={serviceData.constructionProcessSteps.processSteps} titleSectionData={serviceData.constructionProcessSteps.titleSectionData} />
 
+
+
+
             <div className="neighbour-area section-bg-1 pt-118 pb-120">
                 <NeighbourSection showTabs={serviceData.neighbourSection.showTabs} titleSectionData={serviceData.neighbourSection.titleSectionData} tabItems={serviceData.neighbourSection.tabItems} />
+            </div>
+
+            <div style={{ '--image': "url(https://quarter-nextjs.vercel.app/img/bg/21.jpg)" }} className="ltn__about-us-area section-bg-1 bg-image-right-before pt-120 pb-90">
+                <AboutUsSectionTwo data={serviceData.aboutSectionTwo} />
             </div>
 
 
