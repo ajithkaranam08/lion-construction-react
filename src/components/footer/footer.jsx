@@ -26,7 +26,7 @@ const Footer = function () {
                   <div className="footer-logo">
                     <div className="site-logo">
                       {/* <img src="/img/logo.png" alt="Logo" /> */}
-                      <img src="/img/logo-2.png" alt="Logo" />
+                      <img src="/img/logo-2.png" alt="Logo" width={100} height={100} />
                     </div>
                   </div>
                   <p>

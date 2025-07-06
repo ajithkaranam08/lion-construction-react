@@ -130,7 +130,7 @@ const ContactSection = ({ classes = "" }) => {
                   </Col>
 
                   <Col md={6}>
-                    <Button type="submit" className="w-100 text-white fw-bold rounded form-btn">
+                    <Button type="submit" className="w-100  btn-effect-1 theme-btn-1  form-btn">
                       Submit
                     </Button>
                   </Col>

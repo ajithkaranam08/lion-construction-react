@@ -69,9 +69,8 @@ function HeroSectionStyleOne({ data }) {
                 key={key}
               >
                 <div
-                  className={`ltn__slide-item-inner ${
-                    item.variationLeft ? "text-right text-end" : ""
-                  }`}
+                  className={`ltn__slide-item-inner ${item.variationLeft ? "text-right text-end" : ""
+                    }`}
                 >
                   <div className="container">
                     <div className="row">
@@ -80,7 +79,7 @@ function HeroSectionStyleOne({ data }) {
                           <div className="slide-item-info-inner ltn__slide-animation">
                             <h6 className="slide-sub-title animated">
                               <span>
-                                <FaHome />
+                                <FaHome color="var(--ltn__primary-color)" />
                               </span>
                               {item.subtitle}
                             </h6>
@@ -101,9 +100,8 @@ function HeroSectionStyleOne({ data }) {
                           </div>
                         </div>
                         <div
-                          className={`slide-item-img ${
-                            item.variationLeft ? "slide-img-left" : ""
-                          }`}
+                          className={`slide-item-img ${item.variationLeft ? "slide-img-left" : ""
+                            }`}
                         >
                           <img src={`/img/banner/${item.heroimage}`} alt="#" />
                         </div>

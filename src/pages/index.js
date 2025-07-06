@@ -627,7 +627,7 @@ function HomePage(props) {
         <ContactSection classes="bg-white" />
 
 
-        {/* <div className="ltn__call-to-action-area call-to-action-6 before-bg-bottom mt-100">
+        <div className="ltn__call-to-action-area call-to-action-6 before-bg-bottom mt-100">
           <Container>
             <Row>
               <Col xs={12}>
@@ -635,7 +635,7 @@ function HomePage(props) {
               </Col>
             </Row>
           </Container>
-        </div> */}
+        </div>
       </LayoutOne>
     </>
   );

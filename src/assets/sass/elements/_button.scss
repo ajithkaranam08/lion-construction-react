@@ -26,7 +26,7 @@
 }
 
 .theme-btn-1 {
-    background: var(--ltn__secondary-gradient);
+    background: var(--ltn__secondary-color);
     color: var(--white);
     border-radius: var(--bs-border-radius);
 
@@ -39,9 +39,10 @@
 .theme-btn-2 {
     background-color: var(--ltn__primary-color);
     color: var(--white);
+    border-radius: var(--bs-border-radius);
 
     &:hover {
-        background-color: var(--ltn__secondary-gradient);
+        background-color: var(--ltn__secondary-color);
         color: var(--white);
     }
 }
@@ -49,9 +50,10 @@
 .theme-btn-3 {
     background-color: transparent;
     border: 2px solid var(--border-color-9);
+    border-radius: var(--bs-border-radius);
 
     &:hover {
-        background-color: var(--ltn__secondary-gradient);
+        background-color: var(--ltn__secondary-color);
         border-color: transparent;
         color: var(--white);
     }

@@ -13,8 +13,8 @@ const callToActionstyleTwo = () => {
             <Col xs={12}>
               <div className="call-to-action-inner call-to-action-inner-4 text-center">
                 <div className="section-title-area ltn__section-title-2">
-                  <h6 className="section-subtitle ltn__secondary-color">{`//  any question you have  //`}</h6>
-                  <div className=" ltn__secondary-color">
+                  <h6 className="section-subtitle text-white">{`//  any question you have  //`}</h6>
+                  <div className="text-white">
                     Whether it&#39;s a new home or a makeover, we&#39;re ready to help. Honest work. Lasting results.
                   </div>
                   <h1 className="section-title white-color">897-876-987-90</h1>
