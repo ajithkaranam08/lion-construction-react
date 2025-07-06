@@ -121,9 +121,9 @@ const ApartmentsPlanTabs = ({
                           <div className="apartments-info-list apartments-info-list-color mt-40">
                             <ul>
                               {tab.info.map((item, idx) => (
-                                <li key={idx}>
+                                <li key={idx} className="ltn__secondary-color">
                                   <label>{item.label}</label>
-                                  <span>{item.value}</span>
+                                  <span className="ltn__secondary-color">{item.value}</span>
                                 </li>
                               ))}
                             </ul>
