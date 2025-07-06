@@ -41,11 +41,21 @@ function AboutUsStyleOne({ sectionSpace, data }) {
             <Col xs={12} lg={6}>
               <div className="about-us-info-wrap">
                 <div className="section-title-area mb-20">
-                  <h6 className=" section-subtitle-2 ltn__secondary-color">
-                    {data.subtitle}
-                  </h6>
+                  {data.subtitle &&
+                    <h6 className=" section-subtitle-2 ltn__secondary-color">
+                      {data.subtitle}
+                    </h6>
+                  }
                   <h1 className="section-title">
-                    {data.Title}<span>.</span>
+                    {data?.titleSpan ?
+                      <>
+                        <span>{data.titleSpan}.</span>
+                      </>
+                      : <>
+                        {data.Title}
+                        <span>.</span>
+                      </>
+                    }
                   </h1>
                   {data.descriptions?.map((description, index) => (
                     <>

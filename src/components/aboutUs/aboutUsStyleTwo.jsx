@@ -9,26 +9,44 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import Download from "yet-another-react-lightbox/plugins/download";
 
-function AboutUsStyleTwo({ sectionSpace }) {
+
+const defaultData = {
+  sectionSpace: "pt-100 pb-100",
+  subTitle: "CONTACT US",
+  title: "Premier and Best Builders in Chennai for Your Dream Home",
+  description: "We are known as one of the best builders in Chennai, always focused on giving top-quality construction on time",
+  image: "/img/banner/home-contact-2.jpg",
+  list: [
+    "High-Quality Work – We use the best materials and build with care",
+    "On-Time Delivery – Every project is finished without delay.",
+    "We Understand Your Needs – We stay in touch and listen to your ideas.",
+    "Smart Project Planning – We use Gantt charts to keep work on track.",
+    "Regular Progress Updates – You’re always informed about the work.",
+    "Strict Quality Checks – We check every step to ensure top quality.",
+  ],
+  slides: [
+    {
+      src: "/img/banner/home-contact-2.jpg",
+      width: 800,
+      height: 570,
+    },
+    {
+      src: "/img/banner/home-contact-2.jpg",
+      width: 800,
+      height: 570,
+    },
+    {
+      src: "/img/banner/home-contact-2.jpg",
+      width: 800,
+      height: 570,
+    },
+  ],
+};
+
+function AboutUsStyleTwo({ sectionSpace, data = defaultData }) {
   const [index, setIndex] = useState(-1);
 
-  const slides = [
-    {
-      src: "/img/banner/home-contact-2.jpg",
-      width: 800,
-      height: 570,
-    },
-    {
-      src: "/img/banner/home-contact-2.jpg",
-      width: 800,
-      height: 570,
-    },
-    {
-      src: "/img/banner/home-contact-2.jpg",
-      width: 800,
-      height: 570,
-    },
-  ];
+  const slides = data?.slides
 
   return (
     <>
@@ -47,26 +65,38 @@ function AboutUsStyleTwo({ sectionSpace }) {
               <div className="about-us-info-wrap">
                 <div className="section-title-area ltn__section-title-2--- mb-30">
                   <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">
-                    CONTACT US
+                    {data.subTitle}
                   </h6>
-                  <h1 className="section-title">Premier and Best Builders in Chennai for Your Dream Home</h1>
-                  <p>
-                    We are known as one of the best builders in Chennai, always focused on giving top-quality construction on time
-                  </p>
+                  <h1 className="section-title">{data.title}</h1>
+                  {data.description && (
+                    <p>
+                      {data.description}
+                    </p>
+                  )}
                 </div>
                 <ul className="ltn__list-item-1 ltn__list-item-1-before clearfix">
-                  <li>High-Quality Work – We use the best materials and build with care</li>
-                  <li>On-Time Delivery – Every project is finished without delay.</li>
-                  <li>We Understand Your Needs – We stay in touch and listen to your ideas.</li>
-                  <li>Smart Project Planning – We use Gantt charts to keep work on track.</li>
-                  <li>Regular Progress Updates – You’re always informed about the work.</li>
-                  <li>Strict Quality Checks – We check every step to ensure top quality.</li>
+                  {data.list.map((item, index) => (
+                    item?.description ?
+                      <li key={index} >
+                        <h5 className="mb-2">
+                          {item.title}
+                        </h5>
+                        <p>
+                          {item.description}
+                        </p>
+                      </li>
+
+                      : <li key={index}>
+                        {item.title}
+                      </li>
+
+                  ))}
                 </ul>
               </div>
             </Col>
             <Col xs={12} lg={6} className="align-self-center">
               <div className="about-us-img-wrap about-img-right">
-                <img src="/img/banner/home-contact-2.jpg" alt="About Us Image" />
+                <img src={data.image} alt="About Us Image" />
               </div>
             </Col>
           </Row>

@@ -17,6 +17,9 @@ import TeamItem from "@/components/team";
 import TeamData from '@/data/team';
 import aboutData from '@/data/about';
 import CardSection from "@/components/aboutUs/cardSection";
+import AboutUsStyleTwo from "@/components/aboutUs/aboutUsStyleTwo";
+import AmenitiesSlider from "@/components/aminities/AmenitiesSlider";
+import MeetTheFounder from "@/components/aboutUs/meetTheFounder";
 
 function AboutUs() {
   const agents = getProducts(TeamData, "buying", "featured", 3);
@@ -84,22 +87,35 @@ function AboutUs() {
 
         <CardSection data={aboutData.cardSection} />
 
+        <AboutUsStyleTwo sectionSpace="section-bg-1" data={aboutData.aboutSectionTwo} />
+
+
+        <MeetTheFounder />
+
         <Feature
           classes="section-bg-1"
           servicebtn={true}
-          iconTag={false}
-          data={featureDataSorted}
+          iconTag={true}
+          data={aboutData.teamSection}
+          headingClasses="section-subtitle-2"
           titleSectionData={{
             sectionClasses: "text-center",
             subTitle: "Our Services",
-            title: "Our Main Focus",
+            title: "Our Team",
+            description: "Step into the world of construction and interior design with Lion Construction, Chennai’s trusted name for creating beautiful, functional spaces."
           }}
         />
 
 
+        <AmenitiesSlider data={aboutData.aboutSectionProcess.processSteps} titleSectionData={aboutData.aboutSectionProcess.titleSectionData} />
 
 
-        <div className="ltn__team-area pt-115 pb-90">
+        <AboutUsStyleOne sectionSpace="pt-120 pb-90 section-bg-1 " data={aboutData.aboutSectionThree} />
+
+
+
+
+        {/* <div className="ltn__team-area pt-115 pb-90">
           <Container>
             <Row>
               <Col lg={12}>
@@ -127,12 +143,12 @@ function AboutUs() {
 
 
           </Container>
-        </div>
+        </div> */}
 
 
 
         {/* <!-- TESTIMONIAL AREA START (testimonial-7) -->  */}
-        <div
+        {/* <div
           className="ltn__testimonial-area bg-image-top pt-115 pb-70"
           style={{ backgroundImage: `url("../img/bg/20.jpg")` }}
         >
@@ -161,11 +177,11 @@ function AboutUs() {
               })}
             </Slider>
           </Container>
-        </div>
+        </div> */}
         {/* <!-- TESTIMONIAL AREA END --> */}
 
         {/* <!-- BLOG AREA START (blog-3) -->  */}
-        <div className="ltn__blog-area pb-70">
+        {/* <div className="ltn__blog-area pb-70">
           <Container>
             <Row>
               <Col lg={12}>
@@ -191,14 +207,14 @@ function AboutUs() {
               })}
             </Slider>
           </Container>
-        </div>
+        </div> */}
         {/* <!-- BLOG AREA END --> */}
 
         <div className="ltn__call-to-action-area call-to-action-6 before-bg-bottom">
           <Container>
             <Row>
               <Col xs={12}>
-                <CallToAction />
+                <CallToAction data={aboutData.callToAction} />
               </Col>
             </Row>
           </Container>
