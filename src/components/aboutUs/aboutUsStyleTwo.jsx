@@ -46,7 +46,8 @@ const defaultData = {
 function AboutUsStyleTwo({ sectionSpace, data = defaultData }) {
   const [index, setIndex] = useState(-1);
 
-  const slides = data?.slides
+  const slides = data?.slides;
+
 
   return (
     <>
@@ -87,7 +88,7 @@ function AboutUsStyleTwo({ sectionSpace, data = defaultData }) {
                       </li>
 
                       : <li key={index}>
-                        {item.title}
+                        {item}
                       </li>
 
                   ))}
