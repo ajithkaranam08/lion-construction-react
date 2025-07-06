@@ -44,7 +44,7 @@ const Footer = function () {
                         <Link href="/">Home</Link>
                       </li>
                       <li>
-                        <Link href="/coming-soon">About</Link>
+                        <Link href="/about">About</Link>
                       </li>
                       <li>
                         <Link href="/coming-soon">Blog</Link>
