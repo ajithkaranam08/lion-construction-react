@@ -4,7 +4,7 @@ const MeetTheFounder = () => {
     return (
         <div className="py-5">
             <Container>
-                <Row className="align-items-center">
+                <Row className="">
                     {/* Image Section */}
                     <Col md={5} className="mb-4 mb-md-0">
                         <div className="p-3 rounded-4 h-100">
@@ -23,10 +23,19 @@ const MeetTheFounder = () => {
                             <div className="mb-2 text-muted fw-bold ltn__secondary-color">Meet</div>
                             <h2 className="fw-bold">Mr. S.N. Suresh Kumar</h2>
                             <p className="mb-3">
-                                Lion Construction is an official CMDA-approved construction company in Chennai. We work on projects all over Tamil Nadu, especially around Chennai. We offer many construction services including planning, designing, cost estimation, and building for residential, interior designing, commercial, and industrial projects.
+                                At Lion Construction, we are committed to delivering excellence in every brick laid and every structure built. The company is led by Mr. S.N. Suresh Kumar, a seasoned Civil Engineer approved by CMDA (Chennai Metropolitan Development Authority) with over 22 years of professional experience in renowned multinational and overseas companies. Our firm is driven by global standards and local expertise.
                             </p>
                             <p>
-                                Lion Construction is led by Engineer Mr. S.N. Suresh Kumar. He graduated in civil engineering and has 22 years of experience managing projects. He has worked with big companies like Sobha Developers, DLF, Shapoorji Pallonji, and Unitech Ltd. He also worked abroad with companies like M/S Leighton Contracting LLC and Petroserv Limited, gaining experience in high-rise homes, commercial buildings, and infrastructure projects.
+                                Mr. Suresh Kumar holds international quality certifications and brings deep technical knowledge across diverse sectors, including multi-storey residential buildings, interior fit-outs, commercial developments, and infrastructure projects. His global exposure and adherence to international construction standards form the cornerstone of our company’s values and operations.
+                                At the heart of our operations is the QCT principle Quality, Cost, and Time. We believe successful construction is not just about building structures, but delivering top-quality results within optimal costs and committed timelines. This balanced approach ensures maximum value and satisfaction for every client.
+                            </p>
+
+                            <p>
+                                At Lion Construction, We offer end-to-end construction services from planning and design to execution and project delivery while maintaining the highest levels of quality, safety, and integrity.
+                            </p>
+
+                            <p>
+                                We believe in building not just structures, but long-lasting relationships based on trust, transparency, and technical excellence.
                             </p>
                         </Card>
                     </Col>
