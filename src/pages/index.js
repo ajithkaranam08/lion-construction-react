@@ -624,7 +624,14 @@ function HomePage(props) {
           <ApartmentsPlanTabs />
         </div>
 
-        <ContactSection classes="bg-white" />
+        <ContactSection classes="bg-white" leftCart={{
+          subTitle: "Let’s Get Started",
+          title: "Your Vision. Our Passion. Perfect Design.",
+          descriptions: [
+            "Step into the world of Lion Construction, Chennai’s premier interior design studio. We turn your ideas into reality by creating customized spaces that truly reflect your personality and way of living.",
+            "With creativity, expert craftsmanship, and innovative solutions, we transform your dreams into stunning realities making every space uniquely yours."
+          ]
+        }} />
 
 
         <div className="ltn__call-to-action-area call-to-action-6 before-bg-bottom mt-100">

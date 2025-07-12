@@ -9,7 +9,16 @@ const serviceOptions = [
   "Modular Kitchen",
 ];
 
-const ContactSection = ({ classes = "" }) => {
+const defaltLeftCartData = {
+  subTitle: "Have a Project in Mind?",
+  title: "Let’s Build It Together.",
+  descriptions: [
+    "We help bring your ideas to life."
+
+  ],
+}
+
+const ContactSection = ({ classes = "", leftCart = defaltLeftCartData }) => {
   return (
     <section className={`py-5 contact-us-banner ${classes}`}>
       <Container>
@@ -28,9 +37,14 @@ const ContactSection = ({ classes = "" }) => {
               }}
             >
               <div className="overlay-text bg-dark bg-opacity-50 p-4 rounded h-100 w-100 d-flex justify-content-end flex-column">
-                <h4 className="ltn__secondary-color  mb-2">Have a Project in Mind?</h4>
-                <h2 className="fw-bold mb-3 text-white">Let’s Build It Together.</h2>
-                <p className="text-white">We help bring your ideas to life.</p>
+                <h4 className="ltn__secondary-color  mb-2">{leftCart.subTitle}</h4>
+                <h2 className="fw-bold mb-3 text-white">{leftCart.title}</h2>
+                {leftCart.descriptions?.map((description, index) => (
+                  <>
+                    <p className="text-white mb-1">{description}</p>
+                  </>
+                ))}
+
               </div>
             </div>
           </Col>

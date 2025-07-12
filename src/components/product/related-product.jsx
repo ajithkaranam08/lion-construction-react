@@ -22,9 +22,9 @@ const RelatedProduct = ({
   let badgeText = "";
 
   if (productData.rent) {
-    badgeText = "For Rent";
+    badgeText = "";
   } else {
-    badgeText = "For Sale";
+    badgeText = "";
   }
   const dispatch = useDispatch();
   const [modalShow, setModalShow] = useState(false);
@@ -48,13 +48,17 @@ const RelatedProduct = ({
     <>
       <div className="ltn__product-item ltn__product-item-4 ltn__product-item-5">
         <div className="product-img">
-          <Link href={`/${baseUrl}/${slug}`}>
-            <img
-              src={`/img/product-3/${productData.productImg}`}
-              alt={`${productData.title}`}
-            />
-          </Link>
-          <div className="real-estate-agent">
+          {/* <Link href={`/${baseUrl}/${slug}`}> */}
+          <img
+            src={productData.productImg}
+            loading="lazy"
+            alt={`${productData.title}`}
+            width={"100%"}
+            height={250}
+
+          />
+          {/* </Link> */}
+          {/* <div className="real-estate-agent">
             <div className="agent-img">
               <Link href={`/${baseUrl}/${slug}`}>
                 <img
@@ -63,46 +67,55 @@ const RelatedProduct = ({
                 />
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="product-info">
           <div className="product-badge">
             <ul>
-              <li
+              {/* <li
                 className={`sale-badge ${productData.rent ? "bg-green" : ""}`}
               >
                 {badgeText}
-              </li>
+              </li> */}
             </ul>
           </div>
           <h2 className="product-title">
-            <Link href={`/${baseUrl}/${slug}`}>{productData.title}</Link>
+            {/* <Link href={`/${baseUrl}/${slug}`}>{productData.title}</Link> */}
+            {productData.title}
           </h2>
           <div className="product-img-location">
             <ul>
               <li>
-                <Link href={`/${baseUrl}/${slug}`}>
+                {/* <Link href={`/${baseUrl}/${slug}`}>
                   <i className="flaticon-pin"></i>
-                  {productData.locantion}
-                </Link>
+                </Link> */}
+                <i className="flaticon-pin"></i>  {productData.locantion}
               </li>
             </ul>
           </div>
           <ul className="ltn__plot-brief">
-            <li>
+            {productData.propertyDetails.bedrooms ? <li>
               <span>{productData.propertyDetails.bedrooms}</span>
               <span className="ms-1">Bedrooms</span>
-            </li>
-            <li>
+            </li> : null}
+
+            {productData.propertyDetails.baths ? <li>
               <span>{productData.propertyDetails.baths}</span>
               <span className="ms-1">Bathrooms</span>
-            </li>
-            <li>
+            </li> : null}
+
+            {productData.propertyDetails.area ? <li>
               <span>{productData.propertyDetails.area}</span>
-              <span className="ms-1">square Ft</span>
-            </li>
+              <span className="ms-1">Built-up Area</span>
+            </li> : null}
+
+            {productData.propertyDetails.plotArea ? <li>
+              <span>{productData.propertyDetails.plotArea}</span>
+              <span className="ms-1">Plot Area</span>
+            </li> : null}
+
           </ul>
-          <div className="product-hover-action">
+          {/* <div className="product-hover-action">
             <ul>
               <li>
                 <OverlayTrigger
@@ -144,16 +157,16 @@ const RelatedProduct = ({
                 </OverlayTrigger>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
-        <div className="product-info-bottom">
+        {/* <div className="product-info-bottom">
           <div className="product-price">
             <span>
               {`$ ${productData.price}`}
               <label>/Month</label>
             </span>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <QuickViewtModal

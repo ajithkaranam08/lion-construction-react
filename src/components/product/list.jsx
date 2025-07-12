@@ -41,23 +41,23 @@ const ProductList = ({
   );
   const addToCartTooltip = (props) => (
     <Tooltip id="button-tooltip" {...props}>
-     Add To Cart
+      Add To Cart
     </Tooltip>
   );
   return (
     <>
       <div className="ltn__product-item ltn__product-item-4 ltn__product-item-5">
         <div className="product-img">
-          <Link href={`/${baseUrl}/${slug}`}>
-            <img
-              src={`/img/product-3/${productData.productImg}`}
-              alt={`${productData.title}`}
-            />
-          </Link>
+          {/* <Link href={`/${baseUrl}/${slug}`}> */}
+          <img
+            src={productData.productImg}
+            alt={`${productData.title}`}
+          />
+          {/* </Link> */}
         </div>
 
         <div className="product-info">
-          <div className="product-badge-price">
+          {/* <div className="product-badge-price">
             <div className="product-badge">
               <ul>
                 <li
@@ -74,40 +74,50 @@ const ProductList = ({
                 <label>/Month</label>
               </span>
             </div>
-          </div>
+          </div> */}
 
           <h2 className="product-title">
-            <Link href={`/${baseUrl}/${slug}`}>{productData.title}</Link>
+            {/* <Link href={`/${baseUrl}/${slug}`}>{productData.title}</Link> */}
+            {productData.title}
           </h2>
 
           <div className="product-img-location">
             <ul>
               <li>
-                <Link href={`/${baseUrl}/${slug}`}>
+                {/* <Link href={`/${baseUrl}/${slug}`}>
                   <i className="flaticon-pin"></i>
-                  {productData.locantion}
-                </Link>
+                
+                </Link> */}
+                <i className="flaticon-pin"></i>
+                {productData.locantion}
               </li>
             </ul>
           </div>
 
           <ul className="ltn__plot-brief">
-            <li>
+            {productData.propertyDetails.bedrooms ? <li>
               <span>{productData.propertyDetails.bedrooms}</span>
               <span className="ms-1">Bedrooms</span>
-            </li>
-            <li>
+            </li> : null}
+
+            {productData.propertyDetails.baths ? <li>
               <span>{productData.propertyDetails.baths}</span>
               <span className="ms-1">Bathrooms</span>
-            </li>
-            <li>
+            </li> : null}
+
+            {productData.propertyDetails.area ? <li>
               <span>{productData.propertyDetails.area}</span>
-              <span className="ms-1">square Ft</span>
-            </li>
+              <span className="ms-1">Built-up Area</span>
+            </li> : null}
+
+            {productData.propertyDetails.plotArea ? <li>
+              <span>{productData.propertyDetails.plotArea}</span>
+              <span className="ms-1">Plot Area</span>
+            </li> : null}
           </ul>
         </div>
         <div className="product-info-bottom">
-          <div className="real-estate-agent">
+          {/* <div className="real-estate-agent">
             <div className="agent-img">
               <Link href={`/${baseUrl}/${slug}`}>
                 <img
@@ -116,58 +126,58 @@ const ProductList = ({
                 />
               </Link>
             </div>
-          </div>
+          </div> */}
 
-          <div className="product-hover-action">
+          {/* <div className="product-hover-action">
             <ul>
               <li>
-              <OverlayTrigger
+                <OverlayTrigger
                   placement="right"
                   delay={{ show: 250, hide: 400 }}
                   overlay={quickViewTooltip}
                 >
-                <button onClick={() => setModalShow(true)}>
-                  <i className="flaticon-expand"></i>
-                </button>
+                  <button onClick={() => setModalShow(true)}>
+                    <i className="flaticon-expand"></i>
+                  </button>
 
 
                 </OverlayTrigger>
               </li>
               <li>
 
-              <OverlayTrigger
+                <OverlayTrigger
                   placement="right"
                   delay={{ show: 250, hide: 400 }}
                   overlay={wishListTooltip}
                 >
-                <button
-                  onClick={
-                    wishlistItem !== undefined
-                      ? () => dispatch(deleteFromWishlist(productData.id))
-                      : () => dispatch(addToWishlist(productData))
-                  }
-                >
-                  <i className="flaticon-heart-1"></i>
-                </button>
+                  <button
+                    onClick={
+                      wishlistItem !== undefined
+                        ? () => dispatch(deleteFromWishlist(productData.id))
+                        : () => dispatch(addToWishlist(productData))
+                    }
+                  >
+                    <i className="flaticon-heart-1"></i>
+                  </button>
 
-                  
+
                 </OverlayTrigger>
               </li>
               <li>
-              <OverlayTrigger
+                <OverlayTrigger
                   placement="right"
                   delay={{ show: 250, hide: 400 }}
                   overlay={addToCartTooltip}
                 >
-                <button onClick={() => dispatch(addToCart(productData))}>
-                  <i className="flaticon-add"></i>
-                </button>
+                  <button onClick={() => dispatch(addToCart(productData))}>
+                    <i className="flaticon-add"></i>
+                  </button>
 
-                  
+
                 </OverlayTrigger>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
 

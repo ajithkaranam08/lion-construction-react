@@ -9,11 +9,10 @@ const MeetTheFounder = () => {
                     <Col md={5} className="mb-4 mb-md-0">
                         <div className="p-3 rounded-4 h-100">
                             <img
-
-                                src="https://www.kekgaconstruction.com/site-assets/images/ganapathy.png"
+                                src="/img/about/construction-ceo.jpg"
                                 alt="Mr. S.N. Suresh Kumar"
                                 className="img-fluid rounded-4 h-100"
-                                style={{ objectFit: "cover", filter: "hue-rotate(147deg)" }}
+                                style={{ objectFit: "cover" }}
                             />
                         </div>
                     </Col>

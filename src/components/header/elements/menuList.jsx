@@ -167,7 +167,7 @@ const MenuList = ({ addListing }) => {
         </ul> */}
       </li>
       <li className="menu-icon mega-menu-parent">
-        <Link href="/coming-soon">
+        <Link href="/projects">
           Projects
         </Link>
         {/* <ul className="mega-menu mega-menu column-4">
