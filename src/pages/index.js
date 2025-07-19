@@ -16,7 +16,7 @@ import CallToActionstyleTwo from "@/components/callToAction/callToActionstyleTwo
 import ContactSection from "@/components/contact/ContactSection";
 import ApartmentsPlanTabs from "@/components/apartments/ApartmentsPlanTabs";
 import SEOHead from "@/components/SEOHead";
-import HeroSectionStyleThree from "@/components/hero/styleThree";
+import HeroSectionStyleImageFade from "@/components/hero/styleImageFae";
 
 
 function HomePage(props) {
@@ -149,7 +149,7 @@ function HomePage(props) {
       <SEOHead page="home" />
       <LayoutTwo topbar={true}>
       <div className="ltn__slider-area ltn__slider-3 section-bg-2">
-        <HeroSectionStyleThree data={Herodata} />
+        <HeroSectionStyleImageFade data={Herodata} />
         </div>
         {/* 
         <CarDealerSearchForm navMenuClass="d-none" customClasses="" /> */}
