@@ -54,17 +54,20 @@ function Feature({
     nextArrow: <SlickArrowRight />,
     prevArrow: <SlickArrowLeft />,
     autoplay: true,
+    adaptiveHeight: true,
     autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 992,
         settings: {
+          arrows: false,
           slidesToShow: 2,
         },
       },
       {
         breakpoint: 600,
         settings: {
+          arrows: false,
           slidesToShow: 1,
         },
       },
@@ -85,12 +88,13 @@ function Feature({
               />
             </Col>
           </Row>
-          <Slider {...sliderSettings} className="row ltn__upcoming-project-slider-1-active slick-arrow-1" >
+          <Slider {...sliderSettings} className="ltn__upcoming-project-slider-1-active slick-arrow-1" >
             {data.map((item, key) => {
               const slug = productSlug(item.title);
               return (
-                <div key={key}>
+                <div key={key} >
                   <div
+                   style={{minHeight: 370}}
                     className={` ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1 ${item.active ? "active" : ""
                       }`}
                   >
@@ -111,7 +115,7 @@ function Feature({
                       <h3>
                         <Link href={`/service/${slug}`}>{item.title}</Link>
                       </h3>
-                      <p title={item.shortDescription} className="line-clamp-2">{item.shortDescription}</p>
+                      <p title={item.shortDescription} className="">{item.shortDescription}</p>
 
                       {/* {servicebtn ? (
                         <Link

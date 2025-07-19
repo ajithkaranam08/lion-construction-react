@@ -46,19 +46,24 @@ function AmenitiesSlider({ data = [], titleSectionData, classes = "" }) {
         slidesToScroll: 1,
         nextArrow: <SlickArrowRight />,
         prevArrow: <SlickArrowLeft />,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
+        adaptiveHeight: true,
         responsive: [
             {
                 breakpoint: 992,
                 settings: {
+                    arrows: false,
                     slidesToShow: 2,
+                    dots: true,
                 },
             },
             {
                 breakpoint: 576,
                 settings: {
+                    arrows: false,
                     slidesToShow: 1,
+                    dots: true,
                 },
             },
         ],
@@ -82,7 +87,7 @@ function AmenitiesSlider({ data = [], titleSectionData, classes = "" }) {
                 >
                     {data.map((item, key) => (
                         <div key={key} >
-                            <AminitiesItemTwo data={item} styles={{ maxHeight: 420 }} />
+                            <AminitiesItemTwo data={item} styles={{ minHeight: 500}}  />
                         </div>
                     ))}
                 </Slider>
