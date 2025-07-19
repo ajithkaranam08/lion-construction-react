@@ -11,6 +11,7 @@ import CallToAction from "@/components/callToAction";
 import AboutUsStyletwo from "@/components/aboutUs/aboutUsStyleTwo";
 import Feature from "@/components/features";
 import featureData from "@/data/service"
+import SEOHead from "@/components/SEOHead";
 
 function Service() {
   const services = getProducts(featureData, "buying", "featured", 6);
@@ -54,6 +55,7 @@ function Service() {
 
   return (
     <>
+      <SEOHead page="services" />
       <LayoutOne topbar={true}>
         <ShopBreadCrumb
           title="What We Do"

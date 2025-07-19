@@ -27,6 +27,7 @@ import Link from "next/link";
 import CallToActionstyleTwo from "@/components/callToAction/callToActionstyleTwo";
 import ContactSection from "@/components/contact/ContactSection";
 import ApartmentsPlanTabs from "@/components/apartments/ApartmentsPlanTabs";
+import SEOHead from "@/components/SEOHead";
 
 
 function HomePage(props) {
@@ -156,6 +157,7 @@ function HomePage(props) {
 
   return (
     <>
+      <SEOHead page="home" />
       <LayoutOne topbar={true}>
         <HeroSectionStyleOne data={Herodata} />
         {/* 

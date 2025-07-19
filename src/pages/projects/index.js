@@ -16,6 +16,7 @@ import Search from "@/components/search";
 import ReactPaginate from "react-paginate";
 import CallToAction from "@/components/callToAction";
 import ContactSection from "@/components/contact/ContactSection";
+import SEOHead from "@/components/SEOHead";
 
 function ShopGrid() {
     const { products } = useSelector((state) => state.product);
@@ -92,6 +93,8 @@ function ShopGrid() {
     };
 
     return (
+        <>
+        <SEOHead page="projects" />
         <LayoutOne topbar={true}>
             {/* <!-- BREADCRUMB AREA START --> */}
 
@@ -288,6 +291,7 @@ function ShopGrid() {
             </div>
             {/* <!-- CALL TO ACTION END --> */}
         </LayoutOne>
+        </>
     );
 }
 

@@ -20,6 +20,7 @@ import CardSection from "@/components/aboutUs/cardSection";
 import AboutUsStyleTwo from "@/components/aboutUs/aboutUsStyleTwo";
 import AmenitiesSlider from "@/components/aminities/AmenitiesSlider";
 import MeetTheFounder from "@/components/aboutUs/meetTheFounder";
+import SEOHead from "@/components/SEOHead";
 
 function AboutUs() {
   const agents = getProducts(TeamData, "buying", "featured", 3);
@@ -76,6 +77,7 @@ function AboutUs() {
 
   return (
     <>
+      <SEOHead page="about" />
       <LayoutOne topbar={true}>
         <ShopBreadCrumb
           title="About Us"

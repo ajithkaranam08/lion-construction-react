@@ -1,0 +1,80 @@
+{
+  "pages": {
+    "home": {
+      "title": "Lion Construction - Best Construction Company in Chennai",
+      "description": "Lion Construction is Chennai's premier construction company offering residential, commercial, and interior design services. Quality construction with expert craftsmanship.",
+      "keywords": "construction company Chennai, best builders Chennai, residential construction, commercial construction, interior design Chennai",
+      "ogTitle": "Lion Construction - Premier Construction Services in Chennai",
+      "ogDescription": "Transform your vision into reality with Lion Construction. Expert construction and interior design services in Chennai.",
+      "ogImage": "/img/banner/home-banner.png",
+      "canonicalUrl": "/",
+      "structuredData": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Lion Construction",
+        "url": "https://lionconstruction.com",
+        "logo": "/img/logo.png",
+        "description": "Premier construction company in Chennai",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Construction Street",
+          "addressLocality": "Chennai",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "600001",
+          "addressCountry": "IN"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-897-876-987-90",
+          "contactType": "customer service"
+        }
+      }
+    },
+    "about": {
+      "title": "About Lion Construction - Leading Builders in Chennai",
+      "description": "Learn about Lion Construction's journey as Chennai's trusted construction company. Over 22 years of experience in quality construction and interior design.",
+      "keywords": "about lion construction, construction company history, Chennai builders, construction expertise",
+      "ogTitle": "About Lion Construction - Your Trusted Construction Partner",
+      "ogDescription": "Discover Lion Construction's commitment to quality and excellence in construction services across Chennai.",
+      "ogImage": "/img/about/construction-ceo.jpg",
+      "canonicalUrl": "/about"
+    },
+    "services": {
+      "title": "Construction Services - Lion Construction Chennai",
+      "description": "Comprehensive construction services including residential, commercial, interior design, and renovation services in Chennai by expert builders.",
+      "keywords": "construction services Chennai, residential construction, commercial construction, interior design, renovation services",
+      "ogTitle": "Professional Construction Services in Chennai",
+      "ogDescription": "Expert construction services for residential and commercial projects in Chennai.",
+      "ogImage": "/img/service/1.jpg",
+      "canonicalUrl": "/service"
+    },
+    "contact": {
+      "title": "Contact Lion Construction - Get Free Quote",
+      "description": "Contact Lion Construction for your construction needs in Chennai. Get free quotes for residential, commercial, and interior design projects.",
+      "keywords": "contact construction company, construction quote Chennai, building contractors contact",
+      "ogTitle": "Contact Lion Construction for Your Project",
+      "ogDescription": "Ready to start your construction project? Contact Lion Construction for expert consultation and free quotes.",
+      "ogImage": "/img/banner/contact-us-image.jpg",
+      "canonicalUrl": "/contact"
+    },
+    "projects": {
+      "title": "Construction Projects Portfolio - Lion Construction",
+      "description": "Explore Lion Construction's portfolio of completed residential and commercial projects in Chennai. Quality construction delivered on time.",
+      "keywords": "construction projects Chennai, building portfolio, completed projects, residential projects, commercial projects",
+      "ogTitle": "Our Construction Projects Portfolio",
+      "ogDescription": "Browse through our impressive portfolio of construction projects across Chennai.",
+      "ogImage": "/img/product-3/1.jpg",
+      "canonicalUrl": "/projects"
+    }
+  },
+  "global": {
+    "siteName": "Lion Construction",
+    "defaultTitle": "Lion Construction - Premier Construction Company in Chennai",
+    "defaultDescription": "Lion Construction offers expert construction and interior design services in Chennai. Quality construction with professional craftsmanship.",
+    "defaultKeywords": "construction company Chennai, builders Chennai, interior design, residential construction, commercial construction",
+    "defaultOgImage": "/img/logo.png",
+    "twitterHandle": "@lionconstruction",
+    "language": "en",
+    "region": "IN"
+  }
+}

@@ -6,7 +6,9 @@ import { PersistGate } from "redux-persist/integration/react";
 import { Toaster } from "react-hot-toast";
 import { wrapper } from "@/store";
 import { setProducts } from "@/store/slices/product-slice";
+import { setSeoData } from "@/store/slices/seo-slice";
 import products from "@/data/products.json";
+import seoData from "@/data/seo/index.json";
 import Preloader from "@/components/preloader";
 import "animate.css";
 import "slick-carousel/slick/slick.css";
@@ -33,6 +35,7 @@ const MyApp = ({ Component, ...rest }) => {
   const { store, props } = wrapper.useWrappedStore(rest);
   useEffect(() => {
     store.dispatch(setProducts(products));
+    store.dispatch(setSeoData(seoData));
   }, []);
 
   return (

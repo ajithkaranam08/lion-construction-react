@@ -3,10 +3,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import ShopBreadCrumb from "@/components/breadCrumbs/shop";
 import CallToAction from "@/components/callToAction";
 import Contact from "@/components/contact";
+import SEOHead from "@/components/SEOHead";
 
 function ContactUs() {
   return (
     <>
+      <SEOHead page="contact" />
       <LayoutOne topbar={true}>
         <ShopBreadCrumb
           title="Contact Us"
