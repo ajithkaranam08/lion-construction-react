@@ -1,33 +1,22 @@
 import path from "path";
 import fs from "fs/promises";
 import { useSelector } from "react-redux";
-import { getProducts, productSlug, getDiscountPrice } from "@/lib/product";
-import { Container, Row, Col, Nav, Tab, Form } from "react-bootstrap";
-import Slider from "react-slick";
-import { FaArrowRight, FaArrowLeft, FaPencilAlt, FaPhoneAlt, FaArrowDown, FaEnvelope, FaUserAlt } from "react-icons/fa";
-import { LayoutOne } from "@/layouts";
-import HeroSectionStyleOne from "@/components/hero/styleOne";
-import CarDealerSearchForm from "@/components/carDealerSearchForm";
+import { getProducts } from "@/lib/product";
+import { Container, Row, Col } from "react-bootstrap";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import {  LayoutTwo } from "@/layouts";
 import AboutUsStyleOne from "@/components/aboutUs/aboutUsStyleOne";
 import AboutUsStyleTwo from "@/components/aboutUs/aboutUsStyleTwo";
-import CounterUp from "@/components/counterUp";
 import Feature from "@/components/features";
-import TitleSection from "@/components/titleSection";
-import ProductItem from "@/components/product";
+
 import CallToAction from "@/components/callToAction";
-import VideoBanner from "@/components/banner/videoBanner";
-import aminitiesData from "@/data/aminities/index.json";
-import AminitiesItem from "@/components/aminities/item";
-import TestimonialCarouselItem from "@/components/testimonialCarousel";
-import testimonialData from "@/data/testimonial";
-import BlogItem from "@/components/blog";
-import blogData from "@/data/blog";
+
 import featuresData from "@/data/service";
-import Link from "next/link";
 import CallToActionstyleTwo from "@/components/callToAction/callToActionstyleTwo";
 import ContactSection from "@/components/contact/ContactSection";
 import ApartmentsPlanTabs from "@/components/apartments/ApartmentsPlanTabs";
 import SEOHead from "@/components/SEOHead";
+import HeroSectionStyleThree from "@/components/hero/styleThree";
 
 
 function HomePage(props) {
@@ -158,8 +147,10 @@ function HomePage(props) {
   return (
     <>
       <SEOHead page="home" />
-      <LayoutOne topbar={true}>
-        <HeroSectionStyleOne data={Herodata} />
+      <LayoutTwo topbar={true}>
+      <div className="ltn__slider-area ltn__slider-3 section-bg-2">
+        <HeroSectionStyleThree data={Herodata} />
+        </div>
         {/* 
         <CarDealerSearchForm navMenuClass="d-none" customClasses="" /> */}
         {/* <!-- CAR DEALER FORM AREA END -->
@@ -645,7 +636,7 @@ function HomePage(props) {
             </Row>
           </Container>
         </div>
-      </LayoutOne>
+      </LayoutTwo>
     </>
   );
 }

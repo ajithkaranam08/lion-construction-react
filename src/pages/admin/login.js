@@ -121,11 +121,11 @@ const AdminLogin = () => {
                   </Button>
                 </Form>
 
-                <div className="text-center">
+                {/* <div className="text-center">
                   <small className="text-muted">
                     Demo credentials: admin / admin123
                   </small>
-                </div>
+                </div> */}
               </Card.Body>
             </Card>
           </Col>

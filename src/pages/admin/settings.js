@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import AdminLayout from '@/components/admin/AdminLayout';
 import { Card, Row, Col, Form, Button, Alert, Tab, Nav } from 'react-bootstrap';
-import { FaCog, FaDatabase, FaShield, FaEnvelope, FaSave } from 'react-icons/fa';
+import { FaCog, FaDatabase, FaShieldAlt, FaEnvelope, FaSave } from 'react-icons/fa';
 
 const AdminSettings = () => {
   const [savedMessage, setSavedMessage] = useState('');
@@ -52,7 +52,7 @@ const AdminSettings = () => {
           </Nav.Item>
           <Nav.Item>
             <Nav.Link eventKey="security">
-              <FaShield className="me-2" />
+              <FaShieldAlt className="me-2" />
               Security
             </Nav.Link>
           </Nav.Item>

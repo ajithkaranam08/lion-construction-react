@@ -18,9 +18,9 @@ const HeaderTopBarTwo = function () {
               <div className="top-bar-right text-end">
                 <div className="ltn__top-bar-menu mx-auto">
                   <ul>
-                    <li>
+                    {/* <li>
                       <LanguageDropDown />
-                    </li>
+                    </li> */}
 
                     <li>
                       {/* <!-- ltn__social-media --> */}

@@ -50,7 +50,7 @@ const AdminLayout = ({ children, title = "Admin Dashboard" }) => {
       {/* Sidebar */}
       <div className={`bg-dark text-white ${sidebarOpen ? 'd-block' : 'd-none d-lg-block'}`} style={{ width: '250px', minHeight: '100vh' }}>
         <div className="p-3 border-bottom border-secondary">
-          <h5 className="mb-0">Admin Panel</h5>
+          <h5 className="mb-0 text-white">Admin Panel</h5>
         </div>
         
         <nav className="p-3">

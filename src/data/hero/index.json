@@ -1,16 +1,39 @@
 {
   "hero": [
-    {
-      "subtitle": "Welcome to Lion Construction",
-      "Title": "Turn Your Dream Home Into Reality with Lion Construction",
-      "Desc": "Your dream home is our mission. We deliver customized construction with careful planning and attention to every detail.",
-      "icon": "FaHome",
-      "heroimage": "home-banner.png",
-      "id": "01",
-      "buttonText": "Contact Us",
-      "learnMoreButtonText": false,
-      "variationLeft": false
-    }
+      {
+        "subtitle": "Welcome to Lion Construction",
+        "Title": "Turn Your Dream Home Into Reality with Lion Construction",
+        "Desc": "Your dream home is our mission. We deliver customized construction with careful planning and attention to every detail.",
+        "icon": "FaHome",
+        "bgImage": "banner/home-three-banner-1.png",
+        "id": "01",
+        "buttonText": "Contact Us",
+        "learnMoreButtonText": false,
+        "variationLeft": false
+      },
+      {
+        "subtitle": "Modern Architecture Experts",
+        "Title": "Designing Homes That Define the Future",
+        "Desc": "From concept to completion, we specialize in modern, energy-efficient designs that elevate your lifestyle.",
+        "icon": "FaDraftingCompass",
+        "bgImage": "banner/home-three-banner-2.png",
+        "id": "02",
+        "buttonText": "Make An Enquiry",
+        "variationCenter": true,
+        "variationRight": false
+      },
+      {
+        "subtitle": "Renovation & Remodeling",
+        "Title": "Give Your Existing Space a New Life",
+        "Desc": "Whether it's a single room or an entire property, we bring a fresh perspective and flawless execution to every renovation.",
+        "icon": "FaTools",
+        "bgImage": "banner/home-three-banner-3.png",
+        "id": "0",
+        "buttonText": "Make An Enquiry",
+        "variationCenter": false,
+        "variationRight": true
+      }
+    
   ],
   "about": {
     "subtitle": "About Us",
@@ -19,6 +42,6 @@
       "Lion Construction is proud to be known as one of the best construction company in Chennai. We handle all types of projects residential, commercial, and industrial with care and precision. Whether you're building from scratch, renovating, or expanding. And We also offer expert interior design services to craft stylish, functional spaces that match your vision. With skilled experts, strong materials, and modern methods, we deliver high quality results on time and within your budget.",
       "What makes us different is our honest and customer-first approach. From the first meeting to the final handover, we keep you informed and involved. At Lion Construction, we believe in building trust along with strong structures. When you work with us, you’re choosing a team that values clear communication, quality work, and your complete satisfaction."
     ],
-    "image": "home-about.jpg"
+    "image": "home-about.png"
   }
 }

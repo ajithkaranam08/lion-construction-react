@@ -15,7 +15,7 @@ const defaultData = {
   subTitle: "CONTACT US",
   title: "Premier and Best Builders in Chennai for Your Dream Home",
   description: "We are known as one of the best builders in Chennai, always focused on giving top-quality construction on time",
-  image: "/img/banner/home-contact-2.jpg",
+  image: "/img/banner/home-contact-2.png",
   list: [
     "High-Quality Work – We use the best materials and build with care",
     "On-Time Delivery – Every project is finished without delay.",
@@ -26,17 +26,17 @@ const defaultData = {
   ],
   slides: [
     {
-      src: "/img/banner/home-contact-2.jpg",
+      src: "/img/banner/home-contact-2.png",
       width: 800,
       height: 570,
     },
     {
-      src: "/img/banner/home-contact-2.jpg",
+      src: "/img/banner/home-contact-2.png",
       width: 800,
       height: 570,
     },
     {
-      src: "/img/banner/home-contact-2.jpg",
+      src: "/img/banner/home-contact-2.png",
       width: 800,
       height: 570,
     },
@@ -97,7 +97,7 @@ function AboutUsStyleTwo({ sectionSpace, data = defaultData }) {
             </Col>
             <Col xs={12} lg={6} className="align-self-center">
               <div className="about-us-img-wrap about-img-right">
-                <img src={data.image} alt="About Us Image" />
+                <img src={data.image} alt="About Us Image" width={600} height={483}  />
               </div>
             </Col>
           </Row>

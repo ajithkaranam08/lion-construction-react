@@ -64,7 +64,7 @@ const HeaderStyleTwo = function ({ SetToggleClassName, topbar }) {
         {/* <!-- ltn__header-middle-area start --> */}
         <div
           className={clsx(
-            "ltn__header-middle-area ltn__header-sticky ltn__sticky-bg-black",
+            "ltn__header-middle-area ltn__header-sticky  ltn__sticky-bg-white",
             scroll > headerHeight && "sticky-active"
           )}
         >
@@ -74,7 +74,7 @@ const HeaderStyleTwo = function ({ SetToggleClassName, topbar }) {
                 <div className="site-logo-wrap">
                   <div className="site-logo">
                     <Link href="/">
-                      <img src="/img/logo-2.png" alt="Logo" />
+                      <img width={100} height={100} src="/img/logo-2.png" alt="Logo" />
                     </Link>
                   </div>
                 </div>
@@ -83,7 +83,7 @@ const HeaderStyleTwo = function ({ SetToggleClassName, topbar }) {
                 <div className="header-menu d-none d-xl-block">
                   <nav>
                     <div className="ltn__main-menu">
-                      <MenuList addListing={true} />
+                      <MenuList  />
                     </div>
                   </nav>
                 </div>
