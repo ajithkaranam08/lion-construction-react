@@ -1484,8 +1484,8 @@
   padding: 0 0px;
 }
 
-.ltn__upcoming-project-slider-1-active svg,
-.ltn__testimonial-slider-6-active .slick-arrow svg {
+.ltn__upcoming-project-slider-1-active svg:not(.no-size),
+.ltn__testimonial-slider-6-active .slick-arrow svg:not(.no-size) {
   width: 20px;
   height: 20px;
 }
@@ -1503,6 +1503,10 @@
 }
 .ltn__slider-11-img-slide-arrow-active .slick-arrow:hover  {
   color: var(--ltn__secondary-color);
+}
+
+.fixed-height-slide .slick-list {
+  min-height: fit-content;
 }
 /* ----------------------------------------------------
     END

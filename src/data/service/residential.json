@@ -2,7 +2,7 @@
     "hero": [
         {
             "subtitle": "Residential Interiors",
-            "Title": "Stylish and Comfortable Home Makeovers ",
+            "Title": "Residential Interiors Convert Interior Designers page",
             "Desc": "Create a home that feels just right. Our custom interior designs match your style and make everyday living better.",
             "icon": "FaHome",
             "heroimage": "https://quarter-nextjs.vercel.app/img/slider/61.jpg",
@@ -163,5 +163,11 @@
         "beforeImage": "https://quarter-nextjs.vercel.app/img/bg/21.jpg",
         "relativePath": true,
         "reverse": true
+    },
+    "callToAction": {
+        "title": "Let’s build a better workspace together.",
+        "description": "Contact Us Today - We’re Here to Help",
+        "buttonText": "Get Quote",
+        "buttonLink": "contact"
     }
 }

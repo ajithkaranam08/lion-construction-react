@@ -49,11 +49,11 @@ function AboutUsStyleOne({ sectionSpace, data }) {
                   <h1 className="section-title">
                     {data?.titleSpan ?
                       <>
-                        <span>{data.titleSpan}.</span>
+                        <span>{data.titleSpan}</span>
                       </>
                       : <>
                         {data.Title}
-                        <span>.</span>
+                        {/* <span>.</span> */}
                       </>
                     }
                   </h1>

@@ -14,8 +14,8 @@ function Feature({
   titleSectionData,
   classes,
   headingClasses,
+  minHeight = 415
 }) {
-
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
     <button
       {...props}
@@ -44,7 +44,6 @@ function Feature({
     </button>
   );
 
-
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -53,7 +52,7 @@ function Feature({
     slidesToScroll: 1,
     nextArrow: <SlickArrowRight />,
     prevArrow: <SlickArrowLeft />,
-    autoplay: true,
+    autoplay: false,
     adaptiveHeight: true,
     autoplaySpeed: 3000,
     responsive: [
@@ -76,7 +75,9 @@ function Feature({
 
   return (
     <>
-      <div className={`ltn__feature-area pt-115 pb-90 contact-us-banner ${classes}`}>
+      <div
+        className={`ltn__feature-area pt-115 pb-90 contact-us-banner ${classes}`}
+      >
         <Container>
           <Row>
             <Col xs={12}>
@@ -84,19 +85,22 @@ function Feature({
                 titleSectionData={titleSectionData}
                 sectionClasses={titleSectionData.sectionClasses}
                 headingClasses={headingClasses}
-
               />
             </Col>
           </Row>
-          <Slider {...sliderSettings} className="ltn__upcoming-project-slider-1-active slick-arrow-1" >
+          <Slider 
+            {...sliderSettings}
+            className="ltn__upcoming-project-slider-1-active slick-arrow-1"
+          >
             {data.map((item, key) => {
               const slug = productSlug(item.title);
               return (
-                <div key={key} >
+                <div key={key}>
                   <div
-                   style={{minHeight: 370}}
-                    className={` ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1 ${item.active ? "active" : ""
-                      }`}
+                    style={{ minHeight}}
+                    className={`ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1 ${
+                      item.active ? "active" : ""
+                    }`}
                   >
                     <div className="ltn__feature-icon d-flex justify-content-center">
                       {iconTag ? (
@@ -115,7 +119,14 @@ function Feature({
                       <h3>
                         <Link href={`/service/${slug}`}>{item.title}</Link>
                       </h3>
-                      <p title={item.shortDescription} className="">{item.shortDescription}</p>
+                      <p title={item.shortDescription} className="">
+                        {item?.shortDescription.split("\n").map((line, idx) => (
+                          <span key={idx}>
+                            {line}
+                            <br />
+                          </span>
+                        ))}
+                      </p>
 
                       {/* {servicebtn ? (
                         <Link

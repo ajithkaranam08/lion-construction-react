@@ -20,6 +20,7 @@ import "yet-another-react-lightbox/plugins/counter.css";
 import "@/assets/sass/style.scss";
 import "@/assets/responsive.css";
 
+
 const nunito = Nunito_Sans({
   weight: ["200", "300", "400", "600", "700", "800", "900"],
   subsets: ["latin"],
@@ -45,6 +46,7 @@ const MyApp = ({ Component, ...rest }) => {
         <meta name="description" content="Lion Construction - Real Estate" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="keywords" content="Lion Construction, Real Estate" />
       </Head>
       <style jsx global>{`
         html,body {

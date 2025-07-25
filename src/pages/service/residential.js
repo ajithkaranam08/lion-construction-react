@@ -8,6 +8,8 @@ import Feature from '@/components/features';
 import featuresData from "@/data/service";
 import { getProducts } from '@/lib/product';
 import ContactSection from '@/components/contact/ContactSection';
+import { Col, Container, Row } from 'react-bootstrap';
+import CallToAction from '@/components/callToAction';
 
 const Residential = () => {
 
@@ -37,11 +39,23 @@ const Residential = () => {
                 <AboutUsStyleOne data={serviceData.aboutSectionThree} />
             </div>
 
+            <div className="ltn__call-to-action-area call-to-action-6">
+          <Container>
+            <Row>
+              <Col xs={12}>
+                <CallToAction data={serviceData.callToAction} />
+              </Col>
+            </Row>
+          </Container>
+        </div>
+
 
             <Feature
                 servicebtn={false}
+                minHeight={600}
                 iconTag={false}
                 data={featureData}
+                classes={"fixed-height-slide"}
                 headingClasses="section-subtitle-2"
                 titleSectionData={{
                     sectionClasses: "text-center",

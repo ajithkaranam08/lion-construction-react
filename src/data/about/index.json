@@ -232,7 +232,7 @@
         "titleSectionData": {
             "subTitle": null,
             "title": "Why Choose Us?",
-            "description": "At Lion Construction, quality is our top priority. We are trusted for delivering solid and reliable construction..",
+            "description": "At Lion Construction, quality is our top priority. We are trusted for delivering solid and reliable construction.",
             "additionalClassName": "",
             "sectionClasses": "text-center",
             "headingClasses": "section-subtitle-2"
@@ -272,7 +272,7 @@
         "reverse": true
     },
     "callToAction": {
-        "title": "Start Building Your Dream Home Book Your Construction Project Today",
+        "title": "Start Building Your Dream Home \n Book Your Construction Project Today",
         "description": "Contact Us Today - We’re Here to Help",
         "buttonText": "Get Quote",
         "buttonLink": "contact"

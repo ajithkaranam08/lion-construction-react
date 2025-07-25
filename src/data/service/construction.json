@@ -32,7 +32,54 @@
         "relativePath": true,
         "reverse": false
     },
-    "aboutSectionTwo": {
+    
+    "aboutSectionProcess": {
+          "titleSectionData": {
+            "subTitle": null,
+            "title": "Why Choose Lion Construction For Your Project",
+            "description": "At Lion Construction, we bring quality, trust, and professionalism to every project we take on. Whether it’s a home, office, or commercial space, we ensure top-notch construction with a focus on your needs and budget.",
+            "additionalClassName": "",
+            "sectionClasses": "text-center",
+            "headingClasses": "section-subtitle-2",
+            "afterCardDesc" : "Choose Lion Construction, the trusted construction company in Chennai, and let’s build your dream space with confidence."
+          },
+          "processSteps": [
+            {
+              "title": "Experienced Team",
+              "description": "Skilled engineers and craftsmen with years of hands-on experience.",
+              "icon": "engineering",
+              "from": "react-icon"
+            },
+            {
+              "title": "On-Time Delivery",
+              "description": "We value your time and complete every project as promised.",
+              "icon": "clock",
+              "from": "react-icon"
+            },
+            {
+              "title": "High-Quality Materials",
+              "description": "Only the best materials for long-lasting strength and beauty.",
+              "icon": "tools",
+              "from": "react-icon"
+            },
+            {
+              "title": "Clear Communication",
+              "description": "Regular updates and full transparency from start to finish.",
+              "icon": "conversation",
+              "from": "react-icon"
+            },
+            {
+              "title": "Tailored Solutions",
+              "description": "Every project is different, and we create it to match your exact needs.",
+              "icon": "blueprint",
+              "from": "react-icon"
+            }
+          ]
+          
+    },
+      
+      
+  "aboutSectionTwo": {
         "titleSectionData": {
             "subTitle": "Our Approach",
             "title": "Clear and Simple Steps to Building Your Dream Home",

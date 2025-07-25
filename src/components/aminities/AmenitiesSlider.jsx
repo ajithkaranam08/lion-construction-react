@@ -8,7 +8,7 @@ import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import AminitiesItemTwo from "@/components/aminities/itemTwo";
 
-function AmenitiesSlider({ data = [], titleSectionData, classes = "" }) {
+function AmenitiesSlider({ data = [], titleSectionData, classes = "", minHeight = 500 }) {
     const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
         <button
             {...props}
@@ -87,10 +87,15 @@ function AmenitiesSlider({ data = [], titleSectionData, classes = "" }) {
                 >
                     {data.map((item, key) => (
                         <div key={key} >
-                            <AminitiesItemTwo data={item} styles={{ minHeight: 500}}  />
+                            <AminitiesItemTwo data={item} styles={{ minHeight}}  />
                         </div>
                     ))}
                 </Slider>
+                {titleSectionData?.afterCardDesc && (
+                    <p className="ltn__primary-color-2 text-center">
+                        {titleSectionData?.afterCardDesc}
+                    </p>
+                )}
             </Container>
         </div>
     );

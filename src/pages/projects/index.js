@@ -99,9 +99,9 @@ function ShopGrid() {
             {/* <!-- BREADCRUMB AREA START --> */}
 
             <ShopBreadCrumb
-                title="Property Grid"
+                title="Project Grid"
                 sectionPace=""
-                currentSlug="Property Grid"
+                currentSlug="Project Grid"
             />
             {/* <!-- BREADCRUMB AREA END -->
     

@@ -102,7 +102,7 @@ function AboutUs() {
           headingClasses="section-subtitle-2"
           titleSectionData={{
             sectionClasses: "text-center",
-            subTitle: "Our Services",
+            subTitle: " Lion Construction",
             title: "Our Team",
             description: "Step into the world of construction and interior design with Lion Construction, Chennai’s trusted name for creating beautiful, functional spaces."
           }}
@@ -216,7 +216,7 @@ function AboutUs() {
           <Container>
             <Row>
               <Col xs={12}>
-                <CallToAction data={aboutData.callToAction} />
+                <CallToAction data={serviceData.callToAction} />
               </Col>
             </Row>
           </Container>
