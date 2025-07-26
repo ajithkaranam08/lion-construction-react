@@ -216,7 +216,7 @@ function AboutUs() {
           <Container>
             <Row>
               <Col xs={12}>
-                <CallToAction data={serviceData.callToAction} />
+                <CallToAction data={aboutData.callToAction} />
               </Col>
             </Row>
           </Container>
