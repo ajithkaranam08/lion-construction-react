@@ -39,19 +39,19 @@
         {
             "title": "Our Vision",
             "description": "We aim to build a future driven by excellence, where customer satisfaction is the key to our success. Our focus is on consistently exceeding expectations while building lasting relationships based on trust and loyalty.",
-            "image": "https://www.kekgaconstruction.com/site-assets/images/about-section.png"
+            "image": "our-vision.jpg"
         },
         {
             "title": "Our Mission",
             "description": "Our mission is to grow as a company by delivering quality work and ensuring customer satisfaction at every step. We strive to earn repeat business and long-term partnerships through our dedication, leading to continuous growth and exciting new opportunities.",
-            "image": "https://www.kekgaconstruction.com/site-assets/images/about-section-3.png"
+            "image": "our-mission.jpg"
         }
     ],
     "aboutSectionTwo": {
         "subTitle": "Lion Construction",
         "title": "Our Values",
         "description": null,
-        "image": "https://quarter-nextjs.vercel.app/img/others/9.png",
+        "image": "/img/others/our-values.png",
         "list": [
             {
                 "title": "Good Design",

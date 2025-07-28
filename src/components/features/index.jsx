@@ -109,7 +109,9 @@ function Feature({
                         </span>
                       ) : (
                         <img
-                          style={{ filter: "hue-rotate(45deg)" }}
+                        width={100}
+                        height={100}
+                          style={{ filter: "invert(100%) sepia(18%) saturate(7330%) hue-rotate(325deg) brightness(91%) contrast(84%)"}}
                           src={`/img/icons/icon-img/${item.img}`}
                           alt={`${item.title}`}
                         />

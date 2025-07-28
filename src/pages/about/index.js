@@ -89,7 +89,7 @@ function AboutUs() {
 
         <CardSection data={aboutData.cardSection} />
 
-        <AboutUsStyleTwo sectionSpace="section-bg-1" data={aboutData.aboutSectionTwo} />
+        <AboutUsStyleTwo sectionSpace="section-bg-1 pt-120 pb-90" data={aboutData.aboutSectionTwo} />
 
 
         <MeetTheFounder />
