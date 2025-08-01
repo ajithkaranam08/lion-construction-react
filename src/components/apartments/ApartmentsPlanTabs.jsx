@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import TitleSection from "@/components/titleSection";
+import Image from "next/image";
 
 const defaultTabs = [
   {
@@ -13,7 +14,7 @@ const defaultTabs = [
       { label: "Focus", value: "Understanding the Land & Your Vision" },
       { label: "Checks", value: "Soil, Water, Orientation, Utilities" },
     ],
-    image: "/img/others/10.png",
+    image: "/img/others/site-inspection.jpg",
   },
   {
     key: "custom-design",
@@ -25,7 +26,7 @@ const defaultTabs = [
       { label: "Goal", value: "Your Ideas, Expertly Brought to Life" },
       { label: "Features", value: "Personalized, Efficient, Future-ready" },
     ],
-    image: "/img/others/10.png",
+    image: "/img/others/custom-design-planning.jpg",
   },
   {
     key: "detailed-costing",
@@ -37,7 +38,7 @@ const defaultTabs = [
       { label: "Promise", value: "Full Transparency. No Hidden Costs." },
       { label: "Options", value: "Multiple Budgets, Clear Breakdown" },
     ],
-    image: "/img/others/10.png",
+    image: "/img/others/detailed-costing.jpg",
   },
   {
     key: "contract-signing",
@@ -49,7 +50,7 @@ const defaultTabs = [
       { label: "Scope", value: "Defined Work, Timelines, Costs" },
       { label: "Confidence", value: "Clear Responsibilities, No Surprises" },
     ],
-    image: "/img/others/10.png",
+    image: "/img/others/signing-the-contract.jpg",
   },
   {
     key: "groundbreaking",
@@ -61,7 +62,7 @@ const defaultTabs = [
       { label: "Tradition", value: "Bhoomi Pooja, Blessings" },
       { label: "Meaning", value: "Auspicious Start, Family Involvement" },
     ],
-    image: "/img/others/10.png",
+    image: "/img/others/groundbreaking-ceremony.jpg",
   },
   {
     key: "building-home",
@@ -73,7 +74,7 @@ const defaultTabs = [
       { label: "Execution", value: "Vision Meets Precision" },
       { label: "Quality", value: "Skilled Team, Trusted Materials, Safety" },
     ],
-    image: "/img/others/10.png",
+    image: "/img/others/building-your-home.jpg",
   },
 ];
 
@@ -86,12 +87,9 @@ const ApartmentsPlanTabs = ({
       subTitle: "What We Do and How We Do It",
       title: "Our Construction Process",
       additionalClassName: "",
-
     },
   },
 }) => (
-
-
   <Container>
     <Row>
       <Col>
@@ -104,7 +102,9 @@ const ApartmentsPlanTabs = ({
           <div className="ltn__tab-menu ltn__tab-menu-3 text-center responsive-tab-scroll">
             <Nav className="nav flex-nowrap overflow-auto justify-content-start justify-content-lg-center">
               {tabs.map((tab) => (
-                <Nav.Link eventKey={tab.key} key={tab.key}>{tab.title}</Nav.Link>
+                <Nav.Link eventKey={tab.key} key={tab.key}>
+                  {tab.title}
+                </Nav.Link>
               ))}
             </Nav>
           </div>
@@ -112,9 +112,9 @@ const ApartmentsPlanTabs = ({
             {tabs.map((tab) => (
               <Tab.Pane eventKey={tab.key} key={tab.key}>
                 <div className="ltn__apartments-tab-content-inner">
-                  <Row>
+                  <Row >
                     <Col xs={12} lg={6}>
-                      <div className="apartments-plan-info ltn__secondary-bg text-color-white">
+                      <div className="mb-0 h-100 apartments-plan-info ltn__secondary-bg text-color-white">
                         <h2>{tab.heading}</h2>
                         <p>{tab.description}</p>
                         {tab.info && tab.info.length > 0 && (
@@ -123,7 +123,9 @@ const ApartmentsPlanTabs = ({
                               {tab.info.map((item, idx) => (
                                 <li key={idx} className="ltn__secondary-color">
                                   <label>{item.label}</label>
-                                  <span className="ltn__secondary-color">{item.value}</span>
+                                  <span className="ltn__secondary-color">
+                                    {item.value}
+                                  </span>
                                 </li>
                               ))}
                             </ul>
@@ -131,9 +133,14 @@ const ApartmentsPlanTabs = ({
                         )}
                       </div>
                     </Col>
-                    <Col xs={12} lg={6}>
-                      <div className="apartments-plan-img">
-                        <img src={tab.image} alt="#" />
+                    <Col xs={12} lg={6} className="d-flex align-items-center">
+                      <div className="mb-0 apartments-plan-img position-relative  w-100 h-100">
+                        <img
+                        loading="lazy"
+                          src={tab.image}
+                          alt={tab.ApartmentsPlanTabs}
+                          className="object-fit-cover w-100 h-100"
+                        />
                       </div>
                     </Col>
                   </Row>
@@ -145,7 +152,6 @@ const ApartmentsPlanTabs = ({
       </Col>
     </Row>
   </Container>
-
 );
 
-export default ApartmentsPlanTabs; 
+export default ApartmentsPlanTabs;

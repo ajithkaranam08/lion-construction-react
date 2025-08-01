@@ -10,7 +10,7 @@
       "captionShortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     "thumbImage": "21.jpg",
-    "img": "21.png",
+    "img": "cooperation.png",
     "id": "01",
     "buttonText": "Find A Home",
     "active": false,
@@ -34,7 +34,7 @@
       "captionShortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     "thumbImage": "21.jpg",
-    "img": "22.png",
+    "img": "renovation.png",
     "id": "02",
     "buttonText": "Find A Home",
     "active": true,
@@ -58,7 +58,7 @@
       "captionShortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     "thumbImage": "21.jpg",
-    "img": "23.png",
+    "img": "interior.png",
     "id": "03",
     "buttonText": "Find A Home",
     "active": false,
@@ -82,7 +82,7 @@
       "captionShortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     "thumbImage": "21.jpg",
-    "img": "23.png",
+    "img": "staircase.png",
     "id": "04",
     "buttonText": "Find A Home",
     "active": false,
@@ -106,7 +106,7 @@
       "captionShortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     "thumbImage": "21.jpg",
-    "img": "23.png",
+    "img": "company.png",
     "id": "05",
     "buttonText": "Find A Home",
     "active": false,
@@ -130,7 +130,7 @@
       "captionShortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     "thumbImage": "21.jpg",
-    "img": "23.png",
+    "img": "workspace.png",
     "id": "06",
     "buttonText": "Find A Home",
     "active": false,
@@ -154,7 +154,7 @@
       "captionShortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     "thumbImage": "21.jpg",
-    "img": "23.png",
+    "img": "agreement.png",
     "id": "07",
     "buttonText": "Find A Home",
     "active": false,
@@ -178,7 +178,7 @@
       "captionShortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     "thumbImage": "21.jpg",
-    "img": "23.png",
+    "img": "waterproof.png",
     "id": "08",
     "buttonText": "Find A Home",
     "active": false,
@@ -202,7 +202,7 @@
       "captionShortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     "thumbImage": "21.jpg",
-    "img": "23.png",
+    "img": "property-management.png",
     "id": "09",
     "buttonText": "Find A Home",
     "active": true,
@@ -226,7 +226,7 @@
       "captionShortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     "thumbImage": "21.jpg",
-    "img": "23.png",
+    "img": "supply.png",
     "id": "10",
     "buttonText": "Find A Home",
     "active": false,
@@ -250,7 +250,7 @@
       "captionShortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     "thumbImage": "21.jpg",
-    "img": "23.png",
+    "img": "worker.png",
     "id": "11",
     "buttonText": "Find A Home",
     "active": false,

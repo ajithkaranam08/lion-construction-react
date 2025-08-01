@@ -8,8 +8,8 @@ const CardSection = ({ data = [] }) => {
                 <Row className="justify-content-center ltn__blog-slider-one-active slick-arrow-1 ltn__blog-item-3-normal">
                     {data.map((item, index) => (
                         <Col xs={12} lg={4} className="ltn__blog-item ltn__blog-item-3 d-flex flex-column" key={index}>
-                            <div className="ltn__blog-img">
-                                <img className="w-100" src={`${item.image}`} alt={`${item.title}`} />
+                            <div className="ltn__blog-img overflow-hidden rounded-top">
+                                <img className="w-100 " src={`/img/others/${item.image}`} alt={`${item.title}`} />
                             </div>
                             <div className="ltn__blog-brief flex-grow-1">
                                 <h3 className="ltn__blog-title">
