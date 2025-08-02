@@ -2,14 +2,13 @@ import Link from "next/link";
 import IconRenderer from "@/components/icons/iconsRender";
 
 const AminitiesItemTwo = ({ data, styles }) => {
-  console.log(data?.from === "react-icon" &&  <IconRenderer name={data.icon} />)
   return (
     <>
       <div style={styles} className=" ltn__category-item ltn__category-item-5 ltn__category-item-5-2">
         <Link href="/shop">
           <span className="category-icon d-flex align-items-center justify-content-center">
             {data?.from === "react-icon" ? (
-              <IconRenderer name={data.icon} className="no-size" />
+              <IconRenderer name={data.icon} className="no-size  ltn__primary-color" />
             ) : (
               <i className={`${data.icon}`}></i>
             )}

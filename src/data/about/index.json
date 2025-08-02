@@ -5,8 +5,7 @@
         "descriptions": [
             "Experience the difference with Lion Construction, Chennai’s trusted partner for innovative and reliable construction services. We turn your vision into reality with top quality craftsmanship and complete building solutions."
         ],
-        "image": "https://quarter-nextjs.vercel.app/img/others/11.png",
-        "relativePath": true,
+        "image": "about.jpg",
         "reverse": false,
         "list": [
             {
@@ -93,7 +92,8 @@
             "id": "1",
             "buttonText": "Find A Home",
             "active": true,
-            "icon": "flaticon-deal-1",
+            "icon": "handShake",
+            "from":"react-icon",
             "category": [
                 "buying",
                 "women"
@@ -118,7 +118,8 @@
             "id": "1",
             "buttonText": "Find A Home",
             "active": true,
-            "icon": "flaticon-user",
+            "icon": "team",
+            "from": "react-icon",
             "category": [
                 "buying",
                 "women"
@@ -143,7 +144,8 @@
             "id": "1",
             "buttonText": "Find A Home",
             "active": true,
-            "icon": "flaticon-house",
+            "icon": "teamIdea",
+            "from": "react-icon",
             "category": [
                 "buying",
                 "women"
@@ -168,7 +170,8 @@
             "id": "1",
             "buttonText": "Find A Home",
             "active": true,
-            "icon": "flaticon-house-3",
+            "icon": "teamShield",
+            "from": "react-icon",
             "category": [
                 "buying",
                 "women"
@@ -193,7 +196,8 @@
             "id": "1",
             "buttonText": "Find A Home",
             "active": true,
-            "icon": "flaticon-user",
+            "icon": "teamSales",
+            "from": "react-icon",
             "category": [
                 "buying",
                 "women"
@@ -218,7 +222,8 @@
             "id": "1",
             "buttonText": "Find A Home",
             "active": true,
-            "icon": "flaticon-user",
+            "icon": "addTeam",
+            "from": "react-icon",
             "category": [
                 "buying",
                 "women"
@@ -241,22 +246,26 @@
             {
                 "title": "We Value Creativity",
                 "description": "Creative ideas help turn your dreams into reality. We work hard until everything is exactly how it should be.",
-                "icon": "flaticon-car"
+                "icon": "creativity",
+                "from": "react-icon"
             },
             {
                 "title": "Honest and Responsible",
                 "description": "We build strong and flexible steel frames that make buildings safe and long-lasting.",
-                "icon": "flaticon-swimming"
+                "icon": "honest",
+                "from": "react-icon"
             },
             {
                 "title": "Focus on Quality",
                 "description": "We believe in doing things well, not just quickly. We always aim to provide the best results for you.",
-                "icon": "flaticon-secure-shield"
+                "icon": "focus",
+                "from": "react-icon"
             },
             {
                 "title": "Always Aiming for Excellence",
                 "description": "We design home interiors that are beautiful, comfortable, and practical just the way you want.",
-                "icon": "flaticon-stethoscope"
+                "icon": "target",
+                "from": "react-icon"
             }
         ]
     },

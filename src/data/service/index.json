@@ -278,7 +278,8 @@
     "id": "12",
     "buttonText": "Find A Home",
     "active": false,
-    "icon": "flaticon-deal-1",
+    "icon": "laptop",
+    "from": "react-icon",
     "category": [
       "buying",
       "women"
@@ -303,7 +304,8 @@
     "id": "13",
     "buttonText": "Find A Home",
     "active": false,
-    "icon": "flaticon-deal-1",
+    "icon": "building",
+    "from": "react-icon", 
     "category": [
       "buying",
       "women"
@@ -328,7 +330,8 @@
     "id": "14",
     "buttonText": "Find A Home",
     "active": false,
-    "icon": "flaticon-deal-1",
+    "icon": "hotel",
+    "from": "react-icon",
     "category": [
       "buying",
       "women"
