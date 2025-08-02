@@ -251,7 +251,7 @@ function HeroSectionStyleTwo({ data }) {
           </ul>
         </div>
         {/* <!-- slider-4-img-slide-arrow --> */}
-        <div className="ltn__slider-11-img-slide-arrow">
+        {/* <div className="ltn__slider-11-img-slide-arrow">
           <div className="ltn__slider-11-img-slide-arrow-inner">
             <Slider
               {...Navsettings}
@@ -268,7 +268,7 @@ function HeroSectionStyleTwo({ data }) {
               })}
             </Slider>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

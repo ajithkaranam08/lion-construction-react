@@ -5,7 +5,7 @@
             "Title": "Residential Interiors Convert Interior Designers page",
             "Desc": "Create a home that feels just right. Our custom interior designs match your style and make everyday living better.",
             "icon": "FaHome",
-            "heroimage": "https://quarter-nextjs.vercel.app/img/slider/61.jpg",
+            "heroimage": "/img/bg/residential-bg.jpg",
             "id": "1",
             "buttonText": "Get Your Quote",
             "buttonLink": "/contact",
@@ -13,11 +13,7 @@
             "learnMoreButtonText": " See Our Projects",
             "learnMoreButtonLink": "/projects",
             "variationLeft": false,
-            "subImages": [
-                "https://quarter-nextjs.vercel.app/img/slider/62.jpg",
-                "https://quarter-nextjs.vercel.app/img/slider/62.jpg",
-                "https://quarter-nextjs.vercel.app/img/slider/61.jpg"
-            ]
+            "subImages": [ ]
         }
     ],
     "aboutSectionOne": {
@@ -28,8 +24,7 @@
             "Our approach is simple, listen, understand, and deliver. Every project begins with your vision and is shaped by our passion for design and architecture. Whether you're building your dream home, revamping your workspace, or refreshing a retail space, we bring ideas to life with thoughtful planning and exceptional craftsmanship.",
             "Join us on a creative journey to reimagine your space, one that reflects who you are and leaves a lasting impression."
         ],
-        "image": "https://quarter-nextjs.vercel.app/img/others/11.png",
-        "relativePath": true,
+        "image": "residential-about-2.jpg",
         "reverse": false
     },
     "aboutSectionTwo": {
@@ -40,8 +35,7 @@
             "Every design begins with you, your lifestyle, your preferences, and your vision. From welcoming living rooms to peaceful bedrooms, we craft spaces that enhance daily life and reflect your personality in every detail. ",
             "Backed by a passion for design and a commitment to quality, Lion Construction is your trusted partner in bringing your dream home to life seamlessly and beautifully. "
         ],
-        "image": "https://quarter-nextjs.vercel.app/img/others/9.png",
-        "relativePath": true,
+        "image": "residential-about-3.jpg",
         "reverse": true
     },
     "ApartmentsPlan": {
@@ -70,7 +64,7 @@
                         "value": "Measurement, Design, Approval, Installation"
                     }
                 ],
-                "image": "/img/others/10.png"
+                "image": "/img/others/minimal-kitchen.jpg"
             },
             {
                 "key": "bedroom-interiors",
@@ -87,7 +81,7 @@
                         "value": "Custom Furniture, Smart Design, Style"
                     }
                 ],
-                "image": "/img/others/10.png"
+                "image": "/img/others/modern-bedroom.jpg"
             },
             {
                 "key": "dining-room-designs",
@@ -104,7 +98,7 @@
                         "value": "Matching Kitchen Design, Custom Details"
                     }
                 ],
-                "image": "/img/others/10.png"
+                "image": "/img/others/dining-table.jpg"
             },
             {
                 "key": "living-room-designs",
@@ -121,7 +115,7 @@
                         "value": "Custom Furniture, Expert Design"
                     }
                 ],
-                "image": "/img/others/10.png"
+                "image": "/img/others/living-room.jpg"
             },
             {
                 "key": "kids-room-designs",
@@ -138,7 +132,7 @@
                         "value": "Sleep, Play, Learn, Grow"
                     }
                 ],
-                "image": "/img/others/10.png"
+                "image": "/img/others/children-room.jpg"
             }
         ]
     },
@@ -149,8 +143,8 @@
             "At Lion Construction, one of the leading office interior designers in Chennai, Lion Construction delivers innovative workspace designs that combine function, style, and long-lasting value. We understand that a well designed workspace improves focus, teamwork, and overall performance. That’s why we create modern office environments tailored to your company’s style, culture, and needs.",
             "Whether it’s a compact office or a large corporate space, we handle every detail with care from lighting and furniture to layout and colors. Our goal is to design workspaces that inspire productivity and make your team feel at home."
         ],
-        "image": "https://quarter-nextjs.vercel.app/img/others/9.png",
-        "relativePath": true,
+        "image": "residential-about-4.jpg",
+     
         "reverse": false
     },
     "aboutSectionFour": {
