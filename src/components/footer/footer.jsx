@@ -50,7 +50,7 @@ const Footer = function () {
                         <Link href="/coming-soon">Blog</Link>
                       </li>
                       <li>
-                        <Link href="/coming-soon">Projects</Link>
+                        <Link href="/projects">Projects</Link>
                       </li>
                       <li>
                         <Link href="/contact">Contact</Link>
