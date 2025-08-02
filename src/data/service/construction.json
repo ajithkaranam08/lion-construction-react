@@ -8,7 +8,7 @@
                 "We offer end-to-end construction services tailored to your needs. We’re ready to help bring your vision to life."
             ],
             "icon": "FaHome",
-            "heroimage": "https://quarter-nextjs.vercel.app/img/slider/61.jpg",
+            "heroimage": "/img/bg/construction.bg.jpg",
             "id": "1",
             "buttonText": "Get Your Quote",
             "buttonLink": "/contact",
@@ -28,8 +28,7 @@
             "At Lion Construction, we take pride in being one of the best construction company in Chennai, trusted by homeowners and businesses alike. With years of experience, we deliver strong, long-lasting buildings that match your vision and budget. As a reliable construction company in Chennai, we handle every step from planning to completion   with care and precision. ",
             "If you're looking for a professional and transparent construction company Chennai, choose LC. We build homes, offices, and commercial spaces with high quality, on-time delivery, and clear communication. Ready to build something great? Contact us today for a free consultation."
         ],
-        "image": "https://quarter-nextjs.vercel.app/img/others/11.png",
-        "relativePath": true,
+        "image": "construction-about.jpg",
         "reverse": false
     },
     

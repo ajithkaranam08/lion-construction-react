@@ -47,7 +47,7 @@ const Construction = () => {
 
       <div
         style={{
-          "--image": "url(https://quarter-nextjs.vercel.app/img/bg/21.jpg)",
+          "--image": "url(/img/banner/construction-approach.jpg)",
         }}
         className="ltn__about-us-area section-bg-1 bg-image-right-before pt-120 pb-90"
       >

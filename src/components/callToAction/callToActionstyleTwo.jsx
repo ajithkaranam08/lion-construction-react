@@ -6,7 +6,7 @@ const callToActionstyleTwo = () => {
     <>
       <div
         className="ltn__call-to-action-area ltn__call-to-action-4 bg-image pt-115 pb-120"
-        style={{ backgroundImage: `url("../img/banner/home-contact.webp")` }}
+        style={{ backgroundImage: `url("../img/bg/cell-bg6.jpg")` }}
       >
         <Container>
           <Row>
@@ -38,7 +38,7 @@ const callToActionstyleTwo = () => {
           </Row>
         </Container>
         <div className="ltn__call-to-4-img-1">
-          <img src="/img/banner/home-banner.png" alt="home-banner" />
+          <img src="/img/banner/home-banner.png"  alt="home-banner" />
         </div>
         <div className="ltn__call-to-4-img-2">
           <img src="/img/bg/11.png" alt="#" />
