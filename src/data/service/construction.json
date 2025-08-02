@@ -139,67 +139,80 @@
             {
                 "title": "Agreement Signing",
                 "description": "The agreement signing is when the client and construction company officially agree on the project details. This step ensures both sides know their duties, terms, and rules, helping the project run smoothly.",
-                "icon": "flaticon-car"
+                "icon": "note",
+                "from": "react-icon"
             },
             {
                 "title": "Soil Testing",
                 "description": "Soil testing checks the ground before building begins. It finds out the soil type and strength to make sure the foundation is safe and strong. This helps avoid future problems with the building.",
-                "icon": "flaticon-swimming"
+                "icon": "soildTest",
+                "from": "react-icon"
             },
             {
                 "title": "Project Kickoff",
                 "description": "The project kickoff marks the official beginning of the construction work. It brings together clients, builders, and team members to celebrate and discuss the project goals. It helps everyone stay motivated and focused.",
-                "icon": "flaticon-secure-shield"
+                "icon": "teamUp",
+                "from": "react-icon"
             },
             {
                 "title": "Column Planning",
                 "description": "Column planning involves deciding where to place columns in the building. Proper placement is important for keeping the building stable and strong, while allowing open spaces inside.",
-                "icon": "flaticon-stethoscope"
+                "icon": "ideaNote",
+                "from": "react-icon"
             },
             {
                 "title": "Excavation and Foundation Work",
                 "description": "This step involves digging for the columns and building their foundations. It’s important to do this well to make sure the columns can support the entire building safely.",
-                "icon": "flaticon-book"
+                "icon": "home",
+                "from": "react-icon"
             },
             {
                 "title": "Roof Support Setup",
                 "description": "Roof support setup means building temporary structures that hold the concrete roof until it hardens. This ensures the roof keeps its shape and is strong once finished.",
-                "icon": "flaticon-bed-1"
+                "icon": "houseRoof",
+                "from": "react-icon"
             },
             {
                 "title": "Concrete Roof Pouring",
                 "description": "Pouring concrete for the roof slab must be done carefully to ensure it spreads evenly and sets properly. A strong roof slab adds safety and comfort to the building.",
-                "icon": "flaticon-bed-1"
+                "icon": "modernHome",
+                "from": "react-icon"
             },
             {
                 "title": "Partition Walls",
                 "description": "Partition walls divide the inside space into rooms. They provide privacy and reduce noise. Proper installation helps create comfortable and useful living areas.",
-                "icon": "flaticon-bed-1"
+                "icon": "wall",
+                "from": "react-icon"
             },
             {
                 "title": "Flooring, Electrical & Plumbing",
                 "description": "This phase includes laying floors, wiring electricity, and installing water pipes. Doing these tasks properly is key to making the home safe and comfortable.",
-                "icon": "flaticon-bed-1"
+                "icon": "plumbing",
+                "from": "react-icon"
             },
             {
                 "title": "Extras Installation",
                 "description": "Adding features like solar water heaters, pools, elevators, and safety systems improves the building’s comfort and usability. Good safety systems protect the people inside.",
-                "icon": "flaticon-bed-1"
+                "icon": "tools",
+                "from": "react-icon"
             },
             {
                 "title": "Doors, Windows & Fixtures",
                 "description": "Proper installation of doors, windows, and fittings boosts both security and energy efficiency. Choosing good materials and styles also makes the home look better.",
-                "icon": "flaticon-bed-1"
+                "icon": "door",
+                "from": "react-icon"
             },
             {
                 "title": "Outdoor & Entrance Design",
                 "description": "Designing the entrance and outdoor areas creates a welcoming look and makes the property functional. Good landscaping and pathways add beauty and ease of access.",
-                "icon": "flaticon-home-2"
+                "icon": "arch",
+                "from": "react-icon"
             },
             {
                 "title": "Handover & Celebration",
                 "description": "When the project is done, the keys are handed over to the client. This special moment marks the start of new memories in their new home, celebrating a successful build.",
-                "icon": "flaticon-slider"
+                "icon": "handOver",
+                "from": "react-icon"
             }
         ]
     },

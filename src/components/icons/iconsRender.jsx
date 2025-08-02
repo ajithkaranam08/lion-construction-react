@@ -18,15 +18,27 @@
       FaUserCog,
       FaRegBuilding,
     } from "react-icons/fa";
-    import { MdOutlineHandshake, MdRoofing } from "react-icons/md";
+    import { MdOutlineHandshake, MdOutlineNoteAlt, MdPlumbing, MdRoofing } from "react-icons/md";
 
-    import { GiOnTarget, GiReceiveMoney, GiStrong, GiTeamIdea } from "react-icons/gi";
+    import { GiOnTarget, GiReceiveMoney, GiStrong, GiTeamIdea, GiTeamUpgrade } from "react-icons/gi";
 
     import { RiFocus2Line, RiHotelLine, RiTeamLine   } from "react-icons/ri"
     import { LiaUserShieldSolid, LiaPersonBoothSolid } from "react-icons/lia";
     import { IoIosBulb } from "react-icons/io";
 
     import { FaLaptop } from "react-icons/fa";
+    import { LuTestTube  } from "react-icons/lu";
+
+    import { PiHandHeartBold, PiNotebookDuotone, PiWall  } from "react-icons/pi";
+
+    import { IoHomeOutline } from "react-icons/io5";
+
+    import { BsDoorOpen, BsHouseHeart } from "react-icons/bs";
+    import { HiOutlineHomeModern } from "react-icons/hi2";
+
+    import { TbBuildingArch } from "react-icons/tb";
+
+    
 
 
     
@@ -66,7 +78,21 @@
 
       laptop: FaLaptop,
       building: FaRegBuilding,
-      hotel: RiHotelLine
+      hotel: RiHotelLine,
+
+      note: MdOutlineNoteAlt,
+      soildTest: LuTestTube,
+      teamUp: GiTeamUpgrade,
+      ideaNote: PiNotebookDuotone,
+      home: IoHomeOutline,
+      houseRoof: BsHouseHeart,
+      modernHome: HiOutlineHomeModern,
+      wall: PiWall,
+      plumbing: MdPlumbing,
+      door: BsDoorOpen,
+      arch: TbBuildingArch,
+      handOver: PiHandHeartBold
+
     };
     
 
