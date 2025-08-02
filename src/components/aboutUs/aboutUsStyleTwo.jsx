@@ -88,6 +88,7 @@ function AboutUsStyleTwo({ sectionSpace, data = defaultData }) {
             <Col xs={12} lg={6} className="align-self-center">
               <div className="about-us-img-wrap about-img-right">
                 <Image
+                 loading="lazy"
                   src={data.image}
                   alt="About Us Image"
                   className="object-fit-cover"

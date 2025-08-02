@@ -86,7 +86,7 @@ const MenuList = ({ addListing }) => {
         </ul> */}
       </li>
       <li className="menu-icon">
-        <Link href="/coming-soon">
+        <Link href="/service/residential">
           Services <FaPlus />
         </Link>
         <ul>
