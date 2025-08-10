@@ -89,7 +89,7 @@ function AboutUs() {
 
         <CardSection data={aboutData.cardSection} />
 
-        <AboutUsStyleTwo sectionSpace="section-bg-1 pt-120 pb-90" data={aboutData.aboutSectionTwo} />
+        <AboutUsStyleTwo sectionSpace="section-bg-1 pt-50 pb-50" data={aboutData.aboutSectionTwo} />
 
 
         <MeetTheFounder />
@@ -112,7 +112,7 @@ function AboutUs() {
         <AmenitiesSlider data={aboutData.aboutSectionProcess.processSteps} titleSectionData={aboutData.aboutSectionProcess.titleSectionData} />
 
 
-        <AboutUsStyleOne sectionSpace="pt-120 pb-90 section-bg-1 " data={aboutData.aboutSectionThree} />
+        <AboutUsStyleOne sectionSpace="pt-50 pb-50 section-bg-1 " data={aboutData.aboutSectionThree} />
 
 
 

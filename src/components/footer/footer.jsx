@@ -65,7 +65,7 @@ const Footer = function () {
                   <div className="footer-menu">
                     <ul>
                       <li>
-                        <Link href="/service/residential">Residential Interior</Link>
+                        <Link href="/service/residential">Interior Design</Link>
                       </li>
                       <li>
                         <Link href="/service/construction">Construction</Link>

@@ -4,7 +4,7 @@ const TitleSection = ({ titleSectionData, sectionClasses, headingClasses }) => {
       <div className={`section-title-area ${sectionClasses}`}>
         {titleSectionData?.subTitle &&
           <h6
-            className={`section-subtitle ${headingClasses} ltn__secondary-color`}
+            className={`section-subtitle-2 ${headingClasses} ltn__secondary-color`}
           >
             {titleSectionData.subTitle}
           </h6>

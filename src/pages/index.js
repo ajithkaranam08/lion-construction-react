@@ -156,7 +156,7 @@ function HomePage(props) {
         {/* <!-- CAR DEALER FORM AREA END -->
 
       <!-- ABOUT US AREA START --> */}
-        <AboutUsStyleOne sectionSpace="pt-120 pb-90" data={aboutData} />
+        <AboutUsStyleOne sectionSpace="pt-50 pb-50" data={aboutData} />
         {/* <!-- ABOUT US AREA END -->
 
       <!-- COUNTER UP AREA START --> */}
@@ -182,7 +182,7 @@ function HomePage(props) {
             description: "We offer expert construction, design, real estate, and maintenance services ensuring top-quality results from start to finish on every project."
           }}
         />
-        <AboutUsStyleTwo sectionSpace="pt-120 pb-90" />
+        <AboutUsStyleTwo sectionSpace="pt-50 pb-50" />
         {/* <!-- ABOUT US AREA END -->
 
       <!-- FEATURE AREA START ( Feature - 6) --> */}
@@ -613,7 +613,7 @@ function HomePage(props) {
         </div> */}
         {/* <!-- BLOG AREA END --> */}
 
-        <div className="ltn__apartments-plan-area pt-115 pb-100 section-bg-1">
+        <div className="ltn__apartments-plan-area pt-50 pb-50 section-bg-1">
           <ApartmentsPlanTabs />
         </div>
 

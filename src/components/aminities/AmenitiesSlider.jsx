@@ -70,7 +70,7 @@ function AmenitiesSlider({ data = [], titleSectionData, classes = "", minHeight 
     };
 
     return (
-        <div className={`ltn__category-area ltn__product-gutter pt-115 pb-90 ${classes}`}>
+        <div className={`ltn__category-area ltn__product-gutter pt-50 pb-50 ${classes}`}>
             <Container>
                 <Row>
                     <Col xs={12}>
@@ -83,7 +83,7 @@ function AmenitiesSlider({ data = [], titleSectionData, classes = "", minHeight 
                 </Row>
                 <Slider
                     {...sliderSettings}
-                    className="ltn__upcoming-project-slider-1-active slick-arrow-1"
+                    className="ltn__upcoming-project-slider-1-active slick-arrow-1 slick-slide-p"
                 >
                     {data.map((item, key) => (
                         <div key={key} >

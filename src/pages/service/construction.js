@@ -20,13 +20,13 @@ const Construction = () => {
         <HeroSectionStyleTwo data={serviceData.hero} />
       </div>
 
-      <div className="ltn__about-us-area pt-115 pb-100">
+      <div className="ltn__about-us-area pt-50 pb-50">
         <AboutUsStyleOne data={serviceData.aboutSectionOne} />
       </div>
 
       <AmenitiesSlider minHeight={400} data={serviceData.aboutSectionProcess.processSteps} titleSectionData={serviceData.aboutSectionProcess.titleSectionData} />
 
-      <div className="ltn__about-us-area pt-115 pb-100 section-bg-1">
+      <div className="ltn__about-us-area pt-50 pb-50 section-bg-1">
         <BuildingPackageTable />
       </div>
 
@@ -37,7 +37,7 @@ const Construction = () => {
 
   
 
-      <div className="neighbour-area section-bg-1 pt-118 pb-120">
+      <div className="neighbour-area section-bg-1 pt-50 pb-50">
         <NeighbourSection
           showTabs={serviceData.neighbourSection.showTabs}
           titleSectionData={serviceData.neighbourSection.titleSectionData}
@@ -49,12 +49,12 @@ const Construction = () => {
         style={{
           "--image": "url(/img/banner/construction-approach.jpg)",
         }}
-        className="ltn__about-us-area section-bg-1 bg-image-right-before pt-120 pb-90"
+        className="ltn__about-us-area section-bg-1 bg-image-right-before pt-50 pb-50"
       >
         <AboutUsSectionTwo data={serviceData.aboutSectionTwo} />
       </div>
 
-      <div className="ltn__testimonial-area ltn__testimonial-4 pt-115 pb-100 plr--9">
+      <div className="ltn__testimonial-area ltn__testimonial-4 pt-50 pb-50 plr--9">
         <Container fluid>
           <Row>
             <Col lg={12}>
@@ -77,7 +77,7 @@ const Construction = () => {
         </Container>
       </div>
 
-      <ContactSection classes="pt-115 pb-100 section-bg-1" />
+      <ContactSection classes="pt-50 pb-50 section-bg-1" />
     </LayoutOne>
   );
 };

@@ -77,7 +77,7 @@ function Feature({
   return (
     <>
       <div
-        className={`ltn__feature-area pt-115 pb-90 contact-us-banner ${classes}`}
+        className={`ltn__feature-area pt-50 pb-50 contact-us-banner slick-slide-p ${classes}`}
       >
         <Container>
           <Row>

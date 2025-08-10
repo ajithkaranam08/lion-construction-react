@@ -21,7 +21,7 @@ const NeighbourSection = ({
             <Row>
                 <Col xs={12}>
                     <div className="section-title-area">
-                        <h6 className="section-subtitle ltn__secondary-color">{titleSectionData.subTitle}</h6>
+                        <h6 className="section-subtitle-2 ltn__secondary-color">{titleSectionData.subTitle}</h6>
                         <h1 className="section-title">
                             {titleSectionData.title} <br /> Explore Below
                         </h1>

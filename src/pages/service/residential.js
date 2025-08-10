@@ -21,21 +21,21 @@ const Residential = () => {
                 <HeroSectionStyleTwo data={serviceData.hero} />
             </div>
 
-            <div className="ltn__about-us-area pt-115 pb-100">
+            <div className="ltn__about-us-area pt-50 pb-50">
                 <AboutUsStyleOne data={serviceData.aboutSectionOne} />
             </div>
 
 
-            <div className="ltn__about-us-area pt-115 pb-100 section-bg-1">
+            <div className="ltn__about-us-area pt-50 pb-50 section-bg-1">
                 <AboutUsStyleOne data={serviceData.aboutSectionTwo} />
             </div>
 
-            <div className="ltn__apartments-plan-area pt-115 pb-100">
+            <div className="ltn__apartments-plan-area pt-50 pb-50">
                 <ApartmentsPlanTabs sectionTitle={serviceData.ApartmentsPlan.sectionTitle} tabs={serviceData.ApartmentsPlan.tabs} />
             </div>
 
 
-            <div className="ltn__about-us-area pt-115 pb-100 section-bg-1">
+            <div className="ltn__about-us-area  pt-50 pb-50 section-bg-1">
                 <AboutUsStyleOne data={serviceData.aboutSectionThree} />
             </div>
 

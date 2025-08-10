@@ -92,10 +92,10 @@ const MenuList = ({ addListing }) => {
         <ul>
 
           <li>
-            <Link href="/service/residential">Residential Interiors</Link>
+            <Link href="/service/residential">Interior Design</Link>
           </li>
           <li>
-            <Link href="/service/construction">Construction</Link>
+            <Link href="/service/construction">Construction</Link> 
           </li>
           {/*           
           <li>

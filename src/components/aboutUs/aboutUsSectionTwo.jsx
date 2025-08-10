@@ -64,7 +64,7 @@ function AboutUsSectionTwo({ data = defaultData }) {
           <Col xs={12} lg={6} className="align-self-center">
             <div className="about-us-info-wrap">
               <div className="section-title-area mb-20">
-                <h6 className="section-subtitle ltn__secondary-color">
+                <h6 className="section-subtitle-2 ltn__secondary-color">
                   {subTitle}
                 </h6>
                 <h1 className="section-title">{title}</h1>

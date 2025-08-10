@@ -65,9 +65,12 @@ function AboutUsStyleTwo({ sectionSpace, data = defaultData }) {
             <Col xs={12} lg={6} className="align-self-center">
               <div className="about-us-info-wrap">
                 <div className="section-title-area ltn__section-title-2--- mb-30">
-                  <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">
-                    {data.subTitle}
-                  </h6>
+                  {data.subTitle && (
+                    <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">
+                      {data.subTitle}
+                    </h6>
+                  )}
+
                   <h1 className="section-title">{data.title}</h1>
                   {data.description && <p>{data.description}</p>}
                 </div>
@@ -88,13 +91,13 @@ function AboutUsStyleTwo({ sectionSpace, data = defaultData }) {
             <Col xs={12} lg={6} className="align-self-center">
               <div className="about-us-img-wrap about-img-right">
                 <Image
-                 loading="lazy"
+                  loading="lazy"
                   src={data.image}
                   alt="About Us Image"
                   className="object-fit-cover"
                   sizes="(min-width: 808px) 50vw, 100vw"
                   width={550}
-                  height={550}     
+                  height={550}
                 />
               </div>
             </Col>
