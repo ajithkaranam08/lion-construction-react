@@ -109,41 +109,52 @@ const ApartmentsPlanTabs = ({
             </Nav>
           </div>
           <Tab.Content>
-            {tabs.map((tab) => (
+            {tabs.map((tab, index) => (
               <Tab.Pane eventKey={tab.key} key={tab.key}>
-                <div className="ltn__apartments-tab-content-inner">
-                  <Row >
-                    <Col xs={12} lg={6}>
-                      <div className="mb-0 h-100 apartments-plan-info ltn__secondary-bg text-color-white">
-                        <h2>{tab.heading}</h2>
-                        <p>{tab.description}</p>
-                        {tab.info && tab.info.length > 0 && (
-                          <div className="apartments-info-list apartments-info-list-color mt-40">
-                            <ul>
-                              {tab.info.map((item, idx) => (
-                                <li key={idx} className="ltn__secondary-color">
-                                  <label>{item.label}</label>
-                                  <span className="ltn__secondary-color">
-                                    {item.value}
-                                  </span>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        )}
-                      </div>
-                    </Col>
-                    <Col xs={12} lg={6} className="d-flex align-items-center">
-                      <div className="mb-0 apartments-plan-img position-relative  w-100 h-100">
-                        <img
-                        loading="lazy"
-                          src={tab.image}
-                          alt={tab.ApartmentsPlanTabs}
-                          className="object-fit-cover w-100 h-100"
-                        />
-                      </div>
-                    </Col>
-                  </Row>
+                <div className="ltn__apartments-tab-content-inner mb-4">
+                  <div 
+                    className="construction-stage-box p-4 rounded shadow-sm"
+                    style={{
+                      backgroundColor: index % 2 === 0 ? '#f8f9fa' : '#e9ecef',
+                      border: '2px solid #dee2e6',
+                      borderRadius: '12px',
+                      marginBottom: '20px'
+                    }}
+                  >
+                    <Row>
+                      <Col xs={12} lg={6}>
+                        <div className="mb-0 h-100 apartments-plan-info ltn__secondary-bg text-color-white p-4 rounded">
+                          <h2>{tab.heading}</h2>
+                          <p>{tab.description}</p>
+                          {tab.info && tab.info.length > 0 && (
+                            <div className="apartments-info-list apartments-info-list-color mt-40">
+                              <ul>
+                                {tab.info.map((item, idx) => (
+                                  <li key={idx} className="ltn__secondary-color">
+                                    <label>{item.label}</label>
+                                    <span className="ltn__secondary-color">
+                                      {item.value}
+                                    </span>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          )}
+                        </div>
+                      </Col>
+                      <Col xs={12} lg={6} className="d-flex align-items-center">
+                        <div className="mb-0 apartments-plan-img position-relative w-100 h-100">
+                          <img
+                            loading="lazy"
+                            src={tab.image}
+                            alt={tab.heading}
+                            className="object-fit-cover w-100 h-100 rounded"
+                            style={{ borderRadius: '8px' }}
+                          />
+                        </div>
+                      </Col>
+                    </Row>
+                  </div>
                 </div>
               </Tab.Pane>
             ))}

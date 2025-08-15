@@ -179,10 +179,11 @@ function HomePage(props) {
             sectionClasses: "text-center",
             subTitle: "Our Services",
             title: "What We Prioritize",
-            description: "We offer expert construction, design, real estate, and maintenance services ensuring top-quality results from start to finish on every project."
+            description: "We offer expert construction, design, real estate, and maintenance services ensuring top-quality results from start to finish on every project.",
+            highlightTitle: true,
           }}
         />
-        <AboutUsStyleTwo sectionSpace="pt-50 pb-50" />
+        <AboutUsStyleTwo  sectionSpace="pt-50 pb-50" />
         {/* <!-- ABOUT US AREA END -->
 
       <!-- FEATURE AREA START ( Feature - 6) --> */}

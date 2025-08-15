@@ -51,8 +51,10 @@ const ContactSection = ({ classes = "", leftCart = defaltLeftCartData }) => {
 
           {/* RIGHT: Contact form */}
           <Col md={6}>
-            <div className={`${classes.includes("section-bg-1") ? "bg-white" : "bg-light"} p-4 p-md-5 rounded-3 shadow-sm h-100 `}>
-              <h4 className="mb-3 fw-bold ltn__secondary-color">Ready to Build? Let’s Talk</h4>
+            <div className={`${classes.includes("section-bg-1") ? "bg-white" : "bg-light"} p-4 p-md-5 rounded-3 shadow-sm h-100 `} style={{ background: "linear-gradient(180deg, rgba(255,137,63,0.08) 0%, rgba(255,255,255,1) 60%)", border: "1px solid rgba(255,137,63,0.25)" }}>
+              <div className="mb-4 p-3 rounded-3 ltn__secondary-bg text-white">
+                <h4 className="mb-0 fw-bold text-white">Ready to Build? Let’s Talk</h4>
+              </div>
               <p className="text-muted mb-4">
                 Let’s start building your dream space. Just fill out the form, and our team will get in touch with you soon.
               </p>

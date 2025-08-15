@@ -12,18 +12,19 @@ import Image from "next/image";
 
 const defaultData = {
   sectionSpace: "pt-100 pb-100",
-  subTitle: "CONTACT US",
+  subTitle: "",
   title: "Premier and Best Builders in Chennai for Your Dream Home",
   description:
-    "We are known as one of the best builders in Chennai, always focused on giving top-quality construction on time",
+    "We are known as one of the best builders in Chennai, always focused on QCT delivering top-Quality results within optimal Costs and committed Timelines.",
   image: "/img/banner/home-contact-2.jpg",
   list: [
-    "High-Quality Work – We use the best materials and build with care",
+    "Do it Right from First time – We always prefer to doing right thing at first time.",
+    "High-Quality Work – We use the Quality materials and excellent workmanship",
     "On-Time Delivery – Every project is finished without delay.",
-    "We Understand Your Needs – We stay in touch and listen to your ideas.",
+    "Meeting Customer requirements – We stay in touch and listen and value your ideas.",
     "Smart Project Planning – We use Gantt charts to keep work on track.",
-    "Regular Progress Updates – You’re always informed about the work.",
-    "Strict Quality Checks – We check every step to ensure top quality.",
+    "Quality Control & Quality Assurance – We always adhered quality check on each activity and ensure complaince with 300+ Quality checks during process.",
+    "Progress Updates – You're always informed about the work.",
   ],
   slides: [
     {
