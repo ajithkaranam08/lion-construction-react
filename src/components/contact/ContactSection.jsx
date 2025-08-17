@@ -37,7 +37,7 @@ const ContactSection = ({ classes = "", leftCart = defaltLeftCartData }) => {
               }}
             >
               <div className="overlay-text bg-dark bg-opacity-50 p-4 rounded h-100 w-100 d-flex justify-content-end flex-column">
-                <h4 className="ltn__secondary-color  mb-2">{leftCart.subTitle}</h4>
+                <h4 className="ltn__primary-color  mb-2">{leftCart.subTitle}</h4>
                 <h2 className="fw-bold mb-3 text-white">{leftCart.title}</h2>
                 {leftCart.descriptions?.map((description, index) => (
                   <>
