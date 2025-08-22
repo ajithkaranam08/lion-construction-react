@@ -81,7 +81,7 @@
                         "value": "Custom Furniture, Smart Design, Style"
                     }
                 ],
-                "image": "/img/others/modern-bedroom.jpg"
+                "image": "/img/client-img/JJ230129.jpg"
             },
             {
                 "key": "dining-room-designs",
@@ -98,7 +98,7 @@
                         "value": "Matching Kitchen Design, Custom Details"
                     }
                 ],
-                "image": "/img/others/dining-table.jpg"
+                "image": "/img/client-img/JJ230111.jpg"
             },
             {
                 "key": "living-room-designs",
@@ -115,7 +115,7 @@
                         "value": "Custom Furniture, Expert Design"
                     }
                 ],
-                "image": "/img/others/living-room.jpg"
+                "image": "/img/client-img/JJ230129.jpg"
             },
             {
                 "key": "kids-room-designs",
@@ -130,9 +130,9 @@
                     {
                         "label": "Meaning",
                         "value": "Sleep, Play, Learn, Grow"
-                    }
+                    }   
                 ],
-                "image": "/img/others/children-room.jpg"
+                "image": "/img/client-img/JJ230134.jpg"
             }
         ]
     },
