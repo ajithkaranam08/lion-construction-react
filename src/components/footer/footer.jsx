@@ -26,17 +26,23 @@ const Footer = function () {
                   <div className="footer-logo">
                     <div className="site-logo">
                       {/* <img src="/img/logo.png" alt="Logo" /> */}
-                      <img src="/img/logo-2.png" alt="Logo" width={100} height={100} />
+                      <img
+                        src="/img/logo-2.png"
+                        alt="Logo"
+                        width={100}
+                        height={100}
+                      />
                     </div>
                   </div>
-                  <p>
-                    {"At Lion Construction, we turn your ideas into real spaces that are simple, strong, and built for the future. Let's build something great together."}
+                  <p className="ltn__primary-color">
+                    {
+                      "At Lion Construction, we turn your ideas into real spaces that are simple, strong, and built for the future. Let's build something great together."
+                    }
                   </p>
-
                 </div>
               </Col>
               <Col xs={12} sm={6} xl={2}>
-                <div className="footer-widget footer-menu-widget clearfix">
+                <div className="footer-widget footer-menu-widget clearfix ">
                   <h4 className="footer-title">Quick Links</h4>
                   <div className="footer-menu">
                     <ul>
@@ -65,11 +71,10 @@ const Footer = function () {
                   <div className="footer-menu">
                     <ul>
                       <li>
-                        <Link href="/service/residential">Interior Design</Link>
+                        <Link href="/service/construction">Construction</Link>
                       </li>
                       <li>
-                        <Link href="/service/construction">Construction</Link>
-
+                        <Link href="/service/residential">Interior Design</Link>
                       </li>
                     </ul>
                   </div>
@@ -110,7 +115,7 @@ const Footer = function () {
                     </li>
                   </ul>
                 </div>
-                <div className="ltn__social-media mt-20">
+                <div className="ltn__social-media mt-20 social-media-footer">
                   <ul>
                     <li>
                       <Link href="#" title="Facebook">

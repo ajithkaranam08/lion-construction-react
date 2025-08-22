@@ -1,4 +1,6 @@
-const TestimonialCarouselItem = ({data}) => {
+const TestimonialCarouselItem = ({data, clientImage = false}) => {
+  const imagePath = clientImage ? `/img/client-img/${data.img}` : `/img/testimonial/${data.img}`;
+  
   return (
     <>
       <div className="ltn__testimonial-item ltn__testimonial-item-7">
@@ -9,7 +11,7 @@ const TestimonialCarouselItem = ({data}) => {
           </p>
           <div className="ltn__testimoni-info-inner">
             <div className="ltn__testimoni-img">
-              <img src={`/img/testimonial/${data.img}`} alt={`${data.name}`} />
+              <img src={imagePath} alt={`${data.name}`} />
             </div>
             <div className="ltn__testimoni-name-designation">
               <h5> {data.name}</h5>

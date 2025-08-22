@@ -128,14 +128,14 @@ const data = [
 
 const BuildingPackageTable = () => (
   <Container>
-    <Row >
-      <Col xs={12} >
+    <Row>
+      <Col xs={12}>
         <TitleSection
           titleSectionData={{
             subTitle: "Construction Packages",
           }}
           sectionClasses={"text-center mb-4"}
-        />  
+        />
       </Col>
     </Row>
     <div className="table-responsive">
@@ -165,10 +165,7 @@ const BuildingPackageTable = () => (
             <th className="bg-light">Quote</th>
             {packages.map((_, i) => (
               <td key={i}>
-                <Link
-                  href="/contact-us"
-                  className="theme-btn-1 btn btn-effect-1"
-                >
+                <Link href="/contact" className="theme-btn-1 btn btn-effect-1">
                   Get Quote
                 </Link>
               </td>

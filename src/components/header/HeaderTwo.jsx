@@ -64,7 +64,7 @@ const HeaderStyleTwo = function ({ SetToggleClassName, topbar }) {
         {/* <!-- ltn__header-middle-area start --> */}
         <div
           className={clsx(
-            "ltn__header-middle-area ltn__header-sticky  ltn__sticky-bg-white",
+            "ltn__header-middle-area ltn__header-sticky  ltn__sticky-bg-white ltn__home",
             scroll > headerHeight && "sticky-active"
           )}
         >

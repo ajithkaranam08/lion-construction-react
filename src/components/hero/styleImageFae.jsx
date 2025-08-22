@@ -65,7 +65,7 @@ function HeroSectionStyleImageFade({ data }) {
                   </div>
                   <div className="btn-wrapper">
                     <Link
-                      href="/about"
+                      href="/contact"
                       className="theme-btn-1 btn btn-effect-1"
                     >
                       {textContent.buttonText}

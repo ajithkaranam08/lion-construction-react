@@ -126,7 +126,7 @@ const ApartmentsPlanTabs = ({
                         <div className="mb-0 h-100 apartments-plan-info ltn__secondary-bg text-color-white p-4 rounded">
                           <h2>{tab.heading}</h2>
                           <p>{tab.description}</p>
-                          {tab.info && tab.info.length > 0 && (
+                          {/* {tab.info && tab.info.length > 0 && (
                             <div className="apartments-info-list apartments-info-list-color mt-40">
                               <ul>
                                 {tab.info.map((item, idx) => (
@@ -139,7 +139,7 @@ const ApartmentsPlanTabs = ({
                                 ))}
                               </ul>
                             </div>
-                          )}
+                          )} */}
                         </div>
                       </Col>
                       <Col xs={12} lg={6} className="d-flex align-items-center">

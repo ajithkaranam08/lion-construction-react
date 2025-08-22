@@ -16,7 +16,7 @@
       }
     ],
     "title": "Residential Apartment ",
-    "productImg": "https://urbanspacebuilders.com/wp-content/uploads/2024/10/Enscape_2023-07-28-14-26-59.png",
+    "productImg": "/img/product/home2.jpeg",
     "price": 0,
     "priceRange": [
       "Low Budget"
@@ -161,7 +161,7 @@
       }
     ],
     "title": "New Residential Apartment",
-    "productImg": "https://urbanspacebuilders.com/wp-content/uploads/2025/02/CLASSIC-CONDO-1-1024x768.webp",
+    "productImg": "/img/product/home.jpeg",
     "price": 159,
     "priceRange": [
       "Medium"

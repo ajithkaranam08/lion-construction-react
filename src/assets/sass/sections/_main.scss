@@ -262,7 +262,7 @@
     max-width: 500px;
   }
 
-  p+p {
+  p + p {
     margin-top: 15px;
   }
 
@@ -323,9 +323,11 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background: linear-gradient(90deg,
-        rgba(242, 139, 194, 1) 0%,
-        rgba(216, 177, 242, 1) 50%);
+    background: linear-gradient(
+      90deg,
+      rgba(242, 139, 194, 1) 0%,
+      rgba(216, 177, 242, 1) 50%
+    );
   }
 
   .separate-icon {
@@ -942,9 +944,11 @@
         &:before {
           height: 100%;
           width: 100%;
-          background: linear-gradient(90deg,
-              rgba(238, 145, 203, 1) 0%,
-              rgba(217, 176, 241, 1) 50%);
+          background: linear-gradient(
+            90deg,
+            rgba(238, 145, 203, 1) 0%,
+            rgba(217, 176, 241, 1) 50%
+          );
         }
 
         &:after {
@@ -1173,7 +1177,7 @@
       margin-bottom: 0;
     }
 
-    p+p {
+    p + p {
       margin-top: 15px;
     }
 
@@ -1343,7 +1347,7 @@
 
 /* small mobile :320px. */
 @media (max-width: 767px) {
-  .ltn__feature-item-5+.btn-wrapper {
+  .ltn__feature-item-5 + .btn-wrapper {
     margin-bottom: 30px;
   }
 
@@ -1752,7 +1756,7 @@
     box-shadow: var(--ltn__box-shadow-4);
   }
 
-  .ltn__blog-img+.ltn__blog-brief {
+  .ltn__blog-img + .ltn__blog-brief {
     margin-top: -50px;
   }
 }
@@ -1765,7 +1769,7 @@
       width: calc(100%);
     }
 
-    .ltn__blog-img+.ltn__blog-brief {
+    .ltn__blog-img + .ltn__blog-brief {
       margin-top: 0px;
     }
   }
@@ -2155,7 +2159,6 @@
 }
 
 .ltn__page-details-inner {
-
   h1,
   h2,
   h3,
@@ -2272,7 +2275,7 @@ blockquote {
   margin-top: 8px;
 }
 
-.ltn__comment-inner>ul>li:first-child {
+.ltn__comment-inner > ul > li:first-child {
   border-top: 0;
   padding-top: 0;
   margin-top: 0;
@@ -2414,7 +2417,7 @@ blockquote {
       font-size: 14px;
       margin-bottom: 0;
 
-      &+p {
+      & + p {
         margin-top: 15px;
       }
     }
@@ -2608,7 +2611,6 @@ blockquote {
 
     &:hover,
     &.active {
-
       a,
       button {
         background-color: var(--ltn__secondary-color);
@@ -2897,7 +2899,7 @@ blockquote {
     position: static;
     list-style: none;
 
-    >div {
+    > div {
       width: auto;
     }
 
@@ -3069,7 +3071,7 @@ blockquote {
       margin-bottom: 0;
     }
 
-    p+p {
+    p + p {
       margin-top: 15px;
     }
   }
@@ -3565,7 +3567,7 @@ blockquote {
   margin-bottom: 0;
   box-shadow: none;
 
-  &+.ltn__contact-address-item-2 {
+  & + .ltn__contact-address-item-2 {
     border-top: 1px solid;
   }
 }
@@ -3593,7 +3595,6 @@ blockquote {
 }
 
 .contact-form-box-2 {
-
   input,
   textarea {
     border-top: 0;
@@ -4604,7 +4605,6 @@ input.cart-plus-minus-box {
 }
 
 @media (max-width: 767px) {
-
   .ltn__pricing-plan-item.active-price,
   .ltn__pricing-plan-item.active {
     transform: scale(1);
@@ -4649,12 +4649,12 @@ input.cart-plus-minus-box {
 }
 
 /* On mouse-over, add a grey background color */
-.checkbox-item:hover input~.checkmark {
+.checkbox-item:hover input ~ .checkmark {
   background-color: var(--ltn__secondary-color);
 }
 
 /* When the checkbox is checked, add a blue background */
-.checkbox-item input:checked~.checkmark {
+.checkbox-item input:checked ~ .checkmark {
   background-color: var(--ltn__secondary-color);
   border-color: var(--ltn__secondary-color);
 }
@@ -4667,7 +4667,7 @@ input.cart-plus-minus-box {
 }
 
 /* Show the checkmark when checked */
-.checkbox-item input:checked~.checkmark:after {
+.checkbox-item input:checked ~ .checkmark:after {
   display: block;
 }
 
@@ -5190,12 +5190,10 @@ input.cart-plus-minus-box {
 
     &::before {
       position: absolute;
-      content: "";
+      content: "✔";
       left: -30px;
-      width: 15px;
-      height: 1px;
-      background-color: var(--ltn__secondary-color);
-      top: 50%;
+      color: var(--ltn__secondary-color);
+      top: 1rem;
       transform: translateY(-50%);
     }
   }
@@ -5265,7 +5263,7 @@ input.cart-plus-minus-box {
     margin-bottom: 0;
   }
 
-  p+p {
+  p + p {
     margin-top: 20px;
   }
 }
@@ -5473,7 +5471,7 @@ input.cart-plus-minus-box {
     padding-top: 50px;
   }
 
-  .service-item-icon+.service-item-brief {
+  .service-item-icon + .service-item-brief {
     padding-top: 0;
   }
 
@@ -5662,7 +5660,7 @@ input.cart-plus-minus-box {
       margin-bottom: 0;
     }
 
-    p+p {
+    p + p {
       margin-top: 15px;
     }
   }
@@ -5674,7 +5672,6 @@ input.cart-plus-minus-box {
 
 /* Device :991px. */
 @media (max-width: 991px) {
-
   .ltn__call-to-4-img-1,
   .ltn__call-to-4-img-2 {
     display: none;
@@ -5785,13 +5782,13 @@ input.cart-plus-minus-box {
   margin: 0;
   padding: 0 30px;
 
-  &>ul {
+  & > ul {
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
 
-    &>li {
+    & > li {
       display: inline-block;
       margin-right: 20px;
       list-style: none;
@@ -5941,13 +5938,13 @@ input.cart-plus-minus-box {
 }
 
 @media (max-width: 1199px) {
-  .ltn__service-form-box>ul {
+  .ltn__service-form-box > ul {
     justify-content: center;
   }
 }
 
 @media (max-width: 767px) {
-  .ltn__service-form-box>ul {
+  .ltn__service-form-box > ul {
     flex-flow: column;
   }
 }
@@ -6173,9 +6170,8 @@ input.cart-plus-minus-box {
 }
 
 .car-price-filter-range {
-
-  .price_slider_amount>span,
-  .price_slider_amount>span {
+  .price_slider_amount > span,
+  .price_slider_amount > span {
     font-weight: 700;
     font-size: 16px;
     color: var(--ltn__paragraph-color);
@@ -6254,7 +6250,7 @@ input.cart-plus-minus-box {
   overflow: hidden;
   margin-bottom: 10px;
 
-  &>p {
+  & > p {
     font-size: 18px;
     font-weight: 700;
     margin: 0;
@@ -6306,7 +6302,7 @@ input.cart-plus-minus-box {
 
 @media (max-width: 767px) {
   .ltn__progress-bar-item {
-    &>p {
+    & > p {
       font-size: 14px;
     }
   }
@@ -6321,7 +6317,7 @@ input.cart-plus-minus-box {
     padding-left: 0;
   }
 
-  &>ul {
+  & > ul {
     margin: 0;
     padding: 0;
     display: flex;
@@ -6343,7 +6339,7 @@ input.cart-plus-minus-box {
       margin: 0;
     }
 
-    &>li {
+    & > li {
       display: inline-block;
       position: relative;
       margin: 0 10px;
@@ -6468,16 +6464,16 @@ input.cart-plus-minus-box {
 }
 
 @media (max-width: 767px) {
-  .ltn__our-journey-wrap>ul {
+  .ltn__our-journey-wrap > ul {
     flex-flow: column;
   }
 
-  .ltn__our-journey-wrap>ul>li ul {
+  .ltn__our-journey-wrap > ul > li ul {
     left: 30px;
   }
 
-  .ltn__our-journey-wrap>ul>li:nth-last-child(1) ul,
-  .ltn__our-journey-wrap>ul>li:nth-last-child(2) ul {
+  .ltn__our-journey-wrap > ul > li:nth-last-child(1) ul,
+  .ltn__our-journey-wrap > ul > li:nth-last-child(2) ul {
     left: 30px;
     right: auto;
   }
@@ -6661,7 +6657,7 @@ input.cart-plus-minus-box {
     }
   }
 
-  &>ul {
+  & > ul {
     padding: 0;
   }
 }
@@ -6953,7 +6949,7 @@ input.cart-plus-minus-box {
 }
 
 .ltn__myaccount-tab-content-inner {
-  &>p {
+  & > p {
     padding: 20px;
     background-color: var(--section-bg-1);
   }
@@ -7007,7 +7003,6 @@ input.cart-plus-minus-box {
 }
 
 .ltn__contact-feature-info {
-
   .h6,
   .h2 {
     font-family: var(--ltn__body-font);
@@ -7041,7 +7036,7 @@ input.cart-plus-minus-box {
 .ltn__img-slide-item-4,
 .ltn__img-slide-item-3,
 .ltn__img-slide-item-2 {
-  &>a {
+  & > a {
     display: block;
     overflow: hidden;
   }
@@ -7275,7 +7270,7 @@ input.cart-plus-minus-box {
 }
 
 .apartments-info-list {
-  &>ul {
+  & > ul {
     padding: 0;
     margin: 0;
 
@@ -7326,7 +7321,7 @@ input.cart-plus-minus-box {
 }
 
 .apartments-info-list-color {
-  &>ul {
+  & > ul {
     li {
       &::before {
         border-color: var(--section-bg-5);
@@ -7345,7 +7340,7 @@ input.cart-plus-minus-box {
 
 .section-bg-1 {
   .apartments-info-list-color {
-    &>ul {
+    & > ul {
       li {
         &::before {
           border-color: var(--ltn__color-1);
@@ -7800,7 +7795,6 @@ input.cart-plus-minus-box {
   .form-input-textaera:focus {
     border: 1px solid var(--ltn__secondary-color);
     box-shadow: none;
-    ;
   }
 
   .form-check-box {
@@ -7811,15 +7805,10 @@ input.cart-plus-minus-box {
       }
 
       &:focus {
-        box-shadow: 0 0 0 .25rem #ff5a3c3b;
+        box-shadow: 0 0 0 0.25rem #ff5a3c3b;
         border: var(--ltn__secondary-color);
       }
     }
-
-
-
-
-
   }
 
   .form-btn {

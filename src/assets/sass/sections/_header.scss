@@ -247,7 +247,7 @@
   padding: 20px 10px;
   display: inline-block;
   white-space: nowrap;
-  color: var(--ltn__heading-color);
+  color: var(--ltn__primary-color);
   font-weight: 600;
   font-family: var(--ltn__body-font);
   svg {
@@ -255,7 +255,7 @@
   }
 }
 .ltn__main-menu li:hover > a {
-  color: var(--ltn__secondary-color);
+  color: var(--ltn__secondary-color) !important;
 }
 /* Submenu */
 .ltn__main-menu li > ul,
@@ -276,6 +276,9 @@
   text-align: left;
   z-index: 999;
   border-top: 5px solid var(--ltn__secondary-color);
+  & > a {
+    color: var(--ltn__primary-color);
+  }
 }
 .ltn__main-menu li ul li,
 .ltn__main-menu .sub-menu li {
@@ -767,9 +770,6 @@
     opacity: 1;
     visibility: visible;
   }
-  & > a {
-    color: var(--ltn__secondary-color);
-  }
 }
 
 .ltn__drop-menu > ul > li,
@@ -1181,14 +1181,16 @@
 ---------------------------------------- */
 .ltn__header-4,
 .ltn__header-5 {
-  .ltn__header-middle-area {
+  .ltn__header-middle-area:not(.ltn__home) {
     padding-top: 22px;
     padding-bottom: 22px;
+    background-color: var(--ltn__primary-blue);
   }
 }
 .ltn__header-4 {
   .ltn__header-top-area {
     border-color: var(--border-color-3);
+
   }
 }
 .site-logo-wrap {
@@ -1341,12 +1343,12 @@
   .ltn__header-options-2 .mini-cart-icon a,
   .ltn__header-options-2 .header-wishlist {
     background: var(--white);
-    color: var(--ltn__heading-color);
+    color: var(--ltn__primary-color);
   }
 }
 /* Sticky Background White */
 .sticky-active.ltn__sticky-bg-white {
-  background-color: var(--white);
+  background-color: var(--ltn__primary-blue);
   .ltn__main-menu > ul > li > a,
   .header-wishlist a,
   .mini-cart-icon,
@@ -1355,7 +1357,7 @@
   .header-feature-icon,
   .header-search-1 .search-icon,
   .ltn__header-options .ltn__drop-menu > ul > li > a {
-    color: var(--ltn__heading-color);
+    color: var(--ltn__primary-color);
   }
   .ltn__header-options-2 .header-search-1,
   .ltn__header-options-2 .header-search-1 i,
@@ -1363,8 +1365,8 @@
   .ltn__header-options-2 .mini-cart-icon a,
   .ltn__header-options-2 .header-wishlist {
     box-shadow: var(--ltn__box-shadow-1);
-    background: var(--white);
-    color: var(--ltn__heading-color);
+    background: var(--ltn__primary-blue);
+    color: var(--ltn__primary-color);
   }
 }
 
@@ -2286,8 +2288,7 @@
   visibility: visible;
 }
 
-
-.mnw-auto{
+.mnw-auto {
   min-width: auto !important;
 }
 /* ----------------------------------------------------

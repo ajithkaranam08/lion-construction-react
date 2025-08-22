@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { getProducts } from "@/lib/product";
 import { Container, Row, Col } from "react-bootstrap";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import {  LayoutTwo } from "@/layouts";
+import { LayoutTwo } from "@/layouts";
 import AboutUsStyleOne from "@/components/aboutUs/aboutUsStyleOne";
 import AboutUsStyleTwo from "@/components/aboutUs/aboutUsStyleTwo";
 import Feature from "@/components/features";
@@ -17,7 +17,6 @@ import ContactSection from "@/components/contact/ContactSection";
 import ApartmentsPlanTabs from "@/components/apartments/ApartmentsPlanTabs";
 import SEOHead from "@/components/SEOHead";
 import HeroSectionStyleImageFade from "@/components/hero/styleImageFae";
-
 
 function HomePage(props) {
   const { products } = useSelector((state) => state.product);
@@ -33,8 +32,7 @@ function HomePage(props) {
       }
       aria-hidden="true"
       aria-disabled={currentSlide === 0 ? true : false}
-      type="button"
-    >
+      type="button">
       <FaArrowLeft />
     </button>
   );
@@ -47,8 +45,7 @@ function HomePage(props) {
       }
       aria-hidden="true"
       aria-disabled={currentSlide === slideCount - 1 ? true : false}
-      type="button"
-    >
+      type="button">
       <FaArrowRight />
     </button>
   );
@@ -139,7 +136,6 @@ function HomePage(props) {
     ],
   };
 
-
   const { cartItems } = useSelector((state) => state.cart);
   const { wishlistItems } = useSelector((state) => state.wishlist);
   const { compareItems } = useSelector((state) => state.compare);
@@ -148,8 +144,8 @@ function HomePage(props) {
     <>
       <SEOHead page="home" />
       <LayoutTwo topbar={true}>
-      <div className="ltn__slider-area ltn__slider-3 section-bg-2">
-        <HeroSectionStyleImageFade data={Herodata} />
+        <div className="ltn__slider-area ltn__slider-3 section-bg-2">
+          <HeroSectionStyleImageFade data={Herodata} />
         </div>
         {/* 
         <CarDealerSearchForm navMenuClass="d-none" customClasses="" /> */}
@@ -179,11 +175,12 @@ function HomePage(props) {
             sectionClasses: "text-center",
             subTitle: "Our Services",
             title: "What We Prioritize",
-            description: "We offer expert construction, design, real estate, and maintenance services ensuring top-quality results from start to finish on every project.",
+            description:
+              "We offer expert construction, design, real estate, and maintenance services ensuring top-quality results from start to finish on every project.",
             highlightTitle: true,
           }}
         />
-        <AboutUsStyleTwo  sectionSpace="pt-50 pb-50" />
+        <AboutUsStyleTwo sectionSpace="pt-50 pb-50" />
         {/* <!-- ABOUT US AREA END -->
 
       <!-- FEATURE AREA START ( Feature - 6) --> */}
@@ -618,15 +615,17 @@ function HomePage(props) {
           <ApartmentsPlanTabs />
         </div>
 
-        <ContactSection classes="bg-white" leftCart={{
-          subTitle: "Let’s Get Started",
-          title: "Your Vision. Our Passion. Perfect Design.",
-          descriptions: [
-            "Step into the world of Lion Construction, Chennai’s premier interior design studio. We turn your ideas into reality by creating customized spaces that truly reflect your personality and way of living.",
-            "With creativity, expert craftsmanship, and innovative solutions, we transform your dreams into stunning realities making every space uniquely yours."
-          ]
-        }} />
-
+        <ContactSection
+          classes="bg-white"
+          leftCart={{
+            subTitle: "Let’s Get Started",
+            title: "Your Vision. Our Passion. Perfect Design.",
+            descriptions: [
+              "Step into the world of Lion Construction, Chennai’s premier interior design studio. We turn your ideas into reality by creating customized spaces that truly reflect your personality and way of living.",
+              "With creativity, expert craftsmanship, and innovative solutions, we transform your dreams into stunning realities making every space uniquely yours.",
+            ],
+          }}
+        />
 
         <div className="ltn__call-to-action-area call-to-action-6 before-bg-bottom mt-100">
           <Container>
@@ -650,7 +649,7 @@ export async function getStaticProps() {
   return {
     props: {
       Herodata: hero,
-      aboutData: about
+      aboutData: about,
     },
   };
 }

@@ -4,9 +4,7 @@ const MenuList = ({ addListing }) => {
   return (
     <ul>
       <li className="menu-icon">
-        <Link href="/">
-          Home
-        </Link>
+        <Link href="/">Home</Link>
         {/* <ul className="sub-menu menu-pages-img-show">
           <li>
             <Link href="/">Home Style 01</Link>
@@ -55,9 +53,7 @@ const MenuList = ({ addListing }) => {
         </ul> */}
       </li>
       <li className="menu-icon">
-        <Link href="/about">
-          About Us
-        </Link>
+        <Link href="/about">About Us</Link>
         {/* <ul>
           <li>
             <Link href="/about">About</Link>
@@ -90,12 +86,12 @@ const MenuList = ({ addListing }) => {
           Services <FaPlus />
         </Link>
         <ul>
+          <li>
+            <Link href="/service/construction">Construction</Link>
+          </li>
 
           <li>
             <Link href="/service/residential">Interior Design</Link>
-          </li>
-          <li>
-            <Link href="/service/construction">Construction</Link> 
           </li>
           {/*           
           <li>
@@ -148,9 +144,7 @@ const MenuList = ({ addListing }) => {
         </ul>
       </li>
       <li className="menu-icon">
-        <Link href="/coming-soon">
-          Blog
-        </Link>
+        <Link href="/coming-soon">Blog</Link>
         {/* <ul>
           <li>
             <Link href="/blog">News</Link>
@@ -167,9 +161,7 @@ const MenuList = ({ addListing }) => {
         </ul> */}
       </li>
       <li className="menu-icon mega-menu-parent">
-        <Link href="/projects">
-          Projects
-        </Link>
+        <Link href="/projects">Projects</Link>
         {/* <ul className="mega-menu mega-menu column-4">
           <li>
             <Link href="#">Inner Pages</Link>
