@@ -74,7 +74,7 @@ const HeaderStyleTwo = function ({ SetToggleClassName, topbar }) {
                 <div className="site-logo-wrap">
                   <div className="site-logo">
                     <Link href="/">
-                      <img width={100} height={100} src="/img/logo-2.png" alt="Logo" />
+                      <img width={300} height={100} className="object-fit-contain" src="/img/logo.png" alt="Logo" />
                     </Link>
                   </div>
                 </div>

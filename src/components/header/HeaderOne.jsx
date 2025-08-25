@@ -102,7 +102,7 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
                 <div className="site-logo-wrap">
                   <div className="site-logo">
                     <Link href="/">
-                      <img src="/img/logo.png" alt="Logo" width={100} height={100} />
+                      <img src="/img/logo.png" alt="Logo" width={300} height={100} className="object-fit-contain" />
                     </Link>
                   </div>
                 </div>
