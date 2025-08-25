@@ -1,0 +1,133 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  email     String   @unique
+  name      String
+  role      Role     @default(ADMIN)
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  blogPosts BlogPost[]
+}
+
+model Project {
+  id              String   @id @default(auto()) @map("_id") @db.ObjectId
+  title           String
+  price           Float?
+  category        String
+  description     String
+  shortDescription String?
+  images          String[]
+  features        String[]
+  specifications  String?
+  status          ProjectStatus @default(DRAFT)
+  featured        Boolean  @default(false)
+  discount        Float?   @default(0)
+  stock           Int?
+  sku             String?  @unique
+  brand           String?
+  dimensions      String?
+  weight          String?
+  material        String?
+  warranty        String?
+  location        String?
+  area            String?
+  client          String?
+  startDate       DateTime?
+  endDate         DateTime?
+  budget          Float?
+  tags            String[]
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model BlogPost {
+  id              String   @id @default(auto()) @map("_id") @db.ObjectId
+  title           String
+  slug            String   @unique
+  content         String
+  excerpt         String
+  status          PostStatus @default(DRAFT)
+  category        String
+  tags            String[]
+  authorId        String   @db.ObjectId
+  author          User     @relation(fields: [authorId], references: [id])
+  featuredImage  String?
+  metaDescription String?
+  seoTitle       String?
+  views           Int      @default(0)
+  publishedAt     DateTime?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model Contact {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  name      String
+  email     String
+  phone     String?
+  subject   String
+  message   String
+  status    ContactStatus @default(NEW)
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model SEO {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  page        String   @unique
+  title       String
+  description String
+  keywords    String[]
+  ogImage     String?
+  canonical   String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+enum Role {
+  ADMIN
+  EDITOR
+  VIEWER
+}
+
+enum ProjectStatus {
+  DRAFT
+  IN_PROGRESS
+  COMPLETED
+  ON_HOLD
+  CANCELLED
+  ACTIVE
+  INACTIVE
+  OUT_OF_STOCK
+}
+
+enum PostStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+  SCHEDULED
+}
+
+enum ContactStatus {
+  NEW
+  IN_PROGRESS
+  RESPONDED
+  CLOSED
+  SPAM
+}

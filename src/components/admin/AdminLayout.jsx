@@ -36,7 +36,7 @@ const AdminLayout = ({ children, title = "Admin Dashboard" }) => {
   const menuItems = [
     { href: '/admin', icon: FaHome, label: 'Dashboard' },
     { href: '/admin/seo', icon: FaSearch, label: 'SEO Management' },
-    { href: '/admin/products', icon: FaImages, label: 'Products' },
+    { href: '/admin/projects', icon: FaImages, label: 'Projects' },
     { href: '/admin/blog', icon: FaNewspaper, label: 'Blog Posts' },
     { href: '/admin/settings', icon: FaCog, label: 'Settings' },
   ];

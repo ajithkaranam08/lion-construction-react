@@ -1,255 +1,402 @@
-import { useState, useEffect } from "react";
-import { useSelector } from "react-redux";
-import ShopBreadCrumb from "@/components/breadCrumbs/shop";
-import { getSortedProducts, productSlug, getDiscountPrice } from "@/lib/product";
-import { LayoutOne } from "@/layouts";
-import { FaThLarge, FaThList, FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa";
-import { Container, Row, Col, Nav, Tab, Form } from "react-bootstrap";
-import SideBar from "@/components/shopSideBar";
-import RelatedProduct from "@/components/product/related-product";
-import ProductList from "@/components/product/list";
-import Search from "@/components/search";
-import CallToAction from "@/components/callToAction";
-import ReactPaginate from "react-paginate";
+import React, { useState, useEffect } from 'react';
+import { Container, Row, Col, Card, Badge, Form, Button, Pagination } from 'react-bootstrap';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
+import Image from 'next/image';
+import LayoutTwo from '@/layouts/LayoutTwo';
+import TitleSection from '@/components/titleSection';
 
-
-function Shop() {
-  const { products } = useSelector((state) => state.product);
-  const [sortType, setSortType] = useState("");
-  const [sortValue, setSortValue] = useState("");
-  const [filterSortType, setFilterSortType] = useState("");
-  const [filterSortValue, setFilterSortValue] = useState("");
-  const [offset, setOffset] = useState(0);
-  const [sortedProducts, setSortedProducts] = useState([]);
-
-  const { cartItems } = useSelector((state) => state.cart);
-  const { wishlistItems } = useSelector((state) => state.wishlist);
-  const { compareItems } = useSelector((state) => state.compare);
-
-  const pageLimit = 6;
-  const [currentItems, setCurrentItems] = useState(products);
-  const [pageCount, setPageCount] = useState(0);
-  const getSortParams = (sortType, sortValue) => {
-    setSortType(sortType);
-    setSortValue(sortValue);
-  };
-
-  const getFilterSortParams = (sortType, sortValue) => {
-    setFilterSortType(sortType);
-    setFilterSortValue(sortValue);
-  };
-
-  const [query, setQuery] = useState("");
-  const keys = ["title"];
-  const SearchProduct = (data) => {
-    return data.filter((item) =>
-      keys.some((key) => item[key].toLowerCase().includes(query))
-    );
-  };
-  useEffect(() => {
-    let sortedProducts = getSortedProducts(products, sortType, sortValue);
-
-    const filterSortedProducts = getSortedProducts(
-      sortedProducts,
-      filterSortType,
-      filterSortValue
-    );
-
-    sortedProducts = filterSortedProducts;
-
-    setSortedProducts(sortedProducts);
-
-    setCurrentItems(sortedProducts.slice(offset, offset + pageLimit));
-
-    setCurrentItems(
-      SearchProduct(sortedProducts.slice(offset, offset + pageLimit))
-    );
-  }, [
-    offset,
-    products,
-    sortType,
-    sortValue,
-    filterSortType,
-    filterSortValue,
-    query,
-  ]);
+const ShopPage = () => {
+  const router = useRouter();
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [categoryFilter, setCategoryFilter] = useState('all');
+  const [budgetRange, setBudgetRange] = useState({ min: '', max: '' });
+  const [sortBy, setSortBy] = useState('newest');
+  const [filteredProjects, setFilteredProjects] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [projectsPerPage] = useState(12);
 
   useEffect(() => {
-    const endOffset = offset + pageLimit;
-    setCurrentItems(products.slice(offset, endOffset));
-    setPageCount(Math.ceil(products.length / pageLimit));
-  }, [offset, pageLimit]);
+    loadProjects();
+  }, []);
 
-  const handlePageClick = (event) => {
-    const newOffset = (event.selected * pageLimit) % products.length;
-    setOffset(newOffset);
+  useEffect(() => {
+    filterAndSortProjects();
+  }, [projects, searchTerm, categoryFilter, budgetRange, sortBy]);
+
+  const loadProjects = async () => {
+    try {
+      setLoading(true);
+      const response = await fetch('/api/projects?status=ACTIVE');
+      if (response.ok) {
+        const data = await response.json();
+        setProjects(data);
+      } else {
+        console.error('Failed to fetch projects');
+        setProjects([]);
+      }
+    } catch (error) {
+      console.error('Error loading projects:', error);
+      setProjects([]);
+    } finally {
+      setLoading(false);
+    }
   };
 
+  const filterAndSortProjects = () => {
+    let filtered = [...projects];
+
+    // Apply search filter
+    if (searchTerm) {
+      filtered = filtered.filter(project =>
+        project.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        project.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        project.category.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    }
+
+    // Apply category filter
+    if (categoryFilter !== 'all') {
+      filtered = filtered.filter(project => project.category === categoryFilter);
+    }
+
+    // Apply budget range filter
+    if (budgetRange.min !== '') {
+      filtered = filtered.filter(project => project.budget >= parseFloat(budgetRange.min));
+    }
+    if (budgetRange.max !== '') {
+      filtered = filtered.filter(project => project.budget <= parseFloat(budgetRange.max));
+    }
+
+    // Apply sorting
+    switch (sortBy) {
+      case 'budget-low':
+        filtered.sort((a, b) => (a.budget || 0) - (b.budget || 0));
+        break;
+      case 'budget-high':
+        filtered.sort((a, b) => (b.budget || 0) - (a.budget || 0));
+        break;
+      case 'newest':
+        filtered.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+        break;
+      case 'oldest':
+        filtered.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt));
+        break;
+      case 'name':
+        filtered.sort((a, b) => a.title.localeCompare(b.title));
+        break;
+      default:
+        break;
+    }
+
+    setFilteredProjects(filtered);
+    setCurrentPage(1); // Reset to first page when filters change
+  };
+
+  const getCategories = () => {
+    const categories = ['all', ...new Set(projects.map(project => project.category))];
+    return categories;
+  };
+
+  const getBudgetRange = () => {
+    if (projects.length === 0) return { min: 0, max: 100000000 };
+    const budgets = projects.map(p => p.budget).filter(b => b);
+    if (budgets.length === 0) return { min: 0, max: 100000000 };
+    return {
+      min: Math.floor(Math.min(...budgets)),
+      max: Math.ceil(Math.max(...budgets))
+    };
+  };
+
+  const formatBudget = (budget) => {
+    if (!budget) return 'Contact for Quote';
+    return new Intl.NumberFormat('en-IN', {
+      style: 'currency',
+      currency: 'INR',
+      maximumFractionDigits: 0
+    }).format(budget);
+  };
+
+  const truncateText = (text, maxLength = 100) => {
+    if (!text) return '';
+    if (text.length <= maxLength) return text;
+    return text.substring(0, maxLength) + '...';
+  };
+
+  // Pagination
+  const indexOfLastProject = currentPage * projectsPerPage;
+  const indexOfFirstProject = indexOfLastProject - projectsPerPage;
+  const currentProjects = filteredProjects.slice(indexOfFirstProject, indexOfLastProject);
+  const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  if (loading) {
+    return (
+      <LayoutTwo>
+        <div className="container py-5">
+          <div className="text-center">
+            <div className="spinner-border text-primary" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <p className="mt-3">Loading projects...</p>
+          </div>
+        </div>
+      </LayoutTwo>
+    );
+  }
 
   return (
-    <LayoutOne topbar={true}>
-      {/* <!-- BREADCRUMB AREA START --> */}
+    <LayoutTwo>
+      <TitleSection
+        sectionClasses="text-center"
+        subTitle="Our Projects"
+        title="Construction & Interior Solutions"
+        description="Discover our comprehensive range of construction projects, interior design solutions, and professional services."
+      />
 
-      <ShopBreadCrumb title="Property" sectionPace="" currentSlug="Property" />
-      {/* <!-- BREADCRUMB AREA END -->
-    
-    <!-- PRODUCT DETAILS AREA START --> */}
-      <div className="ltn__product-area ltn__product-gutter mb-120">
+      <div className="ltn__shop-area mb-120">
         <Container>
-          <Row>
-            <Col xs={12} lg={8}>
-              <Tab.Container defaultActiveKey="first">
-                <div className="ltn__shop-options">
-                  <ul className="justify-content-between">
-                    <li>
-                      <div className="ltn__grid-list-tab-menu">
-                        <Nav className="nav">
-                          <Nav.Link eventKey="first">
-                            <FaThLarge />
-                          </Nav.Link>
-                          <Nav.Link eventKey="second">
-                            <FaThList />
-                          </Nav.Link>
-                        </Nav>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div className="short-by text-center">
-                        <Form.Select
-                          className="form-control nice-select"
-                          onChange={(e) =>
-
-                            getFilterSortParams("filterSort", e.target.value)
-                          }
-                        >
-                          <option value="default">Default</option>
-                          <option value="priceHighToLow">Price - High to Low</option>
-                          <option value="priceLowToHigh">Price - Low to High</option>
-                        </Form.Select>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-
-                <Search spaceBottom="mb-30" setQuery={setQuery} />
-
-                <Tab.Content>
-                  <Tab.Pane eventKey="first">
-                    <div className="ltn__product-tab-content-inner ltn__product-grid-view">
-                      <Row>
-                        {currentItems.map((product, key) => {
-                          const slug = productSlug(product.title);
-                          const discountedPrice = getDiscountPrice(
-                            product.price,
-                            product.discount
-                          ).toFixed(2);
-                          const productPrice = product.price.toFixed(2);
-                          const cartItem = cartItems.find(
-                            (cartItem) => cartItem.id === product.id
-                          );
-                          const wishlistItem = wishlistItems.find(
-                            (wishlistItem) => wishlistItem.id === product.id
-                          );
-                          const compareItem = compareItems.find(
-                            (compareItem) => compareItem.id === product.id
-                          );
-                          return (
-                            <Col key={key} xs={12} sm={6}>
-                              <RelatedProduct
-                                slug={slug}
-                                baseUrl="shop"
-                                productData={product} discountedPrice={discountedPrice}
-                                productPrice={productPrice}
-                                cartItem={cartItem}
-                                wishlistItem={wishlistItem}
-                                compareItem={compareItem}
-                              />
-                            </Col>
-                          );
-                        })}
-                      </Row>
-                    </div>
-                  </Tab.Pane>
-                  <Tab.Pane eventKey="second">
-                    <div className="ltn__product-tab-content-inner ltn__product-list-view">
-                      <Row>
-                        {currentItems.map((product, key) => {
-                          const slug = productSlug(product.title);
-                          const discountedPrice = getDiscountPrice(
-                            product.price,
-                            product.discount
-                          ).toFixed(2);
-                          const productPrice = product.price.toFixed(2);
-                          const cartItem = cartItems.find(
-                            (cartItem) => cartItem.id === product.id
-                          );
-                          const wishlistItem = wishlistItems.find(
-                            (wishlistItem) => wishlistItem.id === product.id
-                          );
-                          const compareItem = compareItems.find(
-                            (compareItem) => compareItem.id === product.id
-                          );
-                          return (
-                            <Col key={key} xs={12}>
-                              <ProductList slug={slug} baseUrl="shop" productData={product} discountedPrice={discountedPrice}
-                                productPrice={productPrice}
-                                cartItem={cartItem}
-                                wishlistItem={wishlistItem}
-                                compareItem={compareItem} />
-                            </Col>
-                          );
-                        })}
-                      </Row>
-                    </div>
-                  </Tab.Pane>
-                </Tab.Content>
-              </Tab.Container>
-
-              <div className="ltn__pagination-area text-center">
-                <ReactPaginate
-                  onPageChange={handlePageClick}
-                  pageRangeDisplayed={3}
-                  marginPagesDisplayed={2}
-                  pageCount={pageCount}
-                  nextLabel={<FaAngleDoubleRight />}
-                  previousLabel={<FaAngleDoubleLeft />}
-                  pageClassName="page-item"
-                  pageLinkClassName="page-link"
-                  previousClassName="page-item"
-                  previousLinkClassName="page-link"
-                  nextClassName="page-item"
-                  nextLinkClassName="page-link"
-                  breakLabel="..."
-                  breakClassName="page-item"
-                  breakLinkClassName="page-link"
-                  containerClassName="pagination ltn__pagination justify-content-center"
-                  activeClassName="active"
-                  renderOnZeroPageCount={null}
+          {/* Filters and Search */}
+          <Row className="mb-5">
+            <Col lg={3} md={6} className="mb-3">
+              <Form.Group>
+                <Form.Label>Search Projects</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Search by name, description..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
                 />
-              </div>
+              </Form.Group>
             </Col>
-            <Col xs={12} lg={4}>
-              <SideBar products={products} getSortParams={getSortParams} />
+            <Col lg={2} md={6} className="mb-3">
+              <Form.Group>
+                <Form.Label>Category</Form.Label>
+                <Form.Select
+                  value={categoryFilter}
+                  onChange={(e) => setCategoryFilter(e.target.value)}
+                >
+                  {getCategories().map((category) => (
+                    <option key={category} value={category}>
+                      {category === 'all' ? 'All Categories' : category}
+                    </option>
+                  ))}
+                </Form.Select>
+              </Form.Group>
+            </Col>
+            <Col lg={2} md={6} className="mb-3">
+              <Form.Group>
+                <Form.Label>Min Budget</Form.Label>
+                <Form.Control
+                  type="number"
+                  placeholder="Min"
+                  value={budgetRange.min}
+                  onChange={(e) => setBudgetRange(prev => ({ ...prev, min: e.target.value }))}
+                />
+              </Form.Group>
+            </Col>
+            <Col lg={2} md={6} className="mb-3">
+              <Form.Group>
+                <Form.Label>Max Budget</Form.Label>
+                <Form.Control
+                  type="number"
+                  placeholder="Max"
+                  value={budgetRange.max}
+                  onChange={(e) => setBudgetRange(prev => ({ ...prev, max: e.target.value }))}
+                />
+              </Form.Group>
+            </Col>
+            <Col lg={3} md={12} className="mb-3">
+              <Form.Group>
+                <Form.Label>Sort By</Form.Label>
+                <Form.Select
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value)}
+                >
+                  <option value="newest">Newest First</option>
+                  <option value="oldest">Oldest First</option>
+                  <option value="budget-low">Budget: Low to High</option>
+                  <option value="budget-high">Budget: High to Low</option>
+                  <option value="name">Name A-Z</option>
+                </Form.Select>
+              </Form.Group>
             </Col>
           </Row>
-        </Container>
-      </div>
-      {/* <!-- PRODUCT DETAILS AREA END -->
 
-    <!-- CALL TO ACTION START (call-to-action-6) --> */}
-      <div className="ltn__call-to-action-area call-to-action-6 before-bg-bottom">
-        <Container>
-          <Row>
+          {/* Clear Filters */}
+          <Row className="mb-4">
             <Col xs={12}>
-              <CallToAction />
+              <Button 
+                variant="outline-secondary" 
+                onClick={() => {
+                  setSearchTerm('');
+                  setCategoryFilter('all');
+                  setBudgetRange({ min: '', max: '' });
+                  setSortBy('newest');
+                }}
+                className="mb-3"
+              >
+                Clear All Filters
+              </Button>
             </Col>
           </Row>
+
+          {/* Results Count */}
+          <div className="mb-4">
+            <p className="text-muted">
+              Showing {filteredProjects.length} of {projects.length} projects
+            </p>
+          </div>
+
+          {/* Projects Grid */}
+          {currentProjects.length > 0 ? (
+            <>
+              <Row>
+                {currentProjects.map((project) => (
+                  <Col lg={3} md={4} sm={6} className="mb-4" key={project.id}>
+                    <Card className="project-card h-100 shadow-sm">
+                                              {project.images && project.images.length > 0 && (
+                          <div className="project-image-container">
+                            <Image
+                              src={project.images[0]}
+                              alt={project.title}
+                              width={300}
+                              height={200}
+                              className="card-img-top project-image"
+                              style={{ objectFit: 'cover' }}
+                            />
+                            {project.featured && (
+                              <Badge 
+                                bg="warning" 
+                                className="position-absolute top-0 start-0 m-2"
+                              >
+                                Featured
+                              </Badge>
+                            )}
+                          </div>
+                        )}
+                      
+                      <Card.Body className="d-flex flex-column">
+                        <div className="mb-2">
+                          <Badge bg="primary" className="me-2">
+                            {project.category}
+                          </Badge>
+                          <Badge bg={project.status === 'ACTIVE' ? 'success' : 'secondary'}>
+                            {project.status}
+                          </Badge>
+                        </div>
+                        
+                        <Card.Title className="h6 mb-2">
+                          <Link 
+                            href={`/shop/${project.slug || project.id}`}
+                            className="text-decoration-none"
+                          >
+                            {project.title}
+                          </Link>
+                        </Card.Title>
+                        
+                        <Card.Text className="flex-grow-1 text-muted small">
+                          {truncateText(project.shortDescription || project.description, 80)}
+                        </Card.Text>
+                        
+                        <div className="mt-auto">
+                          <div className="d-flex justify-content-between align-items-center mb-2">
+                            <div>
+                              <span className="h6 text-primary mb-0">
+                                {formatBudget(project.budget)}
+                              </span>
+                            </div>
+                            <small className="text-muted">
+                              {project.location || 'Location TBD'}
+                            </small>
+                          </div>
+                          
+                          <Button 
+                            variant="outline-primary" 
+                            size="sm" 
+                            className="w-100"
+                            onClick={() => router.push(`/shop/${project.slug || project.id}`)}
+                          >
+                            View Details
+                          </Button>
+                        </div>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                ))}
+              </Row>
+
+              {/* Pagination */}
+              {totalPages > 1 && (
+                <Row className="mt-5">
+                  <Col xs={12}>
+                    <Pagination className="justify-content-center">
+                      <Pagination.First 
+                        onClick={() => handlePageChange(1)}
+                        disabled={currentPage === 1}
+                      />
+                      <Pagination.Prev 
+                        onClick={() => handlePageChange(currentPage - 1)}
+                        disabled={currentPage === 1}
+                      />
+                      
+                      {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                        <Pagination.Item
+                          key={page}
+                          active={page === currentPage}
+                          onClick={() => handlePageChange(page)}
+                        >
+                          {page}
+                        </Pagination.Item>
+                      ))}
+                      
+                      <Pagination.Next 
+                        onClick={() => handlePageChange(currentPage + 1)}
+                        disabled={currentPage === totalPages}
+                      />
+                      <Pagination.Last 
+                        onClick={() => handlePageChange(totalPages)}
+                        disabled={currentPage === totalPages}
+                      />
+                    </Pagination>
+                  </Col>
+                </Row>
+              )}
+            </>
+          ) : (
+            <div className="text-center py-5">
+              <h4>No projects found</h4>
+              <p className="text-muted">
+                {searchTerm || categoryFilter !== 'all' || budgetRange.min || budgetRange.max
+                  ? 'Try adjusting your search criteria or browse all categories.'
+                  : 'Check back soon for new projects!'
+                }
+              </p>
+              {(searchTerm || categoryFilter !== 'all' || budgetRange.min || budgetRange.max) && (
+                <Button 
+                  variant="primary" 
+                  onClick={() => {
+                    setSearchTerm('');
+                    setCategoryFilter('all');
+                    setBudgetRange({ min: '', max: '' });
+                    setSortBy('newest');
+                  }}
+                >
+                  View All Projects
+                </Button>
+              )}
+            </div>
+          )}
         </Container>
       </div>
-      {/* <!-- CALL TO ACTION END --> */}
-    </LayoutOne>
+    </LayoutTwo>
   );
-}
+};
 
-export default Shop;
+export default ShopPage;
