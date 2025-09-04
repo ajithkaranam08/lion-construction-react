@@ -55,7 +55,6 @@ const RelatedProduct = ({
             alt={`${productData.title}`}
             width={"100%"}
             height={250}
-
           />
           {/* </Link> */}
           {/* <div className="real-estate-agent">
@@ -89,32 +88,51 @@ const RelatedProduct = ({
                 {/* <Link href={`/${baseUrl}/${slug}`}>
                   <i className="flaticon-pin"></i>
                 </Link> */}
-                <i className="flaticon-pin"></i>  {productData.locantion}
+                <i className="flaticon-pin"></i> {productData.locantion}
               </li>
             </ul>
           </div>
           <ul className="ltn__plot-brief">
-            {productData.propertyDetails.bedrooms ? <li>
-              <span>{productData.propertyDetails.bedrooms}</span>
-              <span className="ms-1">Bedrooms</span>
-            </li> : null}
+            {productData.propertyDetails.bedrooms ? (
+              <li>
+                <span>{productData.propertyDetails.bedrooms}</span>
+                <span className="ms-1">Bedrooms</span>
+              </li>
+            ) : null}
 
-            {productData.propertyDetails.baths ? <li>
-              <span>{productData.propertyDetails.baths}</span>
-              <span className="ms-1">Bathrooms</span>
-            </li> : null}
+            {productData.propertyDetails.baths ? (
+              <li>
+                <span>{productData.propertyDetails.baths}</span>
+                <span className="ms-1">Bathrooms</span>
+              </li>
+            ) : null}
 
-            {productData.propertyDetails.area ? <li>
-              <span>{productData.propertyDetails.area}</span>
-              <span className="ms-1">Built-up Area</span>
-            </li> : null}
+            {productData.propertyDetails.area ? (
+              <li>
+                <span>{productData.propertyDetails.area}</span>
+                <span className="ms-1">Built-up Area</span>
+              </li>
+            ) : null}
 
-            {productData.propertyDetails.plotArea ? <li>
-              <span>{productData.propertyDetails.plotArea}</span>
-              <span className="ms-1">Plot Area</span>
-            </li> : null}
+            {productData.propertyDetails.plotArea ? (
+              <li>
+                <span>{productData.propertyDetails.plotArea}</span>
+                <span className="ms-1">Plot Area</span>
+              </li>
+            ) : null}
 
+            {productData.propertyDetails.noOfFloors ? (
+              <li>
+                <span>No. of Floors</span>
+                <span className="ms-1">
+                  {productData.propertyDetails.noOfFloors}
+                </span>
+              </li>
+            ) : null}
           </ul>
+            <div className="product-description">
+              <p>{productData.description?.shortDescription}</p>
+            </div>
           {/* <div className="product-hover-action">
             <ul>
               <li>

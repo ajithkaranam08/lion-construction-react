@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const HeaderTopInfo = function () {
   return (
@@ -7,15 +7,15 @@ const HeaderTopInfo = function () {
       <div className="ltn__top-bar-menu">
         <ul>
           <li>
-            <Link href="mailto:info@webmail.com">
+            <Link href="mailto:lionconstruction07@gmail.com">
               <FaEnvelope />
-              <i></i> info@webmail.com
+              <i></i> lionconstruction07@gmail.com
             </Link>
           </li>
           <li>
             <Link href="/locations">
               <FaMapMarkerAlt />
-              15/A, Nest Tower, NYC
+              No: 14, 1st Floor, Korattur.
             </Link>
           </li>
         </ul>

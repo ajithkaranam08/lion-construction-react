@@ -11,6 +11,7 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
   FaPhoneAlt,
+  FaInstagram,
 } from "react-icons/fa";
 
 const Footer = function () {
@@ -29,8 +30,8 @@ const Footer = function () {
                       <img
                         src="/img/logo-2.png"
                         alt="Logo"
-                        width={100}
-                        height={100}
+                        width={150}
+                        height={150}
                       />
                     </div>
                   </div>
@@ -88,10 +89,12 @@ const Footer = function () {
                         <FaMapMarkerAlt />
                       </div>
                       <div className="footer-address-info">
-                        <p>Brooklyn, New York, United States</p>
+                        <p>
+                          First Street, Kavya nagar, Korattur, Chennai — 600076.
+                        </p>
                       </div>
                     </li>
-                    <li>
+                    {/* <li>
                       <div className="footer-address-icon">
                         <FaPhoneAlt />
                       </div>
@@ -100,15 +103,28 @@ const Footer = function () {
                           <Link href="tel:+0123-456789">+0123-456789</Link>
                         </p>
                       </div>
-                    </li>
+                    </li> */}
                     <li>
                       <div className="footer-address-icon">
                         <FaEnvelope />
                       </div>
                       <div className="footer-address-info">
                         <p>
-                          <Link href="mailto:example@example.com">
-                            example@example.com
+                          <Link href="mailto:lionconstruction07@gmail.com">
+                            lionconstruction07@gmail.com
+                          </Link>
+                        </p>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="footer-address-icon">
+                        <FaInstagram />
+                      </div>
+                      <div className="footer-address-info">
+                        <p>
+                          <Link href="https://instagram.com/lionconstructionofficial">
+                            lionconstructionofficial
                           </Link>
                         </p>
                       </div>
@@ -117,7 +133,7 @@ const Footer = function () {
                 </div>
                 <div className="ltn__social-media mt-20 social-media-footer">
                   <ul>
-                    <li>
+                    {/* <li>
                       <Link href="#" title="Facebook">
                         <FaFacebookF />
                       </Link>
@@ -136,7 +152,16 @@ const Footer = function () {
                       <Link href="#" title="Youtube">
                         <FaYoutube />
                       </Link>
-                    </li>
+                    </li> */}
+
+                    {/* <li>
+                      <Link
+                        href="https://instagram.com/lionconstructionofficial"
+                        target="_blank">
+                        {" "}
+                        <FaInstagram /> 
+                      </Link>
+                    </li> */}
                   </ul>
                 </div>
               </Col>

@@ -44,15 +44,14 @@ const ProductList = ({
       Add To Cart
     </Tooltip>
   );
+
+  console.log(productData.propertyDetails.noOfFloors ? "hu" : "aa");
   return (
     <>
       <div className="ltn__product-item ltn__product-item-4 ltn__product-item-5">
         <div className="product-img">
           {/* <Link href={`/${baseUrl}/${slug}`}> */}
-          <img
-            src={productData.productImg}
-            alt={`${productData.title}`}
-          />
+          <img src={productData.productImg} alt={`${productData.title}`} />
           {/* </Link> */}
         </div>
 
@@ -95,26 +94,46 @@ const ProductList = ({
           </div>
 
           <ul className="ltn__plot-brief">
-            {productData.propertyDetails.bedrooms ? <li>
-              <span>{productData.propertyDetails.bedrooms}</span>
-              <span className="ms-1">Bedrooms</span>
-            </li> : null}
+            {productData.propertyDetails.bedrooms ? (
+              <li>
+                <span>{productData.propertyDetails.bedrooms}</span>
+                <span className="ms-1">Bedrooms</span>
+              </li>
+            ) : null}
 
-            {productData.propertyDetails.baths ? <li>
-              <span>{productData.propertyDetails.baths}</span>
-              <span className="ms-1">Bathrooms</span>
-            </li> : null}
+            {productData.propertyDetails.baths ? (
+              <li>
+                <span>{productData.propertyDetails.baths}</span>
+                <span className="ms-1">Bathrooms</span>
+              </li>
+            ) : null}
 
-            {productData.propertyDetails.area ? <li>
-              <span>{productData.propertyDetails.area}</span>
-              <span className="ms-1">Built-up Area</span>
-            </li> : null}
+            {productData.propertyDetails.area ? (
+              <li>
+                <span>{productData.propertyDetails.area}</span>
+                <span className="ms-1">Built-up Area</span>
+              </li>
+            ) : null}
 
-            {productData.propertyDetails.plotArea ? <li>
-              <span>{productData.propertyDetails.plotArea}</span>
-              <span className="ms-1">Plot Area</span>
-            </li> : null}
+            {productData.propertyDetails.plotArea ? (
+              <li>
+                <span>{productData.propertyDetails.plotArea}</span>
+                <span className="ms-1">Plot Area</span>
+              </li>
+            ) : null}
+
+            {productData.propertyDetails.noOfFloors ? (
+              <li>
+                <span>No. of Floors</span>
+                <span className="ms-1">
+                  {productData.propertyDetails.noOfFloors}
+                </span>
+              </li>
+            ) : null}
           </ul>
+          <div className="product-description">
+            <p>{productData.description?.shortDescription}</p>
+          </div>
         </div>
         <div className="product-info-bottom">
           {/* <div className="real-estate-agent">

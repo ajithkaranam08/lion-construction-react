@@ -15,7 +15,7 @@
         "img": "33.jpg"
       }
     ],
-    "title": "Residential Apartment ",
+    "title": "Turnkey Residential Duplex house construction",
     "productImg": "/img/product/home2.jpeg",
     "price": 0,
     "priceRange": [
@@ -67,21 +67,22 @@
     ],
     "date": "May 19, 2021",
     "comments": 35,
-    "locantion": "Melmaruvathur, Tamil Nadu",
+    "locantion": "Varadharajapuram, Chennai.",
     "description": {
       "title": "Description",
       "fullDescription": "Massa tempor nec feugiat nisl pretium. Egestas fringilla phasellus faucibus scelerisque eleifend donec Porta nibh venenatis cras sed felis eget velit aliquet. Neque volutpat ac tincidunt vitae semper quis lectus. Turpis in eu mi bibendum neque egestas congue quisque. Sed elementum tempus egestas sed sed risus pretium quam. Dignissim sodales ut eu sem. Nibh mauris cursus mattis molestee iaculis at erat pellentesque. Id interdum velit laoreet id donec ultrices tincidunt.",
-      "shortDescription": "To the left is the modern kitchen with central island, leading through to the unique breakfast family room which feature glass walls and doors out onto the garden and access to the separate utility room."
+      "shortDescription": "3BHK Duplex house, Car parking @ GF, Internal Staircase, Water tank & well connected Services."
     },
     "propertyDetails": {
       "propertyId": "HZ29",
-      "area": "3450 SQ.FT",
+      "area": "2450 SQ.FT",
       "propertyStatus": "For Sale",
       "rooms": 0,
       "bedrooms": 0,
       "baths": 0,
       "createdYear": 1992,
-      "plotArea": "1,339 SQ.FT (26’ x 51’6”)"
+      "plotArea": null,
+      "noOfFloors": "G + 1"
     },
     "factsAndFeatures": {
       "livingRoom": "20 x 16 sq feet",
@@ -139,9 +140,7 @@
       "img3": "16.jpg"
     },
     "propertyTypes": [
-      "House",
-      "Office Villa",
-      "Luxary Home"
+      "Duplex (G+1) Residential house"
     ]
   },
   {
@@ -160,7 +159,7 @@
         "img": "33.jpg"
       }
     ],
-    "title": "New Residential Apartment",
+    "title": "Residential Apartment construction",
     "productImg": "/img/product/home.jpeg",
     "price": 159,
     "priceRange": [
@@ -278,21 +277,22 @@
     ],
     "date": "May 19, 2021",
     "comments": 35,
-    "locantion": "West Tambaram, Chennai",
+    "locantion": "Melmaruvathur.",
     "description": {
       "title": "Description",
       "fullDescription": "Massa tempor nec feugiat nisl pretium. Egestas fringilla phasellus faucibus scelerisque eleifend donec Porta nibh venenatis cras sed felis eget velit aliquet. Neque volutpat ac tincidunt vitae semper quis lectus. Turpis in eu mi bibendum neque egestas congue quisque. Sed elementum tempus egestas sed sed risus pretium quam. Dignissim sodales ut eu sem. Nibh mauris cursus mattis molestee iaculis at erat pellentesque. Id interdum velit laoreet id donec ultrices tincidunt.",
-      "shortDescription": "To the left is the modern kitchen with central island, leading through to the unique breakfast family room which feature glass walls and doors out onto the garden and access to the separate utility room."
+      "shortDescription": "3 Units of 2BHK flats, Car parking @ GF, common Staircase, Water tank & well connected Services."
     },
     "propertyDetails": {
       "propertyId": "HZ29",
-      "area": "2,450 SQ.FT",
+      "area": "2678 SQ.FT",
       "propertyStatus": "For Sale",
       "rooms": 7,
       "bedrooms": 0,
       "baths": 0,
       "createdYear": 1992,
-      "plotArea": "1,339 SQ.FT (26’ x 51’6”)"
+      "plotArea": null,
+      "noOfFloors": "G + 1"
     },
     "factsAndFeatures": {
       "livingRoom": "20 x 16 sq feet",
@@ -350,10 +350,7 @@
       "img3": "16.jpg"
     },
     "propertyTypes": [
-      "Apartment",
-      "Office Villa",
-      "Luxary Home",
-      "Studio"
+      "(G+1) Residential Apartment"
     ]
   }
 ]
