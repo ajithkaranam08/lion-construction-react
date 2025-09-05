@@ -30,8 +30,8 @@ const Contact = () => {
                 </div>
                 <h3>Office Address</h3>
                 <p>
-                  18/A, New Born Town Hall <br />
-                  New York, US
+                  First Street, Kavya nagar, Korattur, <br />
+                  Chennai — 600076.
                 </p>
               </div>
             </div>
@@ -41,9 +41,7 @@ const Contact = () => {
                   <img src="/img/icons/11.png" alt="Icon Image" />
                 </div>
                 <h3>Phone Number</h3>
-                <p>
-                  +0123-456789 <br /> +987-6543210
-                </p>
+                <p>897-876-987-90</p>
               </div>
             </div>
             <div className="col-lg-4">
@@ -52,10 +50,7 @@ const Contact = () => {
                   <img src="/img/icons/10.png" alt="Icon Image" />
                 </div>
                 <h3>Email Address</h3>
-                <p>
-                  info@webmail.com <br />
-                  jobs@webexample.com
-                </p>
+                <p>lionconstruction07@gmail.com</p>
               </div>
             </div>
           </div>
@@ -70,10 +65,13 @@ const Contact = () => {
       {/* <!-- GOOGLE MAP AREA START --> */}
       <div className="google-map mb-120">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9334.271551495209!2d-73.97198251485975!3d40.668170674982946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b0456b5a2e7%3A0x68bdf865dda0b669!2sBrooklyn%20Botanic%20Garden%20Shop!5e0!3m2!1sen!2sbd!4v1590597267201!5m2!1sen!2sbd"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.7637759829846!2d80.1848078!3d13.1179503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52638758fed239%3A0xf4d5f225363e21ac!2sKavya%20Nagar%2C%20Korattur%2C%20Chennai%2C%20Tamil%20Nadu%20600076!5e0!3m2!1sen!2sin!4v1693918501234"
           width="100%"
           height="100%"
-        ></iframe>
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"></iframe>
       </div>
       {/* <!-- GOOGLE MAP AREA END --> */}
     </>

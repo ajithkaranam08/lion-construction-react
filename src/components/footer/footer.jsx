@@ -94,16 +94,16 @@ const Footer = function () {
                         </p>
                       </div>
                     </li>
-                    {/* <li>
+                    <li>
                       <div className="footer-address-icon">
                         <FaPhoneAlt />
                       </div>
                       <div className="footer-address-info">
                         <p>
-                          <Link href="tel:+0123-456789">+0123-456789</Link>
+                          <Link href="tel:897-876-987-90">897-876-987-90</Link>
                         </p>
                       </div>
-                    </li> */}
+                    </li>
                     <li>
                       <div className="footer-address-icon">
                         <FaEnvelope />
