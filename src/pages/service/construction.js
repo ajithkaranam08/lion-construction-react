@@ -11,6 +11,7 @@ import testimonialData from "@/data/testimonial/index-three.json";
 import TestimonialStyleThree from "@/components/testimonialCarousel/indexThree";
 import ContactSection from "@/components/contact/ContactSection";
 import AboutUsSectionTwo from "@/components/aboutUs/aboutUsSectionTwo";
+import PackageCalculationTable from "@/components/table/PackageCalculationTable";
 
 
 const Construction = () => {
@@ -28,6 +29,10 @@ const Construction = () => {
 
       <div className="ltn__about-us-area pt-50 pb-50 section-bg-1">
         <BuildingPackageTable />
+      </div>
+
+      <div className="ltn__about-us-area pt-50 pb-50 section-bg-1">
+        <PackageCalculationTable />
       </div>
 
       <AmenitiesSlider
