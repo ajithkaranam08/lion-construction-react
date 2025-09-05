@@ -37,7 +37,7 @@ const floorOptions = [
 const PackageCalculationTable = () => {
   const [formData, setFormData] = useState({
     selectedPackage: "Basic Package",
-    selectedFloors: "G+5",
+    selectedFloors: "G",
     floorAreas: {
       ground: '',
       first: '',
