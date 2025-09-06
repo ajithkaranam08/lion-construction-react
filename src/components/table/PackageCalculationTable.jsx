@@ -47,7 +47,7 @@ const PackageCalculationTable = () => {
       fifth: ''
     },
     additionalItems: {
-      waterSump: '',
+       waterSump: '',
       septicTank: '',
       compoundWallLength: '',
       compoundWallHeight: ''

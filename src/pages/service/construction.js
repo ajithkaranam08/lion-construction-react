@@ -2,6 +2,7 @@ import HeroSectionStyleTwo from "@/components/hero/styleTwo";
 import { LayoutOne } from "@/layouts";
 import serviceData from "@/data/service/construction.json";
 import BuildingPackageTable from "@/components/table/BuildingPackageTable";
+import ExpandablePackageTable from "@/components/table/ExpandablePackageTable";
 import AboutUsStyleOne from "@/components/aboutUs/aboutUsStyleOne";
 import AmenitiesSlider from "@/components/aminities/AmenitiesSlider";
 import NeighbourSection from "@/components/neighbour/NeighbourSection";
@@ -28,7 +29,7 @@ const Construction = () => {
       <AmenitiesSlider minHeight={400} data={serviceData.aboutSectionProcess.processSteps} titleSectionData={serviceData.aboutSectionProcess.titleSectionData} />
 
       <div className="ltn__about-us-area pt-50 pb-50 section-bg-1">
-        <BuildingPackageTable />
+        <ExpandablePackageTable />
       </div>
 
       <div className="ltn__about-us-area pt-50 pb-50 section-bg-1">
