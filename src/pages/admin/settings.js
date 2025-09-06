@@ -8,7 +8,7 @@ const AdminSettings = () => {
   const [settings, setSettings] = useState({
     siteName: 'Lion Construction',
     siteEmail: 'info@lionconstruction.com',
-    sitePhone: '+91-897-876-987-90',
+    sitePhone: '+91-9840361427',
     siteAddress: 'Chennai, Tamil Nadu, India',
     maintenanceMode: false,
     allowRegistration: true,

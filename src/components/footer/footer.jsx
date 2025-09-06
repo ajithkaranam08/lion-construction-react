@@ -100,7 +100,7 @@ const Footer = function () {
                       </div>
                       <div className="footer-address-info">
                         <p>
-                          <Link href="tel:897-876-987-90">897-876-987-90</Link>
+                          <Link href="tel:9840361427">9840361427</Link>
                         </p>
                       </div>
                     </li>

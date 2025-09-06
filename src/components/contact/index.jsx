@@ -41,7 +41,7 @@ const Contact = () => {
                   <img src="/img/icons/11.png" alt="Icon Image" />
                 </div>
                 <h3>Phone Number</h3>
-                <p>897-876-987-90</p>
+                <p>9840361427</p>
               </div>
             </div>
             <div className="col-lg-4">
