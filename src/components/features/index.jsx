@@ -122,7 +122,7 @@ function Feature({
                     </div>
                     <div className="ltn__feature-info">
                       <h3>
-                        <Link href={`/service/${slug}`}>{item.title}</Link>
+                        <span>{item.title}</span>
                       </h3>
                       <p title={item.shortDescription} className="">
                         {item?.shortDescription.split("\n").map((line, idx) => (

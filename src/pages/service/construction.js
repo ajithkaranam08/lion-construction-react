@@ -1,7 +1,6 @@
 import HeroSectionStyleTwo from "@/components/hero/styleTwo";
 import { LayoutOne } from "@/layouts";
 import serviceData from "@/data/service/construction.json";
-import BuildingPackageTable from "@/components/table/BuildingPackageTable";
 import ExpandablePackageTable from "@/components/table/ExpandablePackageTable";
 import AboutUsStyleOne from "@/components/aboutUs/aboutUsStyleOne";
 import AmenitiesSlider from "@/components/aminities/AmenitiesSlider";
@@ -60,7 +59,7 @@ const Construction = () => {
         <AboutUsSectionTwo data={serviceData.aboutSectionTwo} />
       </div>
 
-      <div className="ltn__testimonial-area ltn__testimonial-4 pt-50 pb-50 plr--9">
+      {/* <div className="ltn__testimonial-area ltn__testimonial-4 pt-50 pb-50 plr--9">
         <Container fluid>
           <Row>
             <Col lg={12}>
@@ -81,7 +80,7 @@ const Construction = () => {
             </Col>
           </Row>
         </Container>
-      </div>
+      </div> */}
 
       <ContactSection classes="pt-50 pb-50 section-bg-1" />
     </LayoutOne>

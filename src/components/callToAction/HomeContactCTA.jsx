@@ -16,12 +16,12 @@ const HomeContactCTA = ({ backgroundImage = "/img/banner/home-contact.webp" }) =
             <div className="call-to-action-inner call-to-action-inner-4 text-center">
               <div className="section-title-area ltn__section-title-2">
                 <h6 className="section-subtitle ltn__secondary-color">{`Need a reliable builder? We're here for you`}</h6>
-                <h1 className="section-title">Call Now: 9840361427</h1>
+                <h1 className="section-title">Call Now: +91 9840361427 / +91 8122761428</h1>
               </div>
               <p>Whether it is a new home or a makeover, we&#39;re ready to help.Honest work. Lasting results</p>
               <div className="btn-wrapper">
                 <Link
-                  href="tel:+123456789"
+                  href="tel:+919840361427"
                   className="theme-btn-1 btn btn-effect-1"
                 >
                   Contact Us

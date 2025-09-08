@@ -5,22 +5,15 @@ import { FaPlus, FaMinus, FaStar } from "react-icons/fa";
 
 const packages = [
   {
-    name: "Basic Package",
-    price: "₹ 1999",
-    priceUnit: "per sqft",
-    popular: false,
-    color: "primary",
-  },
-  {
     name: "Standard Package",
-    price: "₹ 2199", 
+    price: "₹ 2300", 
     priceUnit: "per sqft",
     popular: true,
     color: "success",
   },
   {
     name: "Premium Package",
-    price: "₹ 2499",
+    price: "₹ 2600",
     priceUnit: "per sqft",
     popular: false,
     color: "warning",
@@ -31,13 +24,9 @@ const packageDetails = {
   design: {
     title: "Design",
     details: {
-      basic: [
-        "Architectural Plan - 2D",
-        "Structural Drawing",
-        "Basic Elevation Design"
-      ],
       standard: [
         "Architectural Plan - 2D",
+        "Soil testing",
         "Structural Drawing",
         "Elevation Design - 3D"
       ],
@@ -55,18 +44,6 @@ const packageDetails = {
   structure: {
     title: "Structure",
     details: {
-      basic: [
-        "Base Height: Up to 2 Feet",
-        "Steel: FE550 (ISI Brand)",
-        "Aggregates: 20mm & 40mm",
-        "Cement: Ultratech, Ramco & Zuari",
-        "Bricks: Chamber Bricks, 9\" Main walls & 4.5\" Wall for internal walls",
-        "Blocks: 6\" for Main walls & 4\" for internal walls",
-        "Sand: M-Sand - Concrete, Brick & Blockworks",
-        "Sand: P-Sand for Plastering",
-        "Concrete - M20",
-        "Ceiling height: 10 Feet"
-      ],
       standard: [
         "Base Height: Up to 2 Feet",
         "Steel: FE550 (ISI Brand)",
@@ -76,19 +53,19 @@ const packageDetails = {
         "Blocks: 6\" for Main walls & 4\" for internal walls",
         "Sand: M-Sand - Concrete, Brick & Blockworks",
         "Sand: P-Sand for Plastering",
-        "Concrete - M20",
+        "Concrete: M20 | RMC for roof",
         "Ceiling height: 10 Feet"
       ],
       premium: [
         "Base Height: Up to 4 Feet",
-        "Steel: FE550 (ISI Brand)",
+        "Steel: FE550 ARS or Equivalent (ISI Brand)",
         "Aggregates: 20mm & 40mm",
         "Cement: Ultratech, Ramco, Zuari & Dalmia",
         "Bricks: Wirecut Bricks, 9\" Main walls & 4.5\" Wall for internal walls",
         "Blocks: 6\" for Main walls & 4\" for internal walls",
         "Sand: M-Sand - Concrete, Brick & Blockworks",
         "Sand: P-Sand for Plastering",
-        "Concrete - M20",
+        "Concrete: M20 as per design | RMC",
         "Ceiling height: 10 Feet"
       ]
     }
@@ -96,119 +73,89 @@ const packageDetails = {
   finishing: {
     title: "Finishing",
     details: {
-      basic: [
-        "TILING:",
-        "• Flooring - 2'x2' Vetrified tile (Base price: 45/sqft)",
-        "• Wall Tile - 2'x1' tile up to 7' height (Base price: 40/sqft)",
-        "• Kitchen platform - Granite (Base price: 120/Sqft)",
-        "",
-        "JOINERYS:",
-        "• Main Doors - Teak wood doors (Frame & door)",
-        "• Inner Doors - Flush doors",
-        "• Bath room doors - PVC Doors",
-        "• Windows - UPVC windows with MS grills",
-        "",
-        "PLUMBING:",
-        "• EWC & Washbasin - Parryware",
-        "• Fittings - Hindware fittings",
-        "• Kitchen Sink - SS Single bowl (up to 2800/-)",
-        "• Pipes - Finolux PVC, Ashirvad - Upvc",
-        "",
-        "ELECTRICAL:",
-        "• Electrical wires - Orbit or Equivalent",
-        "• Electrical pipes - Orbit or Equivalent",
-        "• Electrical Switches - Legrant / Fybros",
-        "",
-        "PAINTING:",
-        "• Internal - Tractor emulsion - Any ISI Brand",
-        "• External - ACE - Any ISI Brand"
-      ],
       standard: [
         "TILING:",
-        "• Flooring - 2'x2' Vetrified tile (Base price: 45/sqft)",
-        "• Wall Tile - 2'x1' tile up to 7' height (Base price: 40/sqft)",
-        "• Kitchen platform - Granite (Base price: 120/Sqft)",
+        "• Flooring: 2'x2' Vitrified tile for all flooring (Base price: 60/sqft)",
+        "• Wall Tile in bath: 2'x2' tile up to 7' height (Base price: 50/sqft)",
+        "• Wall tile in kitchen: 2'x2' up to 3' height (Base price: 50/Sqft)",
+        "• Kitchen platform: Granite (Base price: 120/Sqft)",
         "",
         "JOINERYS:",
-        "• Main Doors - Teak wood doors (Frame & door)",
-        "• Inner Doors - Flush doors",
-        "• Bath room doors - PVC Doors",
-        "• Windows - UPVC windows with MS grills",
+        "• Main Door: Teak wood doors (Frame & door)",
+        "• Inner Doors: Country wood frames with Flush doors",
+        "• Bathroom doors: PVC Doors",
+        "• Windows: UPVC windows with MS grills (Size restricted to 5'x5')",
+        "• Staircase railing: MS",
         "",
         "PLUMBING:",
-        "• EWC & Washbasin - Parryware",
-        "• Fittings - Hindware fittings",
-        "• Kitchen Sink - SS Single bowl (up to 2800/-)",
-        "• Pipes - Finolux PVC, Ashirvad - Upvc",
+        "• Plumbing: Floor mounted EWC & Wall mounted Washbasin - Parryware",
+        "• Fittings: Pillar tap, Health faucet, shower set & 2in1 wall mixer- Hindware fittings",
+        "• Kitchen Sink: SS Single bowl (Base price up to 2800/-)",
+        "• Pipes: Finolux PVC, Ashirvad - Upvc",
         "",
         "ELECTRICAL:",
-        "• Electrical wires - Orbit or Equivalent",
-        "• Electrical pipes - Orbit or Equivalent",
-        "• Electrical Switches - Legrant / Fybros",
+        "• Electrical wires: Orbit or Equivalent",
+        "• Electrical pipes: Orbit or Equivalent",
+        "• Electrical Switches: Legrant / Fybros",
+        "• Electrical points restricted as per agreement *",
         "",
         "PAINTING:",
-        "• Internal - Tractor emulsion - Any ISI Brand",
-        "• External - ACE - Any ISI Brand"
+        "• Internal: 1 Coat primer, 2 coat putty and 2 coat of tractor emulsion - Any ISI Brand",
+        "• External: 1 Coat primer & 2 coat of ACE - Any ISI Brand"
       ],
       premium: [
         "TILING:",
-        "• Flooring - 4'x2' Vetrified tile (Base price: 60/sqft)",
-        "• Wall Tile - 2'x2' tile up to ceiling with highlighter tile (Base price: 55/sqft)",
-        "• Wall tile in kitchen highlighter 2'x1' up to ceiling (Base price: 65/Sqft)",
-        "• Kitchen platform - Granite (Base price: 160/Sqft)",
+        "• Flooring: 4'x2' Vitrified tile for all flooring (Base price: 80/sqft)",
+        "• Wall Tile in bath: 4'x2' tile up to ceiling with highlighter tile (Base price: 70/sqft)",
+        "• Wall tile in kitchen: highlighter 4'x2' up to ceiling (Base price: 65/Sqft)",
+        "• Kitchen platform: Granite (Base price: 160/Sqft)",
         "",
         "JOINERYS:",
-        "• Doors - 1st class Teak wood doors (Main door)",
-        "• Inner doors - Flush door with laminates",
-        "• Bath room doors - WPC doors",
-        "• Windows - UPVC windows with MS grills",
-        "• Staircase railing - SS",
+        "• Main Door: 1st class Teak wood doors (Main door)",
+        "• Inner doors: Flush door with laminates",
+        "• Bathroom doors: WPC doors",
+        "• Windows: UPVC windows with MS grills (Size may vary)",
+        "• Staircase railing: SS",
         "",
         "PLUMBING:",
-        "• EWC & Washbasin - Parryware",
-        "• Fittings - Hindware fittings",
-        "• Kitchen quartz Sink with drain (up to 5000/-)",
-        "• Pipes - Finolux PVC, Ashirvad - Upvc",
+        "• Plumbing: Floor & wall EWC mounted, Wall mounted Washbasin - Parryware",
+        "• Fittings: Pillar tap, Health faucet, shower set & 2in1 wall mixer- Hindware fittings",
+        "• Kitchen: Quartz Sink with drain (Base price up to 5000/-)",
+        "• Pipes: Finolux PVC, Ashirvad - Upvc",
         "• Solar power provision",
         "",
         "ELECTRICAL:",
-        "• Electrical wires - Finolex / Havelles or Equivalent",
-        "• Electrical pipes - Orbit or Equivalent",
-        "• Electrical Switches - Legrant / Fybros",
+        "• Electrical wires: Finolex / Havelles or Equivalent",
+        "• Electrical pipes: Orbit or Equivalent",
+        "• Electrical Switches: Legrant / Fybros",
         "• Inverter Provisions",
         "",
         "PAINTING:",
-        "• Internal - Royal emulsion - Any ISI Brand",
-        "• External - Damp shealth primer & APEX - Any ISI Brand"
+        "• Internal: 1 Coat primer, 2 coat putty and 2 coat of Royalemulsion - Any ISI Brand",
+        "• External: 1 Coat damp sheath primer & 2 coat of Putty and 2 coats of APEX - Any ISI Brand"
       ]
     }
   },
   exclusions: {
     title: "Exclusions",
     details: {
-      basic: [
-        "Compound wall with gate",
-        "Sump & Septic tank",
-        "Lift & its structure",
-        "Drainage connection",
-        "Electricity connection",
-        "Local Authority Approval Expenses"
-      ],
       standard: [
         "Compound wall with gate",
         "Sump & Septic tank",
         "Lift & its structure",
-        "Drainage connection",
-        "Electricity connection",
-        "Local Authority Approval Expenses"
+        "Drainage connection from local authority",
+        "Electricity connection from Local authority",
+        "Local Authority Approval Expenses",
+        "Weathering Course and water proofing @ terrace & Tiling works"
       ],
       premium: [
         "Compound wall with gate",
         "Sump & Septic tank",
         "Lift & its structure",
-        "Drainage connection",
-        "Electricity connection",
-        "Local Authority Approval Expenses"
+        "Drainage connection from local authority",
+        "Electricity connection from Local authority",
+        "Local Authority Approval Expenses",
+        "Tiling works @ Terrace"
       ]
     }
   }
@@ -230,10 +177,9 @@ const ExpandablePackageTable = () => {
   };
 
   const getPackageKey = (packageName) => {
-    if (packageName.includes("Basic")) return "basic";
     if (packageName.includes("Standard")) return "standard";
     if (packageName.includes("Premium")) return "premium";
-    return "basic";
+    return "standard";
   };
 
   return (
@@ -253,7 +199,7 @@ const ExpandablePackageTable = () => {
       <Row className="justify-content-center">
         {packages.map((pkg, pkgIndex) => (
           <Col key={pkg.name} lg={4} md={6} className="mb-4">
-            <div className={`package-card h-100 ${pkg.popular ? "popular-package" : ""}`}>
+            <div className={`package-card h-100`}>
               {pkg.popular && (
                 <div className="popular-badge">
                   <FaStar className="me-1" /> Most Popular

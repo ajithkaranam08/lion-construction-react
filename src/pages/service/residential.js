@@ -53,7 +53,7 @@ const Residential = () => {
             <Feature
                 servicebtn={false}
                 minHeight={600}
-                iconTag={false}
+                iconTag
                 data={featureData}
                 classes={"fixed-height-slide"}
                 headingClasses="section-subtitle-2"

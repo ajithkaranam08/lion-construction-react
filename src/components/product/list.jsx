@@ -45,7 +45,6 @@ const ProductList = ({
     </Tooltip>
   );
 
-  console.log(productData.propertyDetails.noOfFloors ? "hu" : "aa");
   return (
     <>
       <div className="ltn__product-item ltn__product-item-4 ltn__product-item-5">

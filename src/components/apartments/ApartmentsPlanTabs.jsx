@@ -17,6 +17,18 @@ const defaultTabs = [
     image: "/img/others/site-inspection.jpg",
   },
   {
+    key: "soil-test",
+    title: "Soil Test",
+    heading: "Soil Test",
+    description:
+      "Before construction begins, we conduct a thorough soil test to ensure the land is suitable for building. This test measures the soil's ability to support the weight of the structure and provides insights into its stability. We use advanced equipment to analyze the soil's composition, moisture content, and structural integrity. This information guides our decision-making process and helps us plan the construction process accordingly. A well-tested soil ensures a strong foundation and a durable home.",
+    info: [
+      { label: "Focus", value: "Understanding the Soil's Ability to Support the Structure" },
+      { label: "Checks", value: "Soil Composition, Moisture Content, Structural Integrity" },
+    ],
+    image: "/img/others/soil-testing.jpg",
+  },
+  {
     key: "custom-design",
     title: "Custom Design Planning",
     heading: "Custom Design Planning",
@@ -148,7 +160,9 @@ const ApartmentsPlanTabs = ({
                             loading="lazy"
                             src={tab.image}
                             alt={tab.heading}
-                            className="object-fit-cover w-100 h-100 rounded"
+                            width={500} 
+                            height={500}
+                            className="object-fit-cover  rounded"
                             style={{ borderRadius: '8px' }}
                           />
                         </div>

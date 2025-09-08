@@ -112,7 +112,7 @@ function AboutUs() {
         <AmenitiesSlider data={aboutData.aboutSectionProcess.processSteps} titleSectionData={aboutData.aboutSectionProcess.titleSectionData} />
 
 
-        <AboutUsStyleOne sectionSpace="pt-50 pb-50 section-bg-1 " data={aboutData.aboutSectionThree} />
+        <AboutUsStyleOne sectionSpace="pt-50 pb-50 section-bg-1 " data={aboutData.aboutSectionThree} minHeight={false} />
 
 
 

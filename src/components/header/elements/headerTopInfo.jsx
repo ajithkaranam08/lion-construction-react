@@ -15,7 +15,7 @@ const HeaderTopInfo = function () {
           <li>
             <Link href="/locations">
               <FaMapMarkerAlt />
-              No: 14, 1st Floor, Korattur.
+              No: 14, 1st Floor, Korattur, Chennai - 600076.
             </Link>
           </li>
         </ul>

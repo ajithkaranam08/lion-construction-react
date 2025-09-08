@@ -81,6 +81,45 @@ const Footer = function () {
                   </div>
                 </div>
               </Col>
+              <Col xs={12} sm={6} xl={2}>
+                <div className="footer-widget footer-menu-widget clearfix">
+                  <h4 className="footer-title">Prioritize</h4>
+                  <div className="footer-menu">
+                    <ul>
+                      <li>
+                        <Link href="#">Joint Ventures</Link>
+                      </li>
+                      <li>
+                        <Link href="#">Renovation</Link>
+                      </li>
+                      <li>
+                        <Link href="#">Interior Design</Link>
+                      </li>
+                      <li>
+                        <Link href="#">Flat Promotion</Link>
+                      </li>
+                      <li>
+                        <Link href="#">Commercial Interiors</Link>
+                      </li>
+                      <li>
+                        <Link href="#">Workspace Interiors</Link>
+                      </li>
+                      <li>
+                        <Link href="#">Real Estate</Link>
+                      </li>
+                      <li>
+                        <Link href="#">Property Maintenance</Link>
+                      </li>
+                      <li>
+                        <Link href="#">Material Supply</Link>
+                      </li>
+                      <li>
+                        <Link href="#">Manpower Supply</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </Col>
               <Col xs={12} sm={6} xl={3}>
                 <div className="footer-address">
                   <ul>
@@ -100,7 +139,7 @@ const Footer = function () {
                       </div>
                       <div className="footer-address-info">
                         <p>
-                          <Link href="tel:9840361427">9840361427</Link>
+                          <Link href="tel:+919840361427">+91 9840361427</Link> / <Link href="tel:+918122761428">+91 8122761428</Link>
                         </p>
                       </div>
                     </li>

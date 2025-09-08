@@ -5,21 +5,15 @@ import { FaCalculator, FaHome, FaRuler, FaMoneyBillWave } from "react-icons/fa";
 
 const packages = [
   {
-    name: "Basic Package",
-    pricePerSqft: 1999,
-    color: "primary",
-    description: "Essential construction package"
-  },
-  {
     name: "Standard Package", 
-    pricePerSqft: 2199,
+    pricePerSqft: 2300,
     color: "success",
     description: "Most popular choice",
     popular: true
   },
   {
     name: "Premium Package",
-    pricePerSqft: 2499,
+    pricePerSqft: 2600,
     color: "warning", 
     description: "Premium materials & finishes"
   }
@@ -36,7 +30,7 @@ const floorOptions = [
 
 const PackageCalculationTable = () => {
   const [formData, setFormData] = useState({
-    selectedPackage: "Basic Package",
+    selectedPackage: "Standard Package",
     selectedFloors: "G",
     floorAreas: {
       ground: '',
@@ -123,26 +117,26 @@ const PackageCalculationTable = () => {
     // Calculate additional items
     const waterSump = parseFloat(formData.additionalItems.waterSump) || 0;
     if (waterSump > 0) {
-      const cost = waterSump * 24;
+      const cost = waterSump * 25;
       totalCost += cost;
       breakdown.push({
         work: 'Size of RCC Water Sump (A 4 member family will require 9000 liter capacity)',
         area: waterSump,
         unit: 'ltr',
-        rate: 'Rs.24',
+        rate: 'Rs.25',
         cost: cost
       });
     }
 
     const septicTank = parseFloat(formData.additionalItems.septicTank) || 0;
     if (septicTank > 0) {
-      const cost = septicTank * 24;
+      const cost = septicTank * 26;
       totalCost += cost;
       breakdown.push({
         work: 'Size of Septic Tank',
         area: septicTank,
         unit: 'ltr',
-        rate: 'Rs.24',
+        rate: 'Rs.26',
         cost: cost
       });
     }
@@ -151,13 +145,13 @@ const PackageCalculationTable = () => {
     const compoundHeight = parseFloat(formData.additionalItems.compoundWallHeight) || 0;
     if (compoundLength > 0 && compoundHeight > 0) {
       const area = compoundLength * compoundHeight;
-      const cost = area * 425;
+      const cost = area * 450;
       totalCost += cost;
       breakdown.push({
         work: 'Plain Compound Wall',
         area: `${compoundLength} × ${compoundHeight}`,
         unit: 'sqft',
-        rate: 'Rs.425',
+        rate: 'Rs.450',
         cost: cost
       });
     }
@@ -310,9 +304,9 @@ const PackageCalculationTable = () => {
                       />
                     </td>
                     <td className="text-center" data-label="Unit">ltr</td>
-                    <td className="text-center" data-label="Rate">Rs.24</td>
+                    <td className="text-center" data-label="Rate">Rs.25</td>
                     <td className="text-end fw-bold" data-label="Cost">
-                      Rs. {((parseFloat(formData.additionalItems.waterSump) || 0) * 24).toLocaleString('en-IN')}
+                      Rs. {((parseFloat(formData.additionalItems.waterSump) || 0) * 25).toLocaleString('en-IN')}
                     </td>
                   </tr>
 
@@ -329,9 +323,9 @@ const PackageCalculationTable = () => {
                       />
                     </td>
                     <td className="text-center" data-label="Unit">ltr</td>
-                    <td className="text-center" data-label="Rate">Rs.24</td>
+                    <td className="text-center" data-label="Rate">Rs.26</td>
                     <td className="text-end fw-bold" data-label="Cost">
-                      Rs. {((parseFloat(formData.additionalItems.septicTank) || 0) * 24).toLocaleString('en-IN')}
+                      Rs. {((parseFloat(formData.additionalItems.septicTank) || 0) * 26).toLocaleString('en-IN')}
                     </td>
                   </tr>
 
@@ -358,12 +352,12 @@ const PackageCalculationTable = () => {
                       </div>
                     </td>
                     <td className="text-center" data-label="Unit">sqft</td>
-                    <td className="text-center" data-label="Rate">Rs.425</td>
+                    <td className="text-center" data-label="Rate">Rs.450</td>
                     <td className="text-end fw-bold" data-label="Cost">
                       Rs. {(() => {
                         const length = parseFloat(formData.additionalItems.compoundWallLength) || 0;
                         const height = parseFloat(formData.additionalItems.compoundWallHeight) || 0;
-                        return (length * height * 425).toLocaleString('en-IN');
+                        return (length * height * 450).toLocaleString('en-IN');
                       })()}
                     </td>
                   </tr>

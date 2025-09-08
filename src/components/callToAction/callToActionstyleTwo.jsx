@@ -17,7 +17,7 @@ const callToActionstyleTwo = () => {
                     We bring your vision to life with precision, quality, and
                     commitment.
                   </div>
-                  <h1 className="section-title white-color">9840361427</h1>
+                  <h1 className="section-title white-color">+91 9840361427</h1>
                 </div>
                 <div className="btn-wrapper">
                   <Link
