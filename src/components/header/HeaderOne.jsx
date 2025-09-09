@@ -11,6 +11,7 @@ import Col from "react-bootstrap/Col";
 import clsx from "clsx";
 import { FaCartArrowDown, FaRegUser, FaSearch, FaTimes } from "react-icons/fa";
 import MenuList from "@/components/header/elements/menuList";
+import PassionQualityText from "@/components/passionQualityText/PassionQualityText";
 const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
   const [searchFormOpener, searchFormOpenerSet] = useState(false);
 
@@ -99,11 +100,12 @@ const HeaderStyleOne = function ({ SetToggleClassName, topbar }) {
           <Container>
             <Row>
               <Col>
-                <div className="site-logo-wrap">
-                  <div className="site-logo">
+                <div className="site-logo-wrap" >
+                  <div className="site-logo" style={{ position: 'relative' }}>
                     <Link href="/">
                       <img src="/img/logo.png" alt="Logo" width={300} height={100} className="object-fit-contain" />
                     </Link>
+                  <PassionQualityText variant="header" />
                   </div>
                 </div>
               </Col>

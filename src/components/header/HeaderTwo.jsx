@@ -8,6 +8,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import clsx from "clsx";
 import MenuList from "@/components/header/elements/menuList";
+import PassionQualityText from "@/components/passionQualityText/PassionQualityText";
 const HeaderStyleTwo = function ({ SetToggleClassName, topbar }) {
   const [cartMenuOpener, cartMenuOpenerSet] = useState(false);
   const [overlayBtn, SetoverlayBtn] = useState(false);
@@ -72,10 +73,11 @@ const HeaderStyleTwo = function ({ SetToggleClassName, topbar }) {
             <Row>
               <Col>
                 <div className="site-logo-wrap">
-                  <div className="site-logo">
+                  <div className="site-logo" style={{ position: 'relative' }}>
                     <Link href="/">
                       <img width={300} height={100} className="object-fit-contain" src="/img/logo.png" alt="Logo" />
                     </Link>
+                  <PassionQualityText variant="header" positioning="absolute" />
                   </div>
                 </div>
               </Col>

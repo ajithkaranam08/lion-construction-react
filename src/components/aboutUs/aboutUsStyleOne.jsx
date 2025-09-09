@@ -23,7 +23,7 @@ function AboutUsStyleOne({ sectionSpace, data , minHeight = true }) {
             <Col xs={12} lg={6} >
               {data?.image && (
                 <div className="about-us-img-wrap about-img-left h-100">
-                  <img loading="lazy" width={600} height={767} src={`${data?.relativePath ? data?.image : `/img/banner/${data?.image}`}`} alt="About Us Image" className={`${minHeight ? 'img-align-height' : ''}`} />
+                  <img loading="lazy" width={600} height={600} src={`${data?.relativePath ? data?.image : `/img/banner/${data?.image}`}`} alt="About Us Image" className={`${minHeight ? 'img-align-height' : ''}`} />
                   {/* <div className="about-us-img-info about-us-img-info-2 about-us-img-info-3">
                   <div className="ltn__video-img ltn__animation-pulse1">
                     <img src="/img/others/8.png" alt="video popup bg image" />

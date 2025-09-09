@@ -19,6 +19,7 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import "@/assets/sass/style.scss";
 import "@/assets/responsive.css";
+import "@/assets/css/passion-quality.css";
 
 
 const nunito = Nunito_Sans({

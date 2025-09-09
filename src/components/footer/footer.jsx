@@ -13,6 +13,7 @@ import {
   FaPhoneAlt,
   FaInstagram,
 } from "react-icons/fa";
+import PassionQualityText from "@/components/passionQualityText/PassionQualityText";
 
 const Footer = function () {
   return (
@@ -24,8 +25,8 @@ const Footer = function () {
             <Row className="footer-change">
               <Col xs={12} sm={6} xl={3}>
                 <div className="footer-widget footer-about-widget">
-                  <div className="footer-logo">
-                    <div className="site-logo">
+                  <div className="footer-logo" style={{ position: 'relative' }}>
+                    <div className="site-logo" style={{ position: 'relative' }}>
                       {/* <img src="/img/logo.png" alt="Logo" /> */}
                       <img
                         src="/img/logo-2.png"
@@ -33,6 +34,7 @@ const Footer = function () {
                         width={150}
                         height={150}
                       />
+                    <PassionQualityText variant="footer" positioning="absolute" />
                     </div>
                   </div>
                   <p className="ltn__primary-color">
