@@ -79,49 +79,41 @@ const Footer = function () {
                       <li>
                         <Link href="/service/residential">Interior Design</Link>
                       </li>
-                    </ul>
-                  </div>
-                </div>
-              </Col>
-              <Col xs={12} sm={6} xl={2}>
-                <div className="footer-widget footer-menu-widget clearfix">
-                  <h4 className="footer-title">Prioritize</h4>
-                  <div className="footer-menu">
-                    <ul>
                       <li>
-                        <Link href="#">Joint Ventures</Link>
+                        <span >Joint Ventures</span>
                       </li>
                       <li>
-                        <Link href="#">Renovation</Link>
+                        <span >Renovation</span>
                       </li>
                       <li>
-                        <Link href="#">Interior Design</Link>
+                        <span>Interior Design</span>
                       </li>
                       <li>
-                        <Link href="#">Flat Promotion</Link>
+                        <span>Flat Promotion</span>
                       </li>
                       <li>
-                        <Link href="#">Commercial Interiors</Link>
+                        <span>Commercial Interiors</span>
                       </li>
                       <li>
-                        <Link href="#">Workspace Interiors</Link>
+                        <span>Workspace Interiors</span>
                       </li>
                       <li>
-                        <Link href="#">Real Estate</Link>
+                        <span>Real Estate</span>
                       </li>
                       <li>
-                        <Link href="#">Property Maintenance</Link>
+                        <span>Property Maintenance</span>
                       </li>
                       <li>
-                        <Link href="#">Material Supply</Link>
+                        <span>Material Supply</span>
                       </li>
                       <li>
-                        <Link href="#">Manpower Supply</Link>
+                        <span>Manpower Supply</span>
                       </li>
                     </ul>
                   </div>
                 </div>
               </Col>
+
               <Col xs={12} sm={6} xl={3}>
                 <div className="footer-address">
                   <ul>

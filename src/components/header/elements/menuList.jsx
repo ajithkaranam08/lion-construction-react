@@ -93,6 +93,36 @@ const MenuList = ({ addListing }) => {
           <li>
             <Link href="/service/residential">Interior Design</Link>
           </li>
+          <li>
+            <span>Joint Ventures</span>
+          </li>
+          <li>
+            <span>Renovation</span>
+          </li>
+          <li>
+            <span>Interior Design</span>
+          </li>
+          <li>
+            <span>Flat Promotion</span>
+          </li>
+          <li>
+            <span>Commercial Interiors</span>
+          </li>
+          <li>
+            <span>Workspace Interiors</span>
+          </li>
+          <li>
+            <span>Real Estate</span>
+          </li>
+          <li>
+            <span>Property Maintenance</span>
+          </li>
+          <li>
+            <span>Material Supply</span>
+          </li>
+          <li>
+            <span>Manpower Supply</span>
+          </li>
           {/*           
           <li>
             <Link href="/shop">Property</Link>

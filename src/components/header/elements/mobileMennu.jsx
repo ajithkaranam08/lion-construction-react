@@ -81,7 +81,13 @@ const MobileMenu = function ({ offCanVastoggleBtn, closeSideBar }) {
           <div className="ltn__utilize-menu">
             <ul>
               <li>
-                <Link href="#">Home</Link>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
+                <Link href="/about">About Us</Link>
+              </li>
+              <li>
+                <Link href="/service/residential">Services</Link>
                 <span
                   className="menu-expand"
                   onClick={onClickHandler}
@@ -89,193 +95,48 @@ const MobileMenu = function ({ offCanVastoggleBtn, closeSideBar }) {
                 ></span>
                 <ul className="sub-menu">
                   <li>
-                    <Link href="/home">Home Style 01</Link>
+                    <Link href="/service/construction">Construction</Link>
                   </li>
                   <li>
-                    <Link href="/home/page-two">Home Style 02</Link>
+                    <Link href="/service/residential">Interior Design</Link>
                   </li>
                   <li>
-                    <Link href="/home/page-three">Home Style 03</Link>
+                    <span>Joint Ventures</span>
                   </li>
                   <li>
-                    <Link href="/home/page-four">Home Style 04</Link>
+                    <span>Renovation</span>
                   </li>
                   <li>
-                    <Link href="/home/page-five">Home Style 05</Link>
+                    <span>Interior Design</span>
                   </li>
                   <li>
-                    <Link href="/home/page-six">Home Style 06</Link>
+                    <span>Flat Promotion</span>
                   </li>
                   <li>
-                    <Link href="/home/page-seven">Home Style 07</Link>
+                    <span>Commercial Interiors</span>
                   </li>
                   <li>
-                    <Link href="/home/page-eight">Home Style 08</Link>
+                    <span>Workspace Interiors</span>
                   </li>
                   <li>
-                    <Link href="/home/page-nine">Home Style 09</Link>
+                    <span>Real Estate</span>
                   </li>
                   <li>
-                    <Link href="/home/page-ten">Home Style 10</Link>
+                    <span>Property Maintenance</span>
                   </li>
                   <li>
-                    <Link href="/home/page-eleven">Home Style 11</Link>
+                    <span>Material Supply</span>
+                  </li>
+                  <li>
+                    <span>Manpower Supply</span>
                   </li>
                 </ul>
               </li>
               <li>
-                <Link href="#">About</Link>
-                <span
-                  className="menu-expand"
-                  onClick={onClickHandler}
-                  aria-hidden="true"
-                ></span>
-                <ul className="sub-menu">
-                  <li>
-                    <Link href="/about">About</Link>
-                  </li>
-                  <li>
-                    <Link href="/service">Services</Link>
-                  </li>
-
-                  <li>
-                    <Link href="/portfolio">Portfolio</Link>
-                  </li>
-                  <li>
-                    <Link href="/portfolio/page-two">Portfolio - 02</Link>
-                  </li>
-
-                  <li>
-                    <Link href="/team">Team</Link>
-                  </li>
-
-                  <li>
-                    <Link href="/faq">FAQ</Link>
-                  </li>
-                  <li>
-                    <Link href="/locations">Google Map Locations</Link>
-                  </li>
-                </ul>
+                <Link href="/coming-soon">Blog</Link>
               </li>
               <li>
-                <Link href="#">Property</Link>
-                <span
-                  className="menu-expand"
-                  onClick={onClickHandler}
-                  aria-hidden="true"
-                ></span>
-                <ul className="sub-menu">
-                  <li>
-                    <Link href="/shop">Property</Link>
-                  </li>
-                  <li>
-                    <Link href="/shop/grid">Property Grid</Link>
-                  </li>
-                  <li>
-                    <Link href="/shop/list">Property List</Link>
-                  </li>
-                  <li>
-                    <Link href="/shop/left-sidebar">Property Left sidebar</Link>
-                  </li>
-                  <li>
-                    <Link href="/shop/right-sidebar">
-                      Property right sidebar
-                    </Link>
-                  </li>
-                  
-                  <li>
-                    <Link href="/cart">Cart</Link>
-                  </li>
-                  <li>
-                    <Link href="/wishlist">Wishlist</Link>
-                  </li>
-                  <li>
-                    <Link href="/checkout">Checkout</Link>
-                  </li>
-                  <li>
-                    <Link href="/order-tracking">Order Tracking</Link>
-                  </li>
-                  <li>
-                    <Link href="/my-account">My Account</Link>
-                  </li>
-                  <li>
-                    <Link href="/login">Sign in</Link>
-                  </li>
-                  <li>
-                    <Link href="/register">Register</Link>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <Link href="#">News</Link>
-                <span
-                  className="menu-expand"
-                  onClick={onClickHandler}
-                  aria-hidden="true"
-                ></span>
-                <ul className="sub-menu">
-                  <li>
-                    <Link href="/blog">News</Link>
-                  </li>
-                  <li>
-                    <Link href="/blog/grid">News Grid</Link>
-                  </li>
-                  <li>
-                    <Link href="/blog/left-sidebar">News Left sidebar</Link>
-                  </li>
-                  <li>
-                    <Link href="/blog/right-sidebar">News Right sidebar</Link>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <Link href="#">Pages</Link>
-                <span
-                  className="menu-expand"
-                  onClick={onClickHandler}
-                  aria-hidden="true"
-                ></span>
-                <ul className="sub-menu">
-                  <li>
-                    <Link href="/about">About</Link>
-                  </li>
-                  <li>
-                    <Link href="/service">Services</Link>
-                  </li>
-
-                  <li>
-                    <Link href="/portfolio">Portfolio</Link>
-                  </li>
-                  <li>
-                    <Link href="/portfolio/page-two">Portfolio - 02</Link>
-                  </li>
-
-                  <li>
-                    <Link href="/team">Team</Link>
-                  </li>
-
-                  <li>
-                    <Link href="/faq">FAQ</Link>
-                  </li>
-                  <li>
-                    <Link href="/history">History</Link>
-                  </li>
-                  <li>
-                    <Link href="/add-listing">Add Listing</Link>
-                  </li>
-                  <li>
-                    <Link href="/locations">Google Map Locations</Link>
-                  </li>
-                  <li>
-                    <Link href="/404">404</Link>
-                  </li>
-                  <li>
-                    <Link href="/contact">Contact</Link>
-                  </li>
-                  <li>
-                    <Link href="/coming-soon">Coming Soon</Link>
-                  </li>
-                </ul>
+                <Link href="/projects">Projects</Link>
               </li>
               <li>
                 <Link href="/contact">Contact</Link>
@@ -351,3 +212,4 @@ const MobileMenu = function ({ offCanVastoggleBtn, closeSideBar }) {
 };
 
 export default MobileMenu;
+

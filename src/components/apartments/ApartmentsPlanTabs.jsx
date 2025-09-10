@@ -162,7 +162,7 @@ const ApartmentsPlanTabs = ({
                             alt={tab.heading}
                             width={500} 
                             height={500}
-                            className="object-fit-cover  rounded"
+                            className="object-fit-cover rounded w-100"
                             style={{ borderRadius: '8px' }}
                           />
                         </div>
