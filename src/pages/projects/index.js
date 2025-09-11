@@ -111,8 +111,8 @@ function ShopGrid() {
                 <Container>
                     <Row>
                         <Col xs={12}>
-                            <Tab.Container defaultActiveKey="first">
-                                <div className="ltn__shop-options">
+                            <Tab.Container defaultActiveKey="second">
+                                {/* <div className="ltn__shop-options">
                                     <ul>
                                         <li>
                                             <div className="ltn__grid-list-tab-menu">
@@ -127,7 +127,7 @@ function ShopGrid() {
                                             </div>
                                         </li>
 
-                                        {/* <li>
+                                        <li>
                                             <div className="short-by text-center">
                                                 <Form.Select
                                                     className="form-control nice-select"
@@ -144,19 +144,19 @@ function ShopGrid() {
                                                     </option>
                                                 </Form.Select>
                                             </div>
-                                        </li> */}
-                                        {/* <li>
+                                        </li>
+                                        <li>
                                             <div className="showing-product-number text-right">
                                                 <span>
                                                     {`Showing ${offset + pageLimit} of ${sortedProducts.length
                                                         } results`}
                                                 </span>
                                             </div>
-                                        </li> */}
+                                        </li>
                                     </ul>
-                                </div>
+                                </div> */}
 
-                                <Search spaceBottom="mb-30" setQuery={setQuery} />
+                                {/* <Search spaceBottom="mb-30" setQuery={setQuery} /> */}
                                 <Tab.Content>
                                     <Tab.Pane eventKey="first">
                                         <div className="ltn__product-tab-content-inner ltn__product-grid-view">
@@ -238,7 +238,7 @@ function ShopGrid() {
                                 </Tab.Content>
                             </Tab.Container>
 
-                            <div className="ltn__pagination-area text-center">
+                            {/* <div className="ltn__pagination-area text-center">
                                 <ReactPaginate
                                     onPageChange={handlePageClick}
                                     pageRangeDisplayed={3}
@@ -259,7 +259,7 @@ function ShopGrid() {
                                     activeClassName="active"
                                     renderOnZeroPageCount={null}
                                 />
-                            </div>
+                            </div> */}
                         </Col>
                     </Row>
 

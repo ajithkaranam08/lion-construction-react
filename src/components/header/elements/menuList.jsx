@@ -87,7 +87,7 @@ const MenuList = ({ addListing }) => {
         </Link>
         <ul>
           <li>
-            <Link href="/service/construction">Construction</Link>
+            <Link href="/service/construction">Residential & Commercial construction</Link>
           </li>
 
           <li>
@@ -95,12 +95,6 @@ const MenuList = ({ addListing }) => {
           </li>
           <li>
             <span>Joint Ventures</span>
-          </li>
-          <li>
-            <span>Renovation</span>
-          </li>
-          <li>
-            <span>Interior Design</span>
           </li>
           <li>
             <span>Flat Promotion</span>
@@ -113,6 +107,9 @@ const MenuList = ({ addListing }) => {
           </li>
           <li>
             <span>Real Estate</span>
+          </li>
+          <li>
+            <span>Renovation</span>
           </li>
           <li>
             <span>Property Maintenance</span>

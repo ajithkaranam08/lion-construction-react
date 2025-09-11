@@ -46,7 +46,7 @@ function AmenitiesSlider({ data = [], titleSectionData, classes = "", minHeight 
         slidesToScroll: 1,
         nextArrow: <SlickArrowRight />,
         prevArrow: <SlickArrowLeft />,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
         adaptiveHeight: true,
         responsive: [

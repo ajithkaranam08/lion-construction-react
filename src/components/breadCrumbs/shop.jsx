@@ -11,15 +11,15 @@ const ShopBreadCrumb = ({ title, currentSlug, sectionPace }) => {
       >
         <Container>
           <Row>
-            <Col xs={12}>
+            <Col xs={12} className="px-0">
               <div className="ltn__breadcrumb-inner">
                 <h1 className="page-title">{title}</h1>
                 <div className="ltn__breadcrumb-list">
                   <ul>
                     <li>
                       <Link href="/">
-                        <span className="ltn__secondary-color">
-                          <FaHome className="me-2" color="var(--ltn__primary-color)" />
+                        <span>
+                          <FaHome className="me-2 mb-1"  />
                         </span>
                         <span className="me-2">Home</span>
                         <FaAngleRight />

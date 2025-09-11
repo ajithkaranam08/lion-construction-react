@@ -2,7 +2,12 @@
     "hero": [
         {
             "subtitle": "Welcome To LC",
-            "Title": "Welcome To The Lion Construction",
+            "breadcrumbs": {
+                "label": "Construction",
+                "path": "/construction",
+                "current": true
+            },
+            "Title": "Welcome To Lion Construction",
             "Desc": [
                 "Chennai’s Premier Construction Experts",
                 "We offer end-to-end construction services tailored to your needs. We’re ready to help bring your vision to life."
@@ -123,6 +128,11 @@
             {
                 "title": "Construction Begins",
                 "shortDescription": "Sit back and relax while we start building your dream home with care.",
+                "icon": "icon-done"
+            },
+            {
+                "title": "Project Completion",
+                "shortDescription": "We hand over your completed dream home with all quality checks and documentation.",
                 "icon": "icon-done"
             }
         ]
@@ -299,6 +309,17 @@
                 "distance": "1,500m",
                 "walkTime": "21 min. walk",
                 "description": "Finally, we create realistic 3D interior designs so you can visualize your rooms and decor before construction begins."
+            },
+            {
+                "key": "final-approval",
+                "title": "Final Approval",
+                "thumb": "/img/neighbour/8.jpg",
+                "mainImage": "/img/neighbour/8.jpg",
+                "propertyImage": "/img/product-3/9.jpg",
+                "propertyCount": 9,
+                "distance": "1,500m",
+                "walkTime": "21 min. walk",
+                "description": "We handle all final approvals and permits, ensuring your project is fully compliant and ready for construction to begin."
             }
         ]
     }

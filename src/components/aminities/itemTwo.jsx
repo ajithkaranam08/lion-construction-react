@@ -5,7 +5,7 @@ const AminitiesItemTwo = ({ data, styles }) => {
   return (
     <>
       <div style={styles} className=" ltn__category-item ltn__category-item-5 ltn__category-item-5-2">
-        <Link href="/projects">
+        <a>
           <span className="category-icon d-flex align-items-center justify-content-center">
             {data?.from === "react-icon" ? (
               <IconRenderer name={data.icon} className="no-size  ltn__primary-color" />
@@ -16,7 +16,7 @@ const AminitiesItemTwo = ({ data, styles }) => {
           <span className="category-number">{data.id}</span>
           <span className="category-title">{data.title}</span>
           <p className="category-brief ">{data.description}</p>
-        </Link>
+        </a>
       </div>
     </>
   );

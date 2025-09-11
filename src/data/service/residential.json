@@ -2,6 +2,11 @@
     "hero": [
         {
             "subtitle": "Welcome to LC",
+            "breadcrumbs": {
+                "label": "Residential",
+                "path": "service/residential",
+                "current": true
+            },
             "Title": "Stylish and Comfortable Home Makeovers",
             "Desc": "Create a home that feels just right. Our custom interior designs match your style and make everyday living better.",
             "icon": "FaHome",

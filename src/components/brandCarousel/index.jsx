@@ -40,12 +40,20 @@ function BrandCarouselOne({ data }) {
     slidesToScroll: 1,
     prevArrow: <SlickArrowLeft />,
     nextArrow: <SlickArrowRight />,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    pauseOnDotsHover: true,
     responsive: [
       {
         breakpoint: 992,
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          pauseOnHover: true,
         },
       },
       {
@@ -54,6 +62,9 @@ function BrandCarouselOne({ data }) {
           slidesToShow: 3,
           slidesToScroll: 1,
           arrows: false,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          pauseOnHover: true,
         },
       },
       {
@@ -61,6 +72,9 @@ function BrandCarouselOne({ data }) {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          pauseOnHover: true,
         },
       },
     ],

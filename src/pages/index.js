@@ -57,12 +57,20 @@ function HomePage(props) {
     slidesToScroll: 1,
     prevArrow: <SlickArrowLeft />,
     nextArrow: <SlickArrowRight />,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    pauseOnDotsHover: true,
     responsive: [
       {
         breakpoint: 1799,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          pauseOnHover: true,
         },
       },
       {
@@ -70,6 +78,9 @@ function HomePage(props) {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          pauseOnHover: true,
         },
       },
       {
@@ -77,6 +88,9 @@ function HomePage(props) {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          pauseOnHover: true,
         },
       },
     ],
@@ -90,13 +104,20 @@ function HomePage(props) {
     slidesToScroll: 1,
     prevArrow: <SlickArrowLeft />,
     nextArrow: <SlickArrowRight />,
-
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    pauseOnDotsHover: true,
     responsive: [
       {
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          pauseOnHover: true,
         },
       },
       {
@@ -104,6 +125,9 @@ function HomePage(props) {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          pauseOnHover: true,
         },
       },
     ],
@@ -117,13 +141,20 @@ function HomePage(props) {
     slidesToScroll: 1,
     prevArrow: <SlickArrowLeft />,
     nextArrow: <SlickArrowRight />,
-
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    pauseOnDotsHover: true,
     responsive: [
       {
         breakpoint: 1199,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          pauseOnHover: true,
         },
       },
       {
@@ -131,6 +162,9 @@ function HomePage(props) {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          pauseOnHover: true,
         },
       },
     ],

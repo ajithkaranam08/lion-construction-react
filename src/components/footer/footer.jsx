@@ -25,8 +25,8 @@ const Footer = function () {
             <Row className="footer-change">
               <Col xs={12} sm={6} xl={3}>
                 <div className="footer-widget footer-about-widget">
-                  <div className="footer-logo" style={{ position: 'relative' }}>
-                    <div className="site-logo" style={{ position: 'relative' }}>
+                  <div className="footer-logo" style={{ position: "relative" }}>
+                    <div className="site-logo" style={{ position: "relative" }}>
                       {/* <img src="/img/logo.png" alt="Logo" /> */}
                       <img
                         src="/img/logo-2.png"
@@ -34,7 +34,10 @@ const Footer = function () {
                         width={150}
                         height={150}
                       />
-                    <PassionQualityText variant="footer" positioning="absolute" />
+                      <PassionQualityText
+                        variant="footer"
+                        positioning="absolute"
+                      />
                     </div>
                   </div>
                   <p className="ltn__primary-color">
@@ -74,19 +77,13 @@ const Footer = function () {
                   <div className="footer-menu">
                     <ul>
                       <li>
-                        <Link href="/service/construction">Construction</Link>
+                        <Link href="/service/construction">Residential & Commercial construction</Link>
                       </li>
                       <li>
                         <Link href="/service/residential">Interior Design</Link>
                       </li>
                       <li>
-                        <span >Joint Ventures</span>
-                      </li>
-                      <li>
-                        <span >Renovation</span>
-                      </li>
-                      <li>
-                        <span>Interior Design</span>
+                        <span>Joint Ventures</span>
                       </li>
                       <li>
                         <span>Flat Promotion</span>
@@ -99,6 +96,9 @@ const Footer = function () {
                       </li>
                       <li>
                         <span>Real Estate</span>
+                      </li>
+                      <li>
+                        <span>Renovation</span>
                       </li>
                       <li>
                         <span>Property Maintenance</span>
@@ -133,7 +133,8 @@ const Footer = function () {
                       </div>
                       <div className="footer-address-info">
                         <p>
-                          <Link href="tel:+919840361427">+91 9840361427</Link> / <Link href="tel:+918122761428">+91 8122761428</Link>
+                          <Link href="tel:+919840361427">+91 9840361427</Link> /{" "}
+                          <Link href="tel:+918122761428">+91 8122761428</Link>
                         </p>
                       </div>
                     </li>
@@ -201,7 +202,7 @@ const Footer = function () {
             </Row>
           </Container>
         </div>
-        <div className="ltn__copyright-area ltn__copyright-2 section-bg-7  plr--5">
+        {/* <div className="ltn__copyright-area ltn__copyright-2 section-bg-7  plr--5">
           <div className="container-fluid ltn__border-top-2">
             <Row>
               <Col xs={12} md={6}>
@@ -229,7 +230,7 @@ const Footer = function () {
               </Col>
             </Row>
           </div>
-        </div>
+        </div> */}
       </footer>
       {/* <!-- FOOTER AREA END --> */}
     </>

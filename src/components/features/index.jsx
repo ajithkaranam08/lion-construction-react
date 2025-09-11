@@ -53,15 +53,21 @@ function Feature({
     slidesToScroll: 1,
     nextArrow: <SlickArrowRight />,
     prevArrow: <SlickArrowLeft />,
-    autoplay: false,
+    autoplay: true,
     adaptiveHeight: true,
     autoplaySpeed: 3000,
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    pauseOnDotsHover: true,
     responsive: [
       {
         breakpoint: 992,
         settings: {
           arrows: false,
           slidesToShow: 2,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          pauseOnHover: true,
         },
       },
       {
@@ -69,6 +75,9 @@ function Feature({
         settings: {
           arrows: false,
           slidesToShow: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          pauseOnHover: true,
         },
       },
     ],
