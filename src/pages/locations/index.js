@@ -26,18 +26,18 @@ function Locations() {
         {/* <!-- GOOGLE MAP LOCATIONS AREA START --> */}
         <div className="ltn__google-map-locations-area">
           <div id="gmap">
-          <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.7637759829846!2d80.1848078!3d13.1179503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52638758fed239%3A0xf4d5f225363e21ac!2sKavya%20Nagar%2C%20Korattur%2C%20Chennai%2C%20Tamil%20Nadu%20600076!5e0!3m2!1sen!2sin!4v1693918501234"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3885.6984254443573!2d80.18533707507898!3d13.118281387210688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDA3JzA1LjgiTiA4MMKwMTEnMTYuNSJF!5e0!3m2!1sen!2sin!4v1757699226239!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
         {/* <!-- GOOGLE MAP LOCATIONS AREA END --> */}
-
 
         {/* <!-- GOOGLE MAP LOCATIONS LIST AREA START --> */}
         {/* <div className="ltn__google-map-locations-list-area mt-115 mb-70">
